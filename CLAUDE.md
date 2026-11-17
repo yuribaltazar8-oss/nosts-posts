@@ -1,6 +1,6 @@
 # Instagram automático – Nostos Livraria (@la_livraria_mz)
 
-Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37) ou `feed_tarde` (19:47).
+Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37), `feed_tarde` (19:47) ou `comentarios` (09:23, 15:23, 22:23).
 Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últimas 14 linhas de `data/log.csv`.
 
 ## IDs
@@ -73,6 +73,29 @@ livro do catálogo (1–2x por semana). Sem legenda (o Instagram não aceita em 
 Gancho forte na 1ª linha (ousado, que faça parar) → 2–5 linhas de texto → pergunta para comentar →
 bloco de contacto de `data/brand.md`. Se mencionar livro, pode incluir o preço do catálogo.
 
+## SLOT comentarios – responder e levar ao WhatsApp
+Objectivo: cada pessoa que comenta deve acabar a falar connosco no **WhatsApp 87 943 1217** (principal canal de vendas).
+1. Windsor `get_data` (connector instagram, `last_14dT`): `comment_id, comment_parent_id, comment_text,
+   comment_username, comment_timestamp, media_id`. Ignorar: comentários da própria conta (la_livraria_mz),
+   respostas a respostas nossas sem pergunta, e qualquer `comment_id` já presente em `data/comentarios.csv`.
+2. Actualizar o catálogo a partir dos anúncios ACTIVE (Meta Ads, conta 2119139675179880, sem Dézir).
+   **Os livros que temos são os dos anúncios activos**, não os que aparecem em posts antigos.
+3. Responder com `reply_to_comment`, em português de Moçambique, curto (1–3 frases), caloroso e humano,
+   **sempre variado** (não repetir a mesma frase nem a mesma abertura em respostas seguidas; ver as últimas
+   20 linhas de `data/comentarios.csv`):
+   - Pergunta sobre um livro que está nos anúncios → confirmar que temos, dizer em 1 frase porque vale a pena,
+     preço do catálogo se for pedido, e convidar para o WhatsApp para encomendar/entrega.
+   - Pergunta sobre livro que NÃO está nos anúncios, preço, stock, entrega, província → não prometer nada;
+     convidar a falar no WhatsApp ("lá confirmamos tudo / vemos o que há para ti").
+   - Elogio / emoji / resposta à pergunta do post → agradecer, comentar o que a pessoa disse, convidar a seguir
+     ou a conhecer os livros no WhatsApp (nem sempre o número; variar).
+   - Crítica → responder com calma e respeito, convidar a falar no WhatsApp. Nunca discutir.
+   - Spam/ofensas → não responder; ocultar só se for spam evidente.
+   - Nunca inventar preços, prazos ou stock. Nunca prometer descontos.
+4. Registar cada resposta em `data/comentarios.csv` e fazer commit + push.
+5. Só avisar o Yuri se houver algo que precise dele (reclamação, pedido grande, pergunta sem resposta possível).
+Mensagens privadas (DM) não são possíveis por esta ligação.
+
 ## Direção de conteúdo (pedido do Yuri, 18/11/2026)
 Cada post tem de dar uma razão forte para seguir a página e para ler. Prioridades:
 - **Temas fortes que provam que ler importa**: o que a leitura muda no cérebro, na carreira, nas relações,
@@ -88,7 +111,7 @@ Cada post tem de dar uma razão forte para seguir a página e para ler. Priorida
   (estilo `photo`) em vez de páginas sem pessoas. Nunca gerar pessoas artificiais.
 
 ## Limites
-- Não apagar posts, não alterar a bio, não responder a comentários sem o Yuri pedir.
+- Não apagar posts nem alterar a bio. Não apagar nem ocultar comentários de clientes (só spam evidente pode ser ocultado com hide_comment).
 - Se a publicação falhar, tentar 1 vez; se voltar a falhar, avisar o Yuri com o erro e parar.
 - Não se publica música por aqui (o Instagram não deixa); os vídeos saem com faixa silenciosa. O texto tem de
   funcionar sem som (legível, cenas curtas).
