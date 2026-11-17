@@ -9,7 +9,8 @@
 - Temas que mais prendem: romance intenso, clássicos com emoção, reflexão sobre a vida.
 
 ## Regras actuais
-- Feed: 06:45. Story: 19:20.
+- Feed manhã: 06:45. Story: 12:37. Feed tarde: 19:47 (vídeos curtos e atualidade).
+- Comparar também manhã vs tarde e vídeo vs carrossel vs imagem única; ajustar a rotação da tarde da mesma forma.
 - Mistura semanal (ver CLAUDE.md). Reavaliar pesos a cada domingo:
   formato/estilo com melhor (interacções + guardados×2 + partilhas×2) / alcance ganha +1 dia na semana seguinte;
   o pior perde 1 dia (mínimo 1 por semana para continuar a testar).

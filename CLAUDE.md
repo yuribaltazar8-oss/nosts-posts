@@ -1,6 +1,6 @@
 # Instagram automático – Nostos Livraria (@la_livraria_mz)
 
-Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed` ou `story`.
+Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37) ou `feed_tarde` (19:47).
 Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últimas 14 linhas de `data/log.csv`.
 
 ## IDs
@@ -9,7 +9,7 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - Imagens públicas: `https://raw.githubusercontent.com/yuribaltazar8-oss/nosts-posts/main/<caminho>`
 
 ## Passos de cada execução
-1. **Aprender** (só no slot feed): buscar no Windsor (`get_data`, connector instagram, `last_14dT`) os campos
+1. **Aprender** (só no slot feed_manha): buscar no Windsor (`get_data`, connector instagram, `last_14dT`) os campos
    `timestamp, media_id, media_type, media_reach, media_engagement, media_saved, media_shares, media_total_like_count`
    e preencher as colunas vazias de `data/log.csv` pelo `media_id`. Aos domingos, rever `data/insights.md`
    (regra dos pesos lá descrita) e escrever o que mudou.
@@ -24,12 +24,16 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
    `curl -sI <url raw>` que devolve `200` e `content-type: image/jpeg`.
 7. **Publicar** com `execute_action` do Windsor:
    - feed com 1 imagem → `create_image_post`; 2–10 imagens → `create_carousel_post`
+   - vídeo curto → `create_video_post` (`video_url`, `caption`, `share_to_feed: true`, `cover_url` = 1ª cena .jpg)
    - story → `create_story` (1 imagem 9:16, sem legenda)
+   Vídeo: o GitHub raw serve .mp4 como `application/octet-stream`. Tentar primeiro o URL raw; se o Instagram
+   recusar, tentar `https://cdn.jsdelivr.net/gh/yuribaltazar8-oss/nosts-posts@main/<caminho>`; se também falhar,
+   publicar as cenas (versão feed 4:5) como carrossel e anotar no log "video falhou" para o Yuri saber.
 8. **Registar** uma linha em `data/log.csv` (data, hora de Maputo, slot, estilo, formato, nº páginas, tema,
    livro mencionado, foto usada, media_id) e fazer commit + push.
-9. **Avisar o Yuri** em 2–3 linhas: o que foi publicado e, no slot feed, o resultado do post de ontem.
+9. **Avisar o Yuri** em 2–3 linhas: o que foi publicado e, no slot feed_manha, o resultado dos posts de ontem.
 
-## Rotação semanal do FEED (06:45)
+## Rotação semanal – FEED DA MANHÃ (06:45)
 - Seg: página de livro – carrossel de reflexão (4–6 páginas: title → sections → closing)
 - Ter: design – frase forte (quote) + 1 página `book` com um livro do catálogo
 - Qua: página de livro – uma palavra/conceito (`word`, 1 imagem). Só palavras com origem verdadeira e conhecida
@@ -40,7 +44,28 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - Dom: página de livro – carrossel leve e humano (amor, família, recomeços)
 Mencionar livros em ~3 dos 7 dias, sempre de forma natural. Os outros dias são só sobre ler e viver.
 
-## STORY (19:20, 1 por dia, 9:16)
+## Rotação semanal – FEED DA TARDE (19:47): atenção máxima
+- Seg, Qua, Sáb: **vídeo curto** (Reel 8–15 s): `engine/video.py` com 3–5 cenas 9:16; a 1ª cena é o hook
+  (≤ 8 palavras, 2–2,5 s), as seguintes desenvolvem, a última fecha com convite a ler. Estilo page ou design.
+- Ter, Qui: **atualidade** – frase provocadora (design, 1–3 imagens) ligada a um tema do momento.
+- Sex: **vídeo curto** ligado à atualidade.
+- Dom: **pergunta polémica da semana** (carrossel design 2–4 imagens) para gerar debate nos comentários.
+Livros do catálogo podem aparecer na última cena/imagem 2x por semana.
+
+### Pesquisa de atualidade (slots feed_tarde e, quando útil, feed_manha)
+Antes de escrever, pesquisar na web (WebSearch, várias pesquisas) as notícias e conversas das últimas 48 h:
+Moçambique (Maputo, economia, custo de vida, juventude, educação, cultura, desporto), mundo lusófono e
+temas globais virais. Escolher UM tema que se ligue de forma natural a ler, pensar, decidir ou viver.
+O texto usa o tema como gancho (palavras fortes, perguntas incómodas, verdades que doem) e puxa para a leitura.
+Regras para não queimar a marca:
+- Polémico na pergunta, nunca no ataque: não tomar partido político, não apoiar nem atacar partidos,
+  candidatos, governos, religiões, etnias ou pessoas concretas.
+- Nada de humor ou ganchos sobre mortes, tragédias, violência ou vítimas.
+- Só factos confirmados em pelo menos 2 fontes de notícias; na dúvida, falar do tema sem afirmar factos.
+- Nunca inventar citações nem números.
+Registar no log, na coluna `theme`, o tema e a fonte principal.
+
+## STORY (12:37, 1 por dia, 9:16)
 Página de livro ou design em `size: story`, 1 imagem: pergunta para responder, frase curta, ou bastidor de um
 livro do catálogo (1–2x por semana). Sem legenda (o Instagram não aceita em stories).
 
@@ -51,4 +76,5 @@ bloco de contacto de `data/brand.md`. Se mencionar livro, pode incluir o preço 
 ## Limites
 - Não apagar posts, não alterar a bio, não responder a comentários sem o Yuri pedir.
 - Se a publicação falhar, tentar 1 vez; se voltar a falhar, avisar o Yuri com o erro e parar.
-- Não se publica música por aqui (o Instagram não deixa); não prometer som.
+- Não se publica música por aqui (o Instagram não deixa); os vídeos saem com faixa silenciosa. O texto tem de
+  funcionar sem som (legível, cenas curtas).
