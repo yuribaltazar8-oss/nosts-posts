@@ -40,7 +40,7 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - Dom: página de livro – carrossel leve e humano (amor, família, recomeços)
 Mencionar livros em ~3 dos 7 dias, sempre de forma natural. Os outros dias são só sobre ler e viver.
 
-## STORY (17:45, 1 por dia, 9:16)
+## STORY (19:20, 1 por dia, 9:16)
 Página de livro ou design em `size: story`, 1 imagem: pergunta para responder, frase curta, ou bastidor de um
 livro do catálogo (1–2x por semana). Sem legenda (o Instagram não aceita em stories).
 
