@@ -73,6 +73,20 @@ livro do catálogo (1–2x por semana). Sem legenda (o Instagram não aceita em 
 Gancho forte na 1ª linha (ousado, que faça parar) → 2–5 linhas de texto → pergunta para comentar →
 bloco de contacto de `data/brand.md`. Se mencionar livro, pode incluir o preço do catálogo.
 
+## Direção de conteúdo (pedido do Yuri, 18/11/2026)
+Cada post tem de dar uma razão forte para seguir a página e para ler. Prioridades:
+- **Temas fortes que provam que ler importa**: o que a leitura muda no cérebro, na carreira, nas relações,
+  no dinheiro, na forma de pensar e decidir; o que perde quem não lê; porque é que os livros certos mudam vidas.
+  Usar dados reais (estudos, inquéritos, estatísticas) só depois de os confirmar na web em fonte fiável,
+  e indicar a fonte na legenda ("Fonte: …"). Nunca inventar números.
+- **Valor que dá vontade de seguir**: séries recorrentes que as pessoas esperam (ex.: "Palavra da semana",
+  "O livro que te faltava", "Ninguém te diz isto sobre…"), listas úteis, verdades incómodas, perguntas que
+  pedem resposta. Terminar muitas legendas com "Segue a @la_livraria_mz para mais" quando fizer sentido.
+- **Livros novos**: mostrar que há sempre livros novos e certos para cada fase da vida (catálogo dos anúncios).
+- **Pessoas no ecrã**: posts com pessoas reais chamam mais atenção. Sempre que `fotos/` tiver fotos ou vídeos
+  reais ainda não usados (pessoas moçambicanas, leitores, clientes, entregas, a equipa), dar-lhes prioridade
+  (estilo `photo`) em vez de páginas sem pessoas. Nunca gerar pessoas artificiais.
+
 ## Limites
 - Não apagar posts, não alterar a bio, não responder a comentários sem o Yuri pedir.
 - Se a publicação falhar, tentar 1 vez; se voltar a falhar, avisar o Yuri com o erro e parar.
