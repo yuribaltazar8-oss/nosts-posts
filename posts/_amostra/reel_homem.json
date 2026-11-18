@@ -1,0 +1,56 @@
+{
+ "out": "posts/_amostra/reel_homem.mp4",
+ "bpm": 100,
+ "music": "afro",
+ "seed": 19,
+ "scenes": [
+  {
+   "kind": "text",
+   "kicker": "19 de Novembro · Dia do Homem",
+   "text": "Ninguém pergunta ao homem como ele está.",
+   "highlight": [
+    "como",
+    "ele",
+    "está."
+   ],
+   "size": 96,
+   "bold": true,
+   "beats": 5
+  },
+  {
+   "kind": "text",
+   "text": "Paga as contas.\nResolve tudo.\n\nE cala o que sente.",
+   "highlight": [
+    "cala"
+   ],
+   "size": 84,
+   "bold": true,
+   "beats": 5
+  },
+  {
+   "kind": "text",
+   "text": "Mas o que não se diz,\num dia cobra.\n\nNa saúde. Na família. No trabalho.",
+   "highlight": [
+    "cobra."
+   ],
+   "size": 76,
+   "bold": true,
+   "beats": 5
+  },
+  {
+   "kind": "text",
+   "text": "Há quase 2 000 anos, Séneca já escrevia a um amigo sobre medo e sofrimento.\n\nAlguns livros dizem o que um homem não consegue dizer.",
+   "highlight": [
+    "Séneca"
+   ],
+   "size": 68,
+   "beats": 6
+  },
+  {
+   "kind": "outro",
+   "text": "Leia. Regresse a si.",
+   "sub": "Comente CASA · WhatsApp 87 943 1217",
+   "beats": 5
+  }
+ ]
+}
