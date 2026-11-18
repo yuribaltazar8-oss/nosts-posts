@@ -1,0 +1,12 @@
+{"out": "posts/2026-11-18/reel_teste1.mp4", "bpm": 112,
+ "scenes": [
+  {"kind": "intro", "photo": "livros/dinheiro-e-emocional_foto.jpg", "focus": [0.5, 0.45], "zoom": [1.0, 1.10],
+   "text": "O livro para quem recebe e no dia 10 já não tem nada.", "bold": ["dia", "10"], "card_y": 1250, "beats": 6},
+  {"kind": "book", "photo": "livros/dinheiro-e-emocional_foto.jpg", "focus": [0.5, 0.33], "zoom": [1.55, 1.7],
+   "line": "Mostra porque gastamos quando estamos ansiosos.", "bold": ["ansiosos."], "label": "1/3", "card_y": 1300, "beats": 4},
+  {"kind": "book", "photo": "livros/dinheiro-e-emocional_foto.jpg", "focus": [0.5, 0.62], "zoom": [1.7, 1.55],
+   "line": "Ensina a parar de comprar para impressionar.", "bold": ["impressionar."], "label": "2/3", "card_y": 1300, "beats": 4},
+  {"kind": "book", "photo": "livros/dinheiro-e-emocional_foto.jpg", "focus": [0.5, 0.5], "zoom": [1.2, 1.05],
+   "line": "E a ter paz com o dinheiro, ganhe pouco ou muito.", "bold": ["paz"], "label": "3/3", "card_y": 1300, "beats": 4},
+  {"kind": "outro", "text": "Leia. Regresse a si.", "sub": "Dinheiro é Emocional · WhatsApp 87 943 1217", "beats": 4}
+ ]}
