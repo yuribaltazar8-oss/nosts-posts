@@ -28,7 +28,7 @@ INK = (34, 29, 24)
 RED = (2, 36, 108)  # azul Nostos (cor do logo); nome mantido por compatibilidade
 NAVY = RED
 LOGO_CREME = (251, 248, 240)
-BEIGE = (236, 225, 202)  # creme quente de papel de livro (#ECE1CA), fundo padrão do estilo nota
+BEIGE = (246, 239, 224)  # creme claro de papel de livro (#F6EFE0), fundo padrão do estilo nota
 GREY = (110, 104, 96)
 SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
@@ -448,7 +448,7 @@ def nota_draw(W, H, p, n, total):
     # centrar o bloco (cabeçalho + texto) na vertical
     content_h = int(y)
     rng = np.random.default_rng(7)
-    grain = np.array(bg, float)[None, None, :] + rng.normal(0, 2.2, (H, W, 1))
+    grain = np.array(bg, float)[None, None, :] + rng.normal(0, 1.6, (H, W, 1))
     img = Image.fromarray(np.clip(grain, 0, 255).astype(np.uint8))
     area = H - (260 if story else 150)
     top = max(90, int((area - content_h) / 2))
