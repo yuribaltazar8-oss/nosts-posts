@@ -29,6 +29,7 @@ RED = (2, 36, 108)  # azul Nostos (cor do logo); nome mantido por compatibilidad
 NAVY = RED
 LOGO_CREME = (251, 248, 240)
 BEIGE = (246, 239, 224)  # creme claro de papel de livro (#F6EFE0), fundo padrão do estilo nota
+PAPEL_CLARO = (250, 244, 231)  # papel de livro claro (textura igual às páginas, mais clara)
 GREY = (110, 104, 96)
 SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
@@ -72,7 +73,7 @@ FILLER = ("o tempo passava devagar naquela casa e ninguém se lembrava ao certo 
           "se sentava a ver a chuva cair sobre o quintal e as palavras ficavam no ar").split()
 
 
-def paper(W, H, seed):
+def paper(W, H, seed, base=None, through=0.055, vignette=0.16):
     r = np.random.default_rng(seed)
     small = r.normal(0, 1, (14, 11))
     m = np.array(Image.fromarray(((small - small.min()) / np.ptp(small) * 255).astype(np.uint8))
@@ -80,10 +81,10 @@ def paper(W, H, seed):
     fine = r.normal(0, 1, (H, W))
     img = np.zeros((H, W, 3))
     for c in range(3):
-        img[..., c] = CREAM[c] + m * 10 + fine * 4.2
+        img[..., c] = (base or CREAM)[c] + m * 10 + fine * 4.2
     yy, xx = np.mgrid[0:H, 0:W]
     dd = np.sqrt(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H / 2) / (H * 0.62)) ** 2)
-    img *= (1 - 0.16 * np.clip(dd, 0, 1.4) ** 2)[..., None]
+    img *= (1 - vignette * np.clip(dd, 0, 1.4) ** 2)[..., None]
     img[:, :60] *= np.linspace(0.9, 1, 60)[None, :, None]
     # texto do verso a transparecer
     rr = random.Random(seed)
@@ -103,7 +104,7 @@ def paper(W, H, seed):
         d.text((70, y), " ".join(line), font=f, fill=255)
         y += 50
     layer = layer.transpose(Image.FLIP_LEFT_RIGHT).filter(ImageFilter.GaussianBlur(1.6))
-    a = np.array(layer, float) / 255 * 0.055
+    a = np.array(layer, float) / 255 * through
     img = img * (1 - a[..., None]) + np.array([90, 80, 66]) * a[..., None]
     return Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
 
@@ -379,10 +380,14 @@ def nota_draw(W, H, p, n, total):
     d.text((tx, y0 + 56), HANDLE, font=sans(30), fill=(110, 110, 110))
     y = y0 + 170
     if p.get("kicker"):
-        d.text((M, y), p["kicker"], font=sans(30, True), fill=RED)
+        d.text((M, y), p["kicker"], font=serif(38, 600, it=True), fill=RED)
         y += 60
     size = p.get("size", 54)
-    f, fb = sans(size), sans(size, True)
+    if p.get("font", "serif") == "serif":
+        size = int(size * 1.12)
+        f, fb = serif(size, 450), serif(size, 650)
+    else:
+        f, fb = sans(size), sans(size, True)
     hl = set(w.lower().strip(".,!?:;") for w in p.get("highlight", []))
     for para in p["text"].split("\n"):
         if not para.strip():
@@ -447,9 +452,7 @@ def nota_draw(W, H, p, n, total):
             y += box_h
     # centrar o bloco (cabeçalho + texto) na vertical
     content_h = int(y)
-    rng = np.random.default_rng(7)
-    grain = np.array(bg, float)[None, None, :] + rng.normal(0, 1.6, (H, W, 1))
-    img = Image.fromarray(np.clip(grain, 0, 255).astype(np.uint8))
+    img = paper(W, H, 7 + n, base=PAPEL_CLARO, through=0.025, vignette=0.05)
     area = H - (260 if story else 150)
     top = max(90, int((area - content_h) / 2))
     crop = canvas.crop((0, 0, W, content_h + 10))

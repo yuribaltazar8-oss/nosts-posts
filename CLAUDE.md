@@ -52,7 +52,8 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
   comentar, WhatsApp).
 - Estilos, alternar:
   - `nota` (fundo creme #F6EFE0 (creme claro de papel de livro) – nunca branco puro –, a Nostos a escrever, tipo publicação)
-    – **o principal (~50%)**. Texto limpo e elegante, sem sombras.
+    – **o principal (~50%)**. Letra de livro (Garamond) sobre papel de livro claro, igual às páginas mas mais
+    claro. Texto limpo e elegante, sem sombras.
     Usar `highlight` para 1–3 palavras-chave em azul Nostos e `book` para mostrar um livro do catálogo.
   - `design` (creme, frases fortes) – ~25%.
   - `page` (página de livro) – ~25%, só com hook forte e conhecido.

@@ -40,13 +40,12 @@
   },
   {
    "kicker": "Se for ler apenas um livro sobre dinheiro este ano:",
-   "text": "Que seja este. Obriga o leitor a olhar para a forma como pensa sobre dinheiro, e isso muda tudo o resto.",
-   "size": 46,
+   "text": "Que seja este. Mostra que o que controla as emoções também governa as finanças, e isso muda tudo o resto.",
+   "size": 44,
    "book": {
-    "title": "Os Segredos da Mente Milionária",
-    "author": "T. Harv Eker",
-    "price": "950 MT",
-    "cover": "livros/os-segredos-da-mente-milionaria.jpg"
+    "title": "Dinheiro é Emocional",
+    "author": "Tiago Brunet",
+    "cover": "livros/dinheiro-e-emocional.jpg"
    }
   },
   {
