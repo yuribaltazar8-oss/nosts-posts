@@ -25,7 +25,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FD = os.path.join(HERE, "fonts")
 CREAM = (234, 222, 198)
 INK = (34, 29, 24)
-RED = (139, 30, 30)
+RED = (2, 36, 108)  # azul Nostos (cor do logo); nome mantido por compatibilidade
+NAVY = RED
+LOGO_CREME = (251, 248, 240)
 GREY = (110, 104, 96)
 SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
@@ -105,7 +107,7 @@ def paper(W, H, seed):
 
 def flat(W, H, seed):
     r = np.random.default_rng(seed)
-    base = np.array([245, 241, 234], float)
+    base = np.array(LOGO_CREME, float)
     img = base[None, None, :] + r.normal(0, 1.6, (H, W, 1))
     return Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
 
@@ -245,11 +247,9 @@ def design_draw(img, p, n, total):
         d.text((M, H - (330 if not story else 440)), "Encomende pelo WhatsApp", font=sans(30), fill=GREY)
         d.text((M, H - (286 if not story else 396)), "87 943 1217", font=sans(64, True), fill=RED)
     d.line([M, H - 190, W - M, H - 190], fill=(200, 192, 180), width=2)
-    x = M
-    for ch in "NOSTOS":
-        d.text((x, H - 160), ch, font=serif(64, 700), fill=INK)
-        x += d.textlength(ch, font=serif(64, 700)) + 14
-    d.text((M, H - 72), "NOSTOS LIVRARIA MZ  ·  MAPUTO", font=sans(24), fill=GREY)
+    lg = Image.open(os.path.join(HERE, "logo_marca.png"))
+    lg = lg.resize((int(lg.width * 140 / lg.height), 140), Image.LANCZOS)
+    img.paste(lg, (M, H - 165), lg)
     if n < total:
         a = "desliza  →"
         d.text((W - M - d.textlength(a, font=sans(28)), H - 140), a, font=sans(28), fill=RED)

@@ -43,7 +43,7 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - **Penúltima/última**: livro do catálogo dos anúncios (quando fizer sentido) + CTA (guardar, comentar, WhatsApp).
 - Estilos, alternar:
   - `nota` (fundo branco, a Nostos a escrever, tipo publicação/tweet) – **o principal (~50%)**.
-    Usar `highlight` para 1–3 palavras-chave em vermelho e `book` para mostrar um livro do catálogo.
+    Usar `highlight` para 1–3 palavras-chave em azul Nostos e `book` para mostrar um livro do catálogo.
   - `design` (creme, frases fortes) – ~25%.
   - `page` (página de livro) – ~25%, só com hook forte e conhecido.
   - `photo` sempre que houver fotos reais por usar em `fotos/`.
