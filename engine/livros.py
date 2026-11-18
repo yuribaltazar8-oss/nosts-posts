@@ -190,9 +190,14 @@ def main(path):
         scenes = [("intro", v["intro"])] + [("book", b) for b in v.get("books", [])] + [("outro", v["outro"])]
     v.setdefault("books", [sc for k, sc in scenes if k == "book"])
     total = sum(s["beats"] * beat for _, s in scenes)
+    audio = ["-f", "lavfi", "-t", f"{total:.2f}", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100"]
+    if v.get("music", "afro"):   # batida original Nostos (engine/musica.py), no mesmo bpm dos cortes
+        import musica
+        wav = os.path.splitext(out)[0] + "_musica.wav"
+        musica.save(musica.make(total + 0.1, v.get("bpm", 112), v.get("music", "afro"), v.get("seed", 7)), wav)
+        audio = ["-i", wav]
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-           "-r", str(FPS), "-i", "-", "-f", "lavfi", "-t", f"{total:.2f}",
-           "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+           "-r", str(FPS), "-i", "-"] + audio + [
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p",
            "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", out]
     pr = subprocess.Popen(cmd, stdin=subprocess.PIPE)

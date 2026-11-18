@@ -1,6 +1,6 @@
 # Instagram automático – Nostos Livraria (@nostos_livraria_mz)
 
-Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37), `feed_tarde` (19:47) ou `comentarios` (09:23, 15:23, 22:23).
+Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37), `reel_meio` (13:13), `feed_tarde` (19:47) ou `comentarios` (09:23, 15:23, 22:23).
 Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últimas 14 linhas de `data/log.csv`.
 
 ## IDs
@@ -134,7 +134,7 @@ Regras de rigor e direitos:
   manhã, pedir ao Yuri a foto desse livro para `livros/`.
 
 ## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
-**O feed é SÓ carrosséis (5–8 imagens) ou vídeos curtos (5–8 segundos).** Nunca imagem única.
+**O feed é SÓ carrosséis (5–8 imagens) ou reels de livros (8–14 segundos, com som).** Nunca imagem única.
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
   disciplina, família, fé, amor, telemóvel, solidão, sucesso). Nada de palavras desconhecidas ou temas de nicho
   (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
@@ -163,6 +163,31 @@ Regras de rigor e direitos:
 - Sáb: photo se houver fotos; senão "Perfil do livro" (nota, livro em 3D)
 - Dom: design ou page – amor, família, recomeços
 
+## REELS = LIVROS + SOM (pedido do Yuri, 18/11/2026 – manda sobre as regras de vídeo abaixo)
+- **"As pessoas compram vendo os livros, não os textos."** Os carrosséis são de texto; os **vídeos são dos livros**:
+  o livro aparece em TODAS as cenas (foto/vídeo real na mão, aberto, na estante, capa 3D real). Nada de cenas só de texto.
+- Motor: **`engine/livros.py`** (exemplo: `posts/2026-11-18/livros_reel_teste1.json`). Cenas `intro` (hook a escrever-se
+  num cartão creme Nostos), `book` (1 frase curta por corte: o que o livro resolve), `outro` (azul Nostos, logo,
+  "Leia. Regresse a si.", WhatsApp). Usar `photo`/`clip` de `fotos/` e `livros/` (reais), `focus`/`zoom` para variar
+  o enquadramento; `cover` (capa real → 3D) quando não houver foto.
+- Formatos que vendem: "O livro para quem…", "3 livros para quem…" (1 livro por corte), "1 livro, 3 lições",
+  página aberta com a frase do livro (como a referência do Yuri: mão a segurar o livro aberto em frente à estante).
+- **Som obrigatório**: o Yuri escolheu música livre de direitos. `engine/livros.py` junta sempre a batida original Nostos
+  (`engine/musica.py`, `"music": "afro"` ou `"lofi"`, `"seed"` diferente em cada vídeo, mesmo `bpm` dos cortes).
+  Nunca usar músicas de terceiros (o Instagram corta o som ou bloqueia).
+- Pessoas: só fotos/vídeos reais (de `fotos/`, `livros/` ou enviados pelo Yuri). Não há gerador de imagens aqui e não se
+  inventam pessoas. Pedir ao Yuri, no aviso, vídeos curtos (5–10 s) de mãos a segurar cada livro do catálogo.
+- Hook (cena 1) = problema que a pessoa sente + o livro já visível. Pergunta → resposta só no fim (ciclo aberto).
+- Verificar 8–10 frames (ffmpeg) com Read antes de publicar.
+
+## Cadência: 3 publicações por dia (pedido do Yuri, 18/11/2026)
+- 06:45 `feed_manha` – carrossel. · 12:37 `story`. · **13:13 `reel_meio`** – reel de livro **em teste** (Trial Reel).
+  · 19:47 `feed_tarde` – reel de livro para todos os seguidores.
+- **Trial Reels** (`create_video_post` com `trial_params: {"graduation_strategy": "SS_PERFORMANCE"}`): só aparece a
+  quem não segue e o Instagram passa-o para o feed sozinho se render. Máximo **3 reels em teste ao mesmo tempo**
+  (os `trial` dos últimos 3 dias no log); se já houver 3, o `reel_meio` sai normal. Registar `trial` na coluna `format`.
+- O `feed_tarde` repete o formato/livro/hook do trial com melhor Score (ver `insights.md`) com outra ideia.
+
 ## Vídeos: feedback do Yuri (18/11/2026) – "mortos, sem sentido, não chamam atenção"
 O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lento) é o exemplo do que **não** fazer.
 - **Usar `engine/reel.py`** (não `video.py`): texto a entrar parágrafo a parágrafo, cortes secos com punch-in,
@@ -182,8 +207,7 @@ O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lent
   vendidos (capa de frente, livro aberto, na mão) e pequenos vídeos reais de livros/entregas.
 
 ## Rotação – FEED DA TARDE (19:47): atenção máxima
-- Seg, Qua, Sex, Sáb: **vídeo curto 7–10 s** (`engine/reel.py`, 3 cenas 9:16: hook ≤ 8 palavras → desenvolvimento → livro real
-  em grande; ver "Vídeos: feedback do Yuri"). Estilo nota, design ou page.
+- Seg, Qua, Sex, Sáb: **reel de livro 8–14 s** (`engine/livros.py`, com som; ver "REELS = LIVROS + SOM"). Estilo nota, design ou page.
 - Ter, Qui: **carrossel de atualidade** (nota) – tema do momento ligado à leitura.
 - Dom: **pergunta polémica da semana** (carrossel nota 3–5 imagens) para gerar debate.
 Livros do catálogo aparecem em pelo menos 3 posts por semana, sempre naturais.
