@@ -28,7 +28,7 @@ INK = (34, 29, 24)
 RED = (2, 36, 108)  # azul Nostos (cor do logo); nome mantido por compatibilidade
 NAVY = RED
 LOGO_CREME = (251, 248, 240)
-BEIGE = (241, 234, 220)  # off-white de livro, fundo padrão do estilo nota
+BEIGE = (246, 240, 228)  # creme (#F6F0E4), fundo padrão do estilo nota
 GREY = (110, 104, 96)
 SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
@@ -286,6 +286,54 @@ def photo_draw(W, H, p, root):
     return img
 
 
+
+def book_mockup(cover, h):
+    """Livro 3D a partir de uma CAPA REAL (foto/scan plano enviado pelo Yuri). Devolve RGBA."""
+    cover = cover.convert("RGB")
+    cw = int(h * cover.width / cover.height)
+    cover = cover.resize((cw, h), Image.LANCZOS)
+    spine, pages = max(10, int(cw * 0.05)), max(10, int(cw * 0.045))
+    W2, H2 = cw + spine + pages + 60, h + 80
+    out = Image.new("RGBA", (W2, H2), (0, 0, 0, 0))
+    # sombra suave no chão
+    sh = Image.new("L", (W2, H2), 0)
+    ImageDraw.Draw(sh).ellipse([20, h + 20, W2 - 10, h + 64], fill=90)
+    sh = sh.filter(ImageFilter.GaussianBlur(14))
+    x0, y0 = 20, 20
+    # bloco de páginas (lado direito)
+    pg = Image.new("RGB", (pages, h - 8), (238, 232, 218))
+    pd = ImageDraw.Draw(pg)
+    for yy in range(0, h - 8, 3):
+        pd.line([(0, yy), (pages, yy)], fill=(222, 214, 198))
+    out.paste(pg, (x0 + spine + cw - 4, y0 + 6))
+    # lombada (cor tirada da margem esquerda da capa, mais escura)
+    edge = np.array(cover.crop((0, 0, max(2, cw // 20), h))).reshape(-1, 3).mean(0) * 0.62
+    sp = Image.new("RGB", (spine, h), tuple(int(c) for c in edge))
+    g = np.linspace(0.75, 1.0, spine)[None, :, None]
+    sp = Image.fromarray((np.array(sp, float) * g).astype(np.uint8))
+    out.paste(sp, (x0, y0))
+    # capa com leve dobra junto à lombada e brilho suave
+    arr = np.array(cover, float)
+    hinge = np.ones(cw)
+    hinge[: int(cw * 0.04)] = np.linspace(0.78, 1.0, int(cw * 0.04))
+    shine = 1 + 0.06 * np.exp(-((np.arange(cw) - cw * 0.12) / (cw * 0.08)) ** 2)
+    arr = np.clip(arr * (hinge * shine)[None, :, None], 0, 255)
+    out.paste(Image.fromarray(arr.astype(np.uint8)), (x0 + spine, y0))
+    # leve rotação 3D: a aresta direita fica mais curta (livro virado para o leitor)
+    book = out.crop((0, 0, W2, h + y0 + 2))
+    k = 0.045
+    src = [(0, 0), (book.width, 0), (book.width, book.height), (0, book.height)]
+    dst = [(0, 0), (book.width, book.height * k), (book.width, book.height * (1 - k)), (0, book.height)]
+    A = []
+    for (x, y), (u, v) in zip(dst, src):
+        A.append([x, y, 1, 0, 0, 0, -u * x, -u * y]); A.append([0, 0, 0, x, y, 1, -v * x, -v * y])
+    coef = np.linalg.solve(np.array(A, float), np.array([c for pt in src for c in pt], float))
+    book = book.transform(book.size, Image.PERSPECTIVE, coef.tolist(), Image.BICUBIC)
+    final = Image.new("RGBA", (W2, H2), (0, 0, 0, 0))
+    final.paste((40, 32, 24, 255), (0, 0), sh)
+    final.alpha_composite(book, (0, 0))
+    return final
+
 # ---------------- estilo NOTA (fundo branco, a Nostos a escrever) ----------------
 LOGO = os.path.join(HERE, "logo.png")
 
@@ -356,17 +404,24 @@ def nota_draw(W, H, p, n, total):
     if p.get("book"):
         b = p["book"]
         y += 30
-        photo = b.get("photo")  # foto REAL do livro enviada pelo Yuri (pasta livros/); nunca desenhar capas
-        ph_path = os.path.join(os.path.dirname(HERE), photo) if photo else None
-        if ph_path and os.path.exists(ph_path):
-            ch = 520
-            pic = Image.open(ph_path).convert("RGB")
-            pw = int(pic.width * ch / pic.height)
-            pw = min(pw, W - 2 * M - 360)
-            pic = ImageOps.fit(pic, (pw, ch), Image.LANCZOS)
-            mask = Image.new("L", pic.size, 0)
-            ImageDraw.Draw(mask).rounded_rectangle([0, 0, pic.width - 1, pic.height - 1], radius=18, fill=255)
-            canvas.paste(pic, (M, int(y)), mask)
+        root = os.path.dirname(HERE)
+        cov = b.get("cover")  # capa REAL plana (livros/) -> livro 3D; nunca desenhar capas
+        photo = b.get("photo")  # foto REAL do livro já fotografado -> usada tal como está
+        cov_path = os.path.join(root, cov) if cov else None
+        ph_path = os.path.join(root, photo) if photo else None
+        if (cov_path and os.path.exists(cov_path)) or (ph_path and os.path.exists(ph_path)):
+            ch = 540
+            if cov_path and os.path.exists(cov_path):
+                pic = book_mockup(Image.open(cov_path), ch - 80)
+                canvas.paste(pic, (M - 20, int(y)), pic)
+                pw = pic.width - 20
+            else:
+                pic = Image.open(ph_path).convert("RGB")
+                pw = min(int(pic.width * ch / pic.height), W - 2 * M - 360)
+                pic = ImageOps.fit(pic, (pw, ch), Image.LANCZOS)
+                mask = Image.new("L", pic.size, 0)
+                ImageDraw.Draw(mask).rounded_rectangle([0, 0, pic.width - 1, pic.height - 1], radius=18, fill=255)
+                canvas.paste(pic, (M, int(y)), mask)
             tx = M + pw + 44
             ty = y + 40
             d.text((tx, ty - 6), b.get("kicker", "Disponível na Nostos"), font=sans(26), fill=GREY)
