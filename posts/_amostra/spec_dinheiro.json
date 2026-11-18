@@ -45,7 +45,8 @@
    "book": {
     "title": "Dinheiro é Emocional",
     "author": "Tiago Brunet",
-    "cover": "livros/dinheiro-e-emocional.jpg"
+    "cover": "livros/dinheiro-e-emocional.jpg",
+    "price": "1 500 MT"
    }
   },
   {

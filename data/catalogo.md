@@ -16,6 +16,9 @@ Quarta Asa (2 600 MT) · Amor, Teoricamente (2 400 MT) · A Hipótese do Amor (2
 ## Clássicos e filosofia (anúncio com melhores resultados)
 Obras de Aristóteles, Maquiavel, Nietzsche, Séneca · Noites Brancas – Dostoiévski (1 250 MT)
 
+## Finanças e emoções (adicionado pelo Yuri, 18/11/2026)
+Dinheiro é Emocional – Tiago Brunet (1 500 MT) · capa: `livros/dinheiro-e-emocional.jpg`
+
 ## Fé e propósito
 Uma Vida com Propósitos – Rick Warren (2 100 MT)
 

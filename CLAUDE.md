@@ -134,7 +134,11 @@ Cada post tem de dar uma razão forte para seguir a página e para ler. Priorida
   `livros/<nome-do-livro>.jpg` (enviadas pelo Yuri). Capa plana/digital → `"cover": "livros/…jpg"` (o motor gera
   o livro em 3D com essa capa); foto do livro já fotografado → `"photo": "livros/…jpg"`.
   Nunca desenhar, recriar ou descarregar capas. Sem foto em `livros/`, usar o cartão só com título e autor.
-  Preferir livros que tenham foto.
+  Preferir livros que tenham foto. Para cortar a capa de uma foto tirada à mão, usar transformação de
+  perspectiva (ver como foi feita `livros/dinheiro-e-emocional.jpg` a partir de `livros/dinheiro-e-emocional_foto.jpg`).
+- **Variar sempre o formato**: carrossel de texto com o livro em 3D pequeno por baixo; páginas de livro;
+  fotos do livro aberto ou de páginas reais (quando o Yuri as enviar para `fotos/`); listas; vídeos curtos.
+  Nunca dois posts seguidos com o mesmo formato.
 - **Livros novos**: mostrar que há sempre livros novos e certos para cada fase da vida (catálogo dos anúncios).
 - **Pessoas no ecrã**: posts com pessoas reais chamam mais atenção. Sempre que `fotos/` tiver fotos ou vídeos
   reais ainda não usados (pessoas moçambicanas, leitores, clientes, entregas, a equipa), dar-lhes prioridade

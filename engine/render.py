@@ -371,6 +371,7 @@ def nota_draw(W, H, p, n, total):
     M = 90
     story = H > 1500
     y0 = 0
+    late = []  # imagens coladas depois sobre o papel (evita manchas no fundo)
     av = avatar(96)
     tx = M
     if av is not None:
@@ -418,7 +419,7 @@ def nota_draw(W, H, p, n, total):
             ch = 540
             if cov_path and os.path.exists(cov_path):
                 pic = book_mockup(Image.open(cov_path), ch - 80)
-                canvas.paste(pic, (M - 20, int(y)), pic)
+                late.append((pic, (M - 20, int(y))))
                 pw = pic.width - 20
             else:
                 pic = Image.open(ph_path).convert("RGB")
@@ -458,6 +459,8 @@ def nota_draw(W, H, p, n, total):
     crop = canvas.crop((0, 0, W, content_h + 10))
     cm = np.array(crop, float); diff = np.abs(cm - np.array(bg, float)).sum(2)
     img.paste(crop, (0, top), Image.fromarray((np.clip(diff * 40, 0, 255)).astype(np.uint8)))
+    for pic, (px, py) in late:
+        img.paste(pic, (px, py + top), pic)
     d = ImageDraw.Draw(img)
     # rodapé
     fy = H - (260 if story else 110)
