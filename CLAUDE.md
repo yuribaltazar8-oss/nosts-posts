@@ -206,10 +206,10 @@ O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lent
 - Enquanto `fotos/` estiver vazia e `livros/` só tiver 1 capa, pedir ao Yuri no aviso: fotos dos livros mais
   vendidos (capa de frente, livro aberto, na mão) e pequenos vídeos reais de livros/entregas.
 
-## Rotação – FEED DA TARDE (19:47): atenção máxima
-- Seg, Qua, Sex, Sáb: **reel de livro 8–14 s** (`engine/livros.py`, com som; ver "REELS = LIVROS + SOM"). Estilo nota, design ou page.
-- Ter, Qui: **carrossel de atualidade** (nota) – tema do momento ligado à leitura.
-- Dom: **pergunta polémica da semana** (carrossel nota 3–5 imagens) para gerar debate.
+## Rotação – FEED DA TARDE (19:47) e REEL_MEIO (13:13): reels de livros, todos os dias
+- Ambos são **reels de livros** (`engine/livros.py`, com som). Variar: "O livro para quem…", "3 livros para quem…",
+  "1 livro, 3 lições", página aberta com frase. Tema da atualidade só se ligar de forma óbvia ao livro.
+- A pergunta polémica de domingo e o carrossel de atualidade passam para a legenda / carrossel da manhã.
 Livros do catálogo aparecem em pelo menos 3 posts por semana, sempre naturais.
 
 ### Pesquisa de atualidade (slots feed_tarde e, quando útil, feed_manha)
