@@ -9,10 +9,13 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - Imagens públicas: `https://raw.githubusercontent.com/yuribaltazar8-oss/nosts-posts/main/<caminho>`
 
 ## Passos de cada execução
-1. **Aprender** (só no slot feed_manha): buscar no Windsor (`get_data`, connector instagram, `last_14dT`) os campos
-   `timestamp, media_id, media_type, media_reach, media_engagement, media_saved, media_shares, media_total_like_count`
-   e preencher as colunas vazias de `data/log.csv` pelo `media_id`. Aos domingos, rever `data/insights.md`
-   (regra dos pesos lá descrita) e escrever o que mudou.
+1. **Aprender – TODOS OS DIAS** (no slot feed_manha; nos slots feed_tarde e story ler só `insights.md`): buscar no Windsor
+   (`get_data`, connector instagram, `last_14dT`) os campos `timestamp, media_id, media_type, media_reach, media_views,
+   media_engagement, media_saved, media_shares, media_total_like_count, media_total_comments_count, media_follows,
+   media_profile_visits, media_reel_avg_watch_time, media_reel_skip_rate` e preencher `data/log.csv` pelo `media_id`.
+   Depois calcular o **Score viral** de cada post (fórmula em `data/insights.md`), actualizar o ranking e as
+   "Fórmulas vencedoras / a evitar" em `insights.md` e escrever no aviso ao Yuri o melhor e o pior post de ontem
+   e o que se vai copiar ou mudar hoje. Aos domingos, revisão maior dos pesos (regra em `insights.md`).
 2. **Catálogo** (só às segundas): actualizar `data/catalogo.md` com os anúncios ACTIVE da conta de anúncios.
 3. **Escolher o post** segundo a rotação abaixo (ajustada por `insights.md`). Nunca repetir tema, frase ou livro
    dos últimos 10 dias (ver log).
@@ -38,6 +41,28 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
   "Quem lê…", "Você já reparou…". Português cuidado, sem gíria.
 - "Tu" só muito de vez em quando (no máximo 1 em cada 5 posts), e nunca no hook.
 - Formal não quer dizer morno: o hook continua **polémico e forte**.
+
+## Objectivo: retenção máxima e viralização (pedido do Yuri, 18/11/2026)
+Cada post tem de fazer as pessoas pararem, irem até ao fim, comentarem e enviarem a alguém. A Nostos deve ser
+vista em todo o país como **a referência**: o conteúdo que as pessoas dizem "isto é o melhor que já vi".
+Antes de publicar, o post tem de passar este teste (se falhar um ponto, reescrever):
+1. **Pára o dedo em 1 segundo?** Hook curto, concreto e com tensão (contradição, verdade que dói, promessa clara,
+   pergunta que incomoda). Sem introduções, sem "Olá", sem contexto antes do impacto.
+2. **Abre um ciclo que só fecha no fim?** A 1.ª imagem cria uma pergunta na cabeça da pessoa; a resposta
+   completa só chega na penúltima. Numerar quando ajudar ("3 sinais…", "1/6").
+3. **Cada imagem puxa a seguinte?** Terminar imagens com gancho ("Mas o pior não é isso.", "O 3.º é o que
+   ninguém admite.", "E é aqui que tudo muda."). Uma ideia por imagem, poucas palavras, letra grande.
+4. **Há uma recompensa real?** Uma ideia nova, útil ou que muda a forma de ver – algo que a pessoa queira guardar.
+5. **Dá vontade de comentar?** Terminar com pergunta de lado (A ou B?, "Concorda ou discorda?",
+   "Qual destes é você?", "Complete a frase: …"). Perguntas fáceis de responder numa palavra geram mais comentários.
+6. **Dá vontade de enviar a alguém?** Ideias que as pessoas usam para falar com outra pessoa
+   ("Envie a quem precisa de ler isto hoje"), identificação forte ("Isto é para quem…").
+7. **Vídeo: a 1.ª cena entende-se sem som em < 1 s**, movimento ou texto logo no 1.º frame, nada de ecrã parado
+   no início; terminar de forma que dê vontade de ver outra vez (loop).
+8. **Qualidade de referência**: zero erros de português, design limpo e consistente, nada genérico ou
+   "copiado da internet". Melhor publicar menos texto e mais forte.
+Os dados mandam: se `insights.md` mostrar que um tipo de hook, tema, formato, estilo ou hora rende mais,
+**usar mais esse** e deixar cair o que rende menos (mantendo ~20% de testes novos para descobrir o próximo vencedor).
 
 ## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
 **O feed é SÓ carrosséis (5–8 imagens) ou vídeos curtos (5–8 segundos).** Nunca imagem única.
