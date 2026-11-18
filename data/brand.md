@@ -28,7 +28,8 @@ Nada de néon, gradientes chamativos, emojis dentro das imagens ou aspecto de "I
 ## Voz
 - Calma, profunda e directa. Toca a alma; às vezes provocadora ("invasiva mas profunda"), nunca agressiva nem ofensiva a grupos.
 - Pouca venda. A maioria dos posts é sobre ler e sobre a vida; o livro aparece com naturalidade.
-- Textos originais. Nunca copiar frases de livros, músicas ou outras páginas; nunca inventar citações atribuídas a autores reais.
+- Textos originais. Nunca copiar frases de livros modernos, músicas ou outras páginas; nunca inventar citações atribuídas a autores reais.
+  Excepção: citações curtas de clássicos em domínio público (Aristóteles, Séneca, Marco Aurélio…), confirmadas e com a obra indicada.
 - Não reproduzir capas de livros em desenho. Livro = título + autor tipografados.
 
 ## Contacto (sempre na legenda, no fim)

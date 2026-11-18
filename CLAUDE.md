@@ -66,6 +66,38 @@ Antes de publicar, o post tem de passar este teste (se falhar um ponto, reescrev
 Os dados mandam: se `insights.md` mostrar que um tipo de hook, tema, formato, estilo ou hora rende mais,
 **usar mais esse** e deixar cair o que rende menos (mantendo ~20% de testes novos para descobrir o próximo vencedor).
 
+## Conteúdo de peso: clássicos e grandes autores (pedido do Yuri, 18/11/2026)
+Quem vê a página tem de sentir que **está a perder muito se não seguir**. Para isso, pelo menos 3 posts por
+semana trazem conhecimento sólido de grandes pensadores e livros de referência:
+- Filosofia e vida: Aristóteles, Séneca, Marco Aurélio, Epicteto, Maquiavel, Nietzsche, Dostoiévski, Tolstói…
+- Negócios, dinheiro e carreira: Philip Kotler (marketing), Peter Drucker, Napoleon Hill, Dale Carnegie,
+  T. Harv Eker, Morgan Housel…
+- Psicologia e relações: Viktor Frankl, Daniel Kahneman, Robert Greene…
+Formatos que funcionam: "O que Aristóteles diria sobre o seu salário", "5 ideias de Kotler que qualquer pessoa
+que vende precisa de saber", "O que Séneca escreveu há 2 000 anos sobre ansiedade", "1 livro, 5 lições".
+Regras de rigor (a página tem de ser **referência de confiança**):
+- Cada ideia, data ou citação é confirmada na web em ≥ 2 fontes fiáveis antes de publicar; fonte na legenda
+  ("Fonte: Aristóteles, Ética a Nicómaco, Livro II"). Na dúvida, não publicar essa ideia.
+- Citações literais: só de autores clássicos em domínio público (ex.: Aristóteles, Séneca, Marco Aurélio,
+  Maquiavel, Dostoiévski), curtas e com obra indicada. Autores modernos (Kotler, Drucker, Kahneman…):
+  explicar as ideias com palavras nossas e indicar o autor e a obra, sem copiar frases.
+- Nunca atribuir a um autor uma frase que ele não escreveu (muitas "citações" da internet são falsas – confirmar).
+- Ligar sempre a ideia à vida real em Moçambique (salário, negócio, família, trabalho) – é isso que a torna viral.
+- Preferir autores/livros que estão no catálogo dos anúncios (clássicos e filosofia é o anúncio com
+  melhores resultados) e, no fim, mostrar o livro.
+
+## Perfil do livro e imagens bonitas de livros (pedido do Yuri, 18/11/2026)
+- **"Perfil do livro"** (série, 1–2x por semana, carrossel 5–7 imagens): 1) hook sobre o problema que o livro
+  resolve; 2) o livro em destaque (3D a partir da capa real, grande e bonito); 3) quem é o autor (1 frase,
+  confirmada); 4–5) as 3 ideias mais fortes; 6) "Livro-casa para quem…"; 7) assinatura + WhatsApp.
+  Também em story 1x por semana (1 imagem: livro em 3D + 1 frase + "Peça no WhatsApp").
+- **Imagens de livros**: usar as capas reais em `livros/` para o motor gerar o livro em 3D em composições
+  cuidadas (livro grande ao centro, fundo creme ou azul Nostos, uma frase curta). Fotos reais de livros abertos,
+  estantes e entregas em `fotos/` têm prioridade sempre que existirem.
+- Nunca desenhar, inventar ou descarregar capas, e nunca gerar imagens com IA (pessoas ou cenas falsas).
+  Se faltar a capa de um livro que se quer mostrar, usar o cartão tipográfico (título + autor) e, no aviso da
+  manhã, pedir ao Yuri a foto desse livro para `livros/`.
+
 ## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
 **O feed é SÓ carrosséis (5–8 imagens) ou vídeos curtos (5–8 segundos).** Nunca imagem única.
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
@@ -91,9 +123,9 @@ Os dados mandam: se `insights.md` mostrar que um tipo de hook, tema, formato, es
 - Seg: nota – "Ninguém lhe diz isto sobre…" (dinheiro/trabalho/relações) + livro do catálogo
 - Ter: design – verdades incómodas (5–7 frases fortes)
 - Qua: nota – lista "X livros para quem…" (livros do catálogo, 1 por imagem)
-- Qui: page – reflexão com hook forte
+- Qui: page – "Página que fica": ideia de um clássico/grande autor ligada à vida de hoje (confirmada, fonte na legenda)
 - Sex: nota – facto/estudo real sobre leitura (confirmado na web, fonte na legenda)
-- Sáb: photo se houver fotos; senão nota
+- Sáb: photo se houver fotos; senão "Perfil do livro" (nota, livro em 3D)
 - Dom: design ou page – amor, família, recomeços
 
 ## Rotação – FEED DA TARDE (19:47): atenção máxima
