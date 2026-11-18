@@ -52,7 +52,9 @@ def wrap(d, text, f, maxw):
             out.append("")
             continue
         line = ""
-        for w in para.split():
+        for w in para.split(" "):
+            if not w:
+                continue
             t = (line + " " + w).strip()
             if d.textlength(t, font=f) <= maxw:
                 line = t
@@ -337,7 +339,9 @@ def nota_draw(W, H, p, n, total):
             y += int(size * 0.7)
             continue
         line_words, x = [], M
-        for w in para.split():
+        for w in para.split(" "):
+            if not w:
+                continue
             fw = fb if w.lower().strip(".,!?:;\"“”") in hl or p.get("bold") else f
             tw = d.textlength(w + " ", font=fw)
             if x + tw > W - M and line_words:

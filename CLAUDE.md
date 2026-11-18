@@ -44,7 +44,7 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
   disciplina, família, fé, amor, telemóvel, solidão, sucesso). Nada de palavras desconhecidas ou temas de nicho
   (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
-  ("Recebes no dia 25. No dia 10 já não há nada."). Máx. ~15 palavras.
+  ("A maioria das pessoas não tem um problema de salário. Tem um problema de mentalidade."). Máx. ~15 palavras.
 - **Desenvolvimento**: cada imagem uma ideia, frases curtas, ritmo que obriga a deslizar.
 - **1.ª imagem = SÓ o hook polémico.** Nunca CTA na 1.ª imagem ("guarde este post", "envie a alguém", WhatsApp,
   preço) – isso não chama atenção. CTAs, livro e contacto vão **só nas últimas imagens**.
@@ -59,7 +59,7 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - Exemplo de referência: `posts/_amostra/spec_dinheiro.json` (carrossel "dinheiro", estilo nota, voz formal).
 
 ## Rotação – FEED DA MANHÃ (06:45): carrossel
-- Seg: nota – "Ninguém te diz isto sobre…" (dinheiro/trabalho/relações) + livro do catálogo
+- Seg: nota – "Ninguém lhe diz isto sobre…" (dinheiro/trabalho/relações) + livro do catálogo
 - Ter: design – verdades incómodas (5–7 frases fortes)
 - Qua: nota – lista "X livros para quem…" (livros do catálogo, 1 por imagem)
 - Qui: page – reflexão com hook forte
@@ -126,8 +126,8 @@ Cada post tem de dar uma razão forte para seguir a página e para ler. Priorida
   Usar dados reais (estudos, inquéritos, estatísticas) só depois de os confirmar na web em fonte fiável,
   e indicar a fonte na legenda ("Fonte: …"). Nunca inventar números.
 - **Valor que dá vontade de seguir**: séries recorrentes que as pessoas esperam (ex.: "Palavra da semana",
-  "O livro que te faltava", "Ninguém te diz isto sobre…"), listas úteis, verdades incómodas, perguntas que
-  pedem resposta. Terminar muitas legendas com "Segue a @nostos_livraria_mz para mais" quando fizer sentido.
+  "O livro que te faltava", "Ninguém lhe diz isto sobre…"), listas úteis, verdades incómodas, perguntas que
+  pedem resposta. Terminar muitas legendas com "Siga a @nostos_livraria_mz para mais" quando fizer sentido.
 - **Livros novos**: mostrar que há sempre livros novos e certos para cada fase da vida (catálogo dos anúncios).
 - **Pessoas no ecrã**: posts com pessoas reais chamam mais atenção. Sempre que `fotos/` tiver fotos ou vídeos
   reais ainda não usados (pessoas moçambicanas, leitores, clientes, entregas, a equipa), dar-lhes prioridade
