@@ -179,6 +179,11 @@ Regras de rigor e direitos:
   Nunca usar músicas de terceiros (o Instagram corta o som ou bloqueia).
 - Pessoas: só fotos/vídeos reais (de `fotos/`, `livros/` ou enviados pelo Yuri). Não há gerador de imagens aqui e não se
   inventam pessoas. Pedir ao Yuri, no aviso, vídeos curtos (5–10 s) de mãos a segurar cada livro do catálogo.
+- **Vídeo só de texto = proibido** (Yuri, 18/11, sobre a amostra `posts/_amostra/reel_homem.mp4`: "o conteúdo é bom,
+  mas para carrossel, não para vídeo" e "está rápido"). Ideias fortes só de texto vão para carrossel.
+  O vídeo segue a referência do Yuri: imagens reais de livros (mão a segurar/abrir o livro, estante, páginas),
+  pouco texto por cena e tempo para ler: ≥ 3 s por frase curta (≤ 10 palavras), no máximo 1 frase por cena.
+  Sem filmagens reais em `fotos/videos/` ou capas em `livros/`, não se faz vídeo: carrossel + pedido ao Yuri.
 - Hook (cena 1) = problema que a pessoa sente + o livro já visível. Pergunta → resposta só no fim (ciclo aberto).
 - Verificar 8–10 frames (ffmpeg) com Read antes de publicar.
 
