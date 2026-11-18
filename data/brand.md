@@ -11,6 +11,7 @@ Livraria em Maputo, vendas por WhatsApp, entregas em Maputo, Matola e todo o pa�
 
 ## Paleta
 - Papel / creme: #EADEC6 (páginas de livro) e #F5F1EA (design limpo)
+- Branco #FFFFFF (estilo nota: a Nostos a escrever, com avatar N e @la_livraria_mz)
 - Tinta: #221D18
 - Vermelho Nostos: #8B1E1E (só para destaques, nunca fundos inteiros)
 - Cinzento quente: #6E6860

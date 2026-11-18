@@ -18,7 +18,7 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
    dos últimos 10 dias (ver log).
 4. **Escrever o texto** – original, em português de Moçambique, na voz da marca. Curto nas imagens.
 5. **Gerar**: escrever um spec JSON (formato em `engine/render.py`), `out` = `posts/AAAA-MM-DD`, `name` = slot,
-   e correr `python3 engine/render.py spec.json`. Ver cada imagem com a ferramenta Read: texto não pode
+   e correr `python3 engine/render.py spec.json` (estilos: nota, design, page, photo). Ver cada imagem com a ferramenta Read: texto não pode
    sair da página, sobrepor-se ou ficar cortado. Corrigir e voltar a gerar se preciso.
 6. **Carregar**: `git add`, commit, `git -c push.negotiate=true push origin main`. Confirmar com
    `curl -sI <url raw>` que devolve `200` e `content-type: image/jpeg`.
@@ -33,24 +33,37 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
    livro mencionado, foto usada, media_id) e fazer commit + push.
 9. **Avisar o Yuri** em 2–3 linhas: o que foi publicado e, no slot feed_manha, o resultado dos posts de ontem.
 
-## Rotação semanal – FEED DA MANHÃ (06:45)
-- Seg: página de livro – carrossel de reflexão (4–6 páginas: title → sections → closing)
-- Ter: design – frase forte (quote) + 1 página `book` com um livro do catálogo
-- Qua: página de livro – uma palavra/conceito (`word`, 1 imagem). Só palavras com origem verdadeira e conhecida
-  (ex.: metanoia, saudade, ubuntu, kintsugi, sonder…); nunca inventar etimologias.
-- Qui: página de livro – livro em destaque (`book`) do catálogo, com texto que faz desejar ler
-- Sex: design – carrossel "X livros para quem…" com livros do catálogo (3–6 páginas `book`)
-- Sáb: foto real (estilo `photo`) se houver em `fotos/` uma foto ainda não usada; senão página de livro
-- Dom: página de livro – carrossel leve e humano (amor, família, recomeços)
-Mencionar livros em ~3 dos 7 dias, sempre de forma natural. Os outros dias são só sobre ler e viver.
+## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
+**O feed é SÓ carrosséis (5–8 imagens) ou vídeos curtos (5–8 segundos).** Nunca imagem única.
+- **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
+  disciplina, família, fé, amor, telemóvel, solidão, sucesso). Nada de palavras desconhecidas ou temas de nicho
+  (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
+  ("Recebes no dia 25. No dia 10 já não há nada."). Máx. ~15 palavras.
+- **Desenvolvimento**: cada imagem uma ideia, frases curtas, ritmo que obriga a deslizar.
+- **Penúltima/última**: livro do catálogo dos anúncios (quando fizer sentido) + CTA (guardar, comentar, WhatsApp).
+- Estilos, alternar:
+  - `nota` (fundo branco, a Nostos a escrever, tipo publicação/tweet) – **o principal (~50%)**.
+    Usar `highlight` para 1–3 palavras-chave em vermelho e `book` para mostrar um livro do catálogo.
+  - `design` (creme, frases fortes) – ~25%.
+  - `page` (página de livro) – ~25%, só com hook forte e conhecido.
+  - `photo` sempre que houver fotos reais por usar em `fotos/`.
+- Exemplo de referência: `posts/_amostra/` (carrossel "dinheiro", estilo nota).
 
-## Rotação semanal – FEED DA TARDE (19:47): atenção máxima
-- Seg, Qua, Sáb: **vídeo curto** (Reel 8–15 s): `engine/video.py` com 3–5 cenas 9:16; a 1ª cena é o hook
-  (≤ 8 palavras, 2–2,5 s), as seguintes desenvolvem, a última fecha com convite a ler. Estilo page ou design.
-- Ter, Qui: **atualidade** – frase provocadora (design, 1–3 imagens) ligada a um tema do momento.
-- Sex: **vídeo curto** ligado à atualidade.
-- Dom: **pergunta polémica da semana** (carrossel design 2–4 imagens) para gerar debate nos comentários.
-Livros do catálogo podem aparecer na última cena/imagem 2x por semana.
+## Rotação – FEED DA MANHÃ (06:45): carrossel
+- Seg: nota – "Ninguém te diz isto sobre…" (dinheiro/trabalho/relações) + livro do catálogo
+- Ter: design – verdades incómodas (5–7 frases fortes)
+- Qua: nota – lista "X livros para quem…" (livros do catálogo, 1 por imagem)
+- Qui: page – reflexão com hook forte
+- Sex: nota – facto/estudo real sobre leitura (confirmado na web, fonte na legenda)
+- Sáb: photo se houver fotos; senão nota
+- Dom: design ou page – amor, família, recomeços
+
+## Rotação – FEED DA TARDE (19:47): atenção máxima
+- Seg, Qua, Sex, Sáb: **vídeo curto 5–8 s** (`engine/video.py`, 2–3 cenas 9:16; 1ª cena = hook de ≤ 8 palavras,
+  durations ex.: [2, 3, 2.5]). Estilo nota, design ou page.
+- Ter, Qui: **carrossel de atualidade** (nota) – tema do momento ligado à leitura.
+- Dom: **pergunta polémica da semana** (carrossel nota 3–5 imagens) para gerar debate.
+Livros do catálogo aparecem em pelo menos 3 posts por semana, sempre naturais.
 
 ### Pesquisa de atualidade (slots feed_tarde e, quando útil, feed_manha)
 Antes de escrever, pesquisar na web (WebSearch, várias pesquisas) as notícias e conversas das últimas 48 h:

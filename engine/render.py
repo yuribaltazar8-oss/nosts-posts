@@ -281,6 +281,81 @@ def photo_draw(W, H, p, root):
     return img
 
 
+# ---------------- estilo NOTA (fundo branco, a Nostos a escrever) ----------------
+def avatar(size):
+    a = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    d = ImageDraw.Draw(a)
+    d.ellipse([0, 0, size - 1, size - 1], fill=INK)
+    f = serif(int(size * 0.62), 600)
+    t = "N"
+    bb = d.textbbox((0, 0), t, font=f)
+    d.text(((size - (bb[2] - bb[0])) / 2 - bb[0], (size - (bb[3] - bb[1])) / 2 - bb[1]), t, font=f, fill=CREAM)
+    return a
+
+
+def nota_draw(W, H, p, n, total):
+    """Cartão branco tipo 'nota/tweet' assinado pela Nostos.
+    p: {"text": "...", "size": 54, "highlight": ["palavra", ...], "kicker": "...", "book": {"title","author"}}"""
+    canvas = Image.new("RGB", (W, H * 2), (255, 255, 255))
+    d = ImageDraw.Draw(canvas)
+    M = 90
+    story = H > 1500
+    y0 = 0
+    canvas.paste(avatar(96), (M, y0), avatar(96))
+    d.text((M + 120, y0 + 10), "Nostos Livraria", font=sans(36, True), fill=(15, 15, 15))
+    bx = M + 120 + d.textlength("Nostos Livraria", font=sans(36, True)) + 12
+    d.ellipse([bx, y0 + 20, bx + 26, y0 + 46], fill=RED)  # selo da marca
+    d.text((M + 120, y0 + 56), "@la_livraria_mz", font=sans(30), fill=(110, 110, 110))
+    y = y0 + 170
+    if p.get("kicker"):
+        d.text((M, y), p["kicker"], font=sans(30, True), fill=RED)
+        y += 60
+    size = p.get("size", 54)
+    f, fb = sans(size), sans(size, True)
+    hl = set(w.lower().strip(".,!?:;") for w in p.get("highlight", []))
+    for para in p["text"].split("\n"):
+        if not para.strip():
+            y += int(size * 0.7)
+            continue
+        line_words, x = [], M
+        for w in para.split():
+            fw = fb if w.lower().strip(".,!?:;\"“”") in hl or p.get("bold") else f
+            tw = d.textlength(w + " ", font=fw)
+            if x + tw > W - M and line_words:
+                y += int(size * 1.38)
+                x = M
+            d.text((x, y), w, font=fw, fill=RED if w.lower().strip(".,!?:;\"“”") in hl else (15, 15, 15))
+            x += tw
+            line_words.append(w)
+        y += int(size * 1.38)
+    if p.get("book"):
+        b = p["book"]
+        y += 30
+        d.rounded_rectangle([M, y, W - M, y + 170], radius=24, outline=(225, 225, 225), width=3, fill=(250, 248, 244))
+        d.rectangle([M + 30, y + 30, M + 38, y + 140], fill=RED)
+        d.text((M + 62, y + 30), b["title"], font=serif(52, 600), fill=INK)
+        if b.get("author"):
+            d.text((M + 62, y + 98), b["author"] + ("  ·  " + b["price"] if b.get("price") else ""), font=sans(30), fill=GREY)
+        y += 170
+    # centrar o bloco (cabeçalho + texto) na vertical
+    content_h = int(y)
+    img = Image.new("RGB", (W, H), (255, 255, 255))
+    area = H - (260 if story else 150)
+    top = max(90, int((area - content_h) / 2))
+    img.paste(canvas.crop((0, 0, W, content_h + 10)), (0, top))
+    d = ImageDraw.Draw(img)
+    # rodapé
+    fy = H - (260 if story else 110)
+    d.text((M, fy), "📚" if False else "Nostos · Lá Livraria MZ", font=sans(26), fill=(140, 140, 140))
+    if total > 1:
+        t = f"{n}/{total}" + ("  →" if n < total else "")
+        d.text((W - M - d.textlength(t, font=sans(28, True)), fy), t, font=sans(28, True), fill=RED if n < total else (140, 140, 140))
+    else:
+        t = WA
+        d.text((W - M - d.textlength(t, font=sans(26)), fy), t, font=sans(26), fill=(140, 140, 140))
+    return img
+
+
 def render(spec, root):
     W, H = SIZES[spec.get("size", "feed")]
     style = spec.get("style", "page")
@@ -298,6 +373,8 @@ def render(spec, root):
             img = img.rotate(0.25, resample=Image.BICUBIC, fillcolor=(200, 190, 170))
         elif style == "design":
             img = design_draw(flat(W, H, seed0 + i), p, i + 1, len(pages))
+        elif style == "nota":
+            img = nota_draw(W, H, p, i + 1, len(pages))
         elif style == "photo":
             img = photo_draw(W, H, p, root)
         else:
