@@ -29,6 +29,8 @@ RED = (139, 30, 30)
 GREY = (110, 104, 96)
 SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
+NAME = "Nostos Livraria MZ"
+HANDLE = "@nostos_livraria_mz"
 
 
 def serif(size, w=400, it=False):
@@ -247,7 +249,7 @@ def design_draw(img, p, n, total):
     for ch in "NOSTOS":
         d.text((x, H - 160), ch, font=serif(64, 700), fill=INK)
         x += d.textlength(ch, font=serif(64, 700)) + 14
-    d.text((M, H - 72), "LÁ LIVRARIA MZ  ·  MAPUTO", font=sans(24), fill=GREY)
+    d.text((M, H - 72), "NOSTOS LIVRARIA MZ  ·  MAPUTO", font=sans(24), fill=GREY)
     if n < total:
         a = "desliza  →"
         d.text((W - M - d.textlength(a, font=sans(28)), H - 140), a, font=sans(28), fill=RED)
@@ -277,12 +279,27 @@ def photo_draw(W, H, p, root):
     for ch in "NOSTOS":
         d.text((x, H - 150), ch, font=serif(44, 700), fill=(250, 245, 236))
         x += d.textlength(ch, font=serif(44, 700)) + 10
-    d.text((M, H - 92), "Lá Livraria MZ · " + WA, font=sans(24), fill=(220, 212, 198))
+    d.text((M, H - 92), "Nostos Livraria MZ · " + WA, font=sans(24), fill=(220, 212, 198))
     return img
 
 
 # ---------------- estilo NOTA (fundo branco, a Nostos a escrever) ----------------
+LOGO = os.path.join(HERE, "logo.png")
+
+
 def avatar(size):
+    """Logo oficial da Nostos (engine/logo.png), recortado em círculo. Sem logo -> None (nunca inventar um)."""
+    if not os.path.exists(LOGO):
+        return None
+    lg = ImageOps.fit(Image.open(LOGO).convert("RGBA"), (size, size), Image.LANCZOS)
+    mask = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(mask).ellipse([0, 0, size - 1, size - 1], fill=255)
+    out = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    out.paste(lg, (0, 0), mask)
+    return out
+
+
+def _old_avatar(size):
     a = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     d = ImageDraw.Draw(a)
     d.ellipse([0, 0, size - 1, size - 1], fill=INK)
@@ -301,11 +318,13 @@ def nota_draw(W, H, p, n, total):
     M = 90
     story = H > 1500
     y0 = 0
-    canvas.paste(avatar(96), (M, y0), avatar(96))
-    d.text((M + 120, y0 + 10), "Nostos Livraria", font=sans(36, True), fill=(15, 15, 15))
-    bx = M + 120 + d.textlength("Nostos Livraria", font=sans(36, True)) + 12
-    d.ellipse([bx, y0 + 20, bx + 26, y0 + 46], fill=RED)  # selo da marca
-    d.text((M + 120, y0 + 56), "@la_livraria_mz", font=sans(30), fill=(110, 110, 110))
+    av = avatar(96)
+    tx = M
+    if av is not None:
+        canvas.paste(av, (M, y0), av)
+        tx = M + 120
+    d.text((tx, y0 + 10), NAME, font=sans(36, True), fill=(15, 15, 15))
+    d.text((tx, y0 + 56), HANDLE, font=sans(30), fill=(110, 110, 110))
     y = y0 + 170
     if p.get("kicker"):
         d.text((M, y), p["kicker"], font=sans(30, True), fill=RED)
@@ -346,7 +365,7 @@ def nota_draw(W, H, p, n, total):
     d = ImageDraw.Draw(img)
     # rodapé
     fy = H - (260 if story else 110)
-    d.text((M, fy), "📚" if False else "Nostos · Lá Livraria MZ", font=sans(26), fill=(140, 140, 140))
+    d.text((M, fy), "📚" if False else NAME, font=sans(26), fill=(140, 140, 140))
     if total > 1:
         t = f"{n}/{total}" + ("  →" if n < total else "")
         d.text((W - M - d.textlength(t, font=sans(28, True)), fy), t, font=sans(28, True), fill=RED if n < total else (140, 140, 140))

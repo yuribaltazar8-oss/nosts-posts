@@ -1,4 +1,7 @@
-# Marca Nostos Livraria (@la_livraria_mz)
+# Marca Nostos Livraria MZ (@nostos_livraria_mz)
+
+Nome a usar nas imagens: **Nostos Livraria MZ**. Logo oficial: `engine/logo.png` (só este; nunca desenhar ou inventar outro logo).
+Se `engine/logo.png` não existir, as imagens saem só com o nome, sem logo.
 
 ## Quem somos
 Nostos (do grego νόστος) = o regresso a casa. Livros que te levam de volta a ti.
@@ -11,7 +14,7 @@ Livraria em Maputo, vendas por WhatsApp, entregas em Maputo, Matola e todo o pa�
 
 ## Paleta
 - Papel / creme: #EADEC6 (páginas de livro) e #F5F1EA (design limpo)
-- Branco #FFFFFF (estilo nota: a Nostos a escrever, com avatar N e @la_livraria_mz)
+- Branco #FFFFFF (estilo nota: a Nostos a escrever, com avatar N e @nostos_livraria_mz)
 - Tinta: #221D18
 - Vermelho Nostos: #8B1E1E (só para destaques, nunca fundos inteiros)
 - Cinzento quente: #6E6860

@@ -1,4 +1,4 @@
-# Instagram automático – Nostos Livraria (@la_livraria_mz)
+# Instagram automático – Nostos Livraria (@nostos_livraria_mz)
 
 Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37), `feed_tarde` (19:47) ou `comentarios` (09:23, 15:23, 22:23).
 Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últimas 14 linhas de `data/log.csv`.
@@ -89,7 +89,7 @@ bloco de contacto de `data/brand.md`. Se mencionar livro, pode incluir o preço 
 ## SLOT comentarios – responder e levar ao WhatsApp
 Objectivo: cada pessoa que comenta deve acabar a falar connosco no **WhatsApp 87 943 1217** (principal canal de vendas).
 1. Windsor `get_data` (connector instagram, `last_14dT`): `comment_id, comment_parent_id, comment_text,
-   comment_username, comment_timestamp, media_id`. Ignorar: comentários da própria conta (la_livraria_mz),
+   comment_username, comment_timestamp, media_id`. Ignorar: comentários da própria conta (nostos_livraria_mz),
    respostas a respostas nossas sem pergunta, e qualquer `comment_id` já presente em `data/comentarios.csv`.
 2. Actualizar o catálogo a partir dos anúncios ACTIVE (Meta Ads, conta 2119139675179880, sem Dézir).
    **Os livros que temos são os dos anúncios activos**, não os que aparecem em posts antigos.
@@ -117,7 +117,7 @@ Cada post tem de dar uma razão forte para seguir a página e para ler. Priorida
   e indicar a fonte na legenda ("Fonte: …"). Nunca inventar números.
 - **Valor que dá vontade de seguir**: séries recorrentes que as pessoas esperam (ex.: "Palavra da semana",
   "O livro que te faltava", "Ninguém te diz isto sobre…"), listas úteis, verdades incómodas, perguntas que
-  pedem resposta. Terminar muitas legendas com "Segue a @la_livraria_mz para mais" quando fizer sentido.
+  pedem resposta. Terminar muitas legendas com "Segue a @nostos_livraria_mz para mais" quando fizer sentido.
 - **Livros novos**: mostrar que há sempre livros novos e certos para cada fase da vida (catálogo dos anúncios).
 - **Pessoas no ecrã**: posts com pessoas reais chamam mais atenção. Sempre que `fotos/` tiver fotos ou vídeos
   reais ainda não usados (pessoas moçambicanas, leitores, clientes, entregas, a equipa), dar-lhes prioridade
