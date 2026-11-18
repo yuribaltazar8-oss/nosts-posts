@@ -33,6 +33,12 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
    livro mencionado, foto usada, media_id) e fazer commit + push.
 9. **Avisar o Yuri** em 2–3 linhas: o que foi publicado e, no slot feed_manha, o resultado dos posts de ontem.
 
+## Voz: formal (pedido do Yuri, 18/11/2026)
+- Escrever **sempre de forma formal, na 3.ª pessoa / "você"**: "Recebe no dia 25…", "A maioria das pessoas…",
+  "Quem lê…", "Você já reparou…". Português cuidado, sem gíria.
+- "Tu" só muito de vez em quando (no máximo 1 em cada 5 posts), e nunca no hook.
+- Formal não quer dizer morno: o hook continua **polémico e forte**.
+
 ## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
 **O feed é SÓ carrosséis (5–8 imagens) ou vídeos curtos (5–8 segundos).** Nunca imagem única.
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
@@ -40,14 +46,17 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
   (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
   ("Recebes no dia 25. No dia 10 já não há nada."). Máx. ~15 palavras.
 - **Desenvolvimento**: cada imagem uma ideia, frases curtas, ritmo que obriga a deslizar.
-- **Penúltima/última**: livro do catálogo dos anúncios (quando fizer sentido) + CTA (guardar, comentar, WhatsApp).
+- **1.ª imagem = SÓ o hook polémico.** Nunca CTA na 1.ª imagem ("guarde este post", "envie a alguém", WhatsApp,
+  preço) – isso não chama atenção. CTAs, livro e contacto vão **só nas últimas imagens**.
+- **Penúltima/última**: livro do catálogo dos anúncios (quando fizer sentido) + CTA (guardar, enviar a alguém,
+  comentar, WhatsApp).
 - Estilos, alternar:
   - `nota` (fundo branco, a Nostos a escrever, tipo publicação/tweet) – **o principal (~50%)**.
     Usar `highlight` para 1–3 palavras-chave em azul Nostos e `book` para mostrar um livro do catálogo.
   - `design` (creme, frases fortes) – ~25%.
   - `page` (página de livro) – ~25%, só com hook forte e conhecido.
   - `photo` sempre que houver fotos reais por usar em `fotos/`.
-- Exemplo de referência: `posts/_amostra/` (carrossel "dinheiro", estilo nota).
+- Exemplo de referência: `posts/_amostra/spec_dinheiro.json` (carrossel "dinheiro", estilo nota, voz formal).
 
 ## Rotação – FEED DA MANHÃ (06:45): carrossel
 - Seg: nota – "Ninguém te diz isto sobre…" (dinheiro/trabalho/relações) + livro do catálogo
@@ -76,6 +85,7 @@ Regras para não queimar a marca:
 - Nada de humor ou ganchos sobre mortes, tragédias, violência ou vítimas.
 - Só factos confirmados em pelo menos 2 fontes de notícias; na dúvida, falar do tema sem afirmar factos.
 - Nunca inventar citações nem números.
+- Nas imagens, escrever o número do WhatsApp com espaços inquebráveis (87\u00a0943\u00a01217) para não partir a linha.
 Registar no log, na coluna `theme`, o tema e a fonte principal.
 
 ## STORY (12:37, 1 por dia, 9:16)

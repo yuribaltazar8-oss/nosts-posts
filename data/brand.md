@@ -10,7 +10,7 @@ Livraria em Maputo, vendas por WhatsApp, entregas em Maputo, Matola e todo o pa�
 ## Público (dados do Instagram, nov/2026)
 - ~5 900 seguidores; ~51% mulheres; 25–34 anos é o maior grupo, depois 35–44 e 18–24.
 - Cidades: Maputo (maior), Matola, Tete, Chimoio, Beira, Quelimane, Nampula; há público no Brasil.
-- Escrever em português de Moçambique (tu/você conforme o tom, "telemóvel", "exactamente" aceite).
+- Escrever em português de Moçambique, **formal, na 3.ª pessoa / "você"** ("tu" só raramente, nunca no hook).
 
 ## Paleta
 - Papel / creme: #EADEC6 (páginas de livro) e #F5F1EA (design limpo)
