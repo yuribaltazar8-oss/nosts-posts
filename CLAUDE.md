@@ -61,6 +61,8 @@ Antes de publicar, o post tem de passar este teste (se falhar um ponto, reescrev
    no início; terminar de forma que dê vontade de ver outra vez (loop).
 8. **Qualidade de referência**: zero erros de português, design limpo e consistente, nada genérico ou
    "copiado da internet". Melhor publicar menos texto e mais forte.
+9. **Tem os códigos da Nostos?** Assinatura "Leia. Regresse a si." no fim, série com nome fixo, azul Nostos,
+   #regresseasi – ver "Códigos da Nostos" em `data/brand.md`. Sem isto, o post não sai.
 Os dados mandam: se `insights.md` mostrar que um tipo de hook, tema, formato, estilo ou hora rende mais,
 **usar mais esse** e deixar cair o que rende menos (mantendo ~20% de testes novos para descobrir o próximo vencedor).
 
@@ -121,7 +123,7 @@ livro do catálogo (1–2x por semana). Sem legenda (o Instagram não aceita em 
 
 ## Legenda do feed (sempre)
 Gancho forte na 1ª linha (ousado, que faça parar) → 2–5 linhas de texto → pergunta para comentar →
-bloco de contacto de `data/brand.md`. Se mencionar livro, pode incluir o preço do catálogo.
+"Leia. Regresse a si." → bloco de contacto de `data/brand.md` (com #regresseasi). Se mencionar livro, pode incluir o preço do catálogo.
 
 ## SLOT comentarios – responder e levar ao WhatsApp
 Objectivo: cada pessoa que comenta deve acabar a falar connosco no **WhatsApp 87 943 1217** (principal canal de vendas).
@@ -139,6 +141,8 @@ Objectivo: cada pessoa que comenta deve acabar a falar connosco no **WhatsApp 87
      convidar a falar no WhatsApp ("lá confirmamos tudo / vemos o que há para ti").
    - Elogio / emoji / resposta à pergunta do post → agradecer, comentar o que a pessoa disse, convidar a seguir
      ou a conhecer os livros no WhatsApp (nem sempre o número; variar).
+   - Comentário "CASA" (ritual da marca) → resposta curta e calorosa, variação de "Bem-vindo(a) a casa.";
+     às vezes sugerir um livro-casa no WhatsApp.
    - Crítica → responder com calma e respeito, convidar a falar no WhatsApp. Nunca discutir.
    - Spam/ofensas → não responder; ocultar só se for spam evidente.
    - Nunca inventar preços, prazos ou stock. Nunca prometer descontos.

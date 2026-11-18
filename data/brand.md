@@ -41,3 +41,27 @@ Nada de néon, gradientes chamativos, emojis dentro das imagens ou aspecto de "I
 Só fotos reais carregadas pelo Yuri na pasta `fotos/` (pessoas moçambicanas, pele negra, ambientes de Maputo,
 escritórios, cafés, praia, casa). Não gerar pessoas artificiais. Cada foto usa-se uma vez
 (registar em data/log.csv).
+
+## Códigos da Nostos – identidade (pedido do Yuri, 18/11/2026)
+Como o "SIU" do CR7: sinais fixos que fazem as pessoas reconhecerem a Nostos sem ver o nome.
+Nascem do nome: **Nostos = o regresso a casa**. Nunca alterar as palavras destes códigos.
+
+1. **Assinatura final – "Leia. Regresse a si."**
+   - Última imagem de TODOS os carrosséis e última cena de TODOS os vídeos (sozinha ou por baixo do CTA,
+     com `highlight` em azul Nostos).
+   - Última linha do texto de TODAS as legendas, antes do bloco de contacto.
+   - Nos stories, em letra pequena no fundo.
+2. **Ritual de comentário – "CASA"**: "Se este post foi casa para si, comente CASA."
+   Usar em 2–3 posts por semana (os mais emocionais), na última imagem ou na legenda. Nos comentários,
+   responder a quem escreve CASA com uma variação de "Bem-vindo(a) a casa." (sempre diferente).
+3. **Palavra-marca – "livro-casa"**: o livro certo, que chega na hora certa e o traz de volta a si.
+   Usar quando se recomenda um livro ("Este é um livro-casa para quem…"). No máximo 1 vez por post.
+4. **Séries com nome fixo** (pequeno rótulo/kicker discreto no topo da 1.ª imagem; o hook continua a ser
+   a estrela):
+   - Seg: **Ninguém lhe diz isto** · Ter: **Verdades incómodas** · Qua: **Livros-casa para quem…** ·
+     Qui: **Página que fica** · Sex: **O que a leitura faz** (estudo real) · Dom: **A pergunta de domingo**
+5. **Marca visual**: creme de papel + Garamond + só azul Nostos (#02246C) como cor de destaque, 1–3 palavras
+   por imagem. Nada de outras cores de destaque. Logo oficial na última imagem.
+6. **Hashtag própria**: `#regresseasi` em todas as legendas (junto de #nostoslivraria).
+7. **Palavras da casa** (usar com naturalidade, não forçar): casa, regressar, voltar a si, a página certa,
+   na hora certa. Evitar clichês vazios ("viaje pelas páginas", "o mundo mágico dos livros").
