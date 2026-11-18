@@ -1,0 +1,63 @@
+{
+ "style": "nota",
+ "size": "feed",
+ "out": "posts/2026-11-18",
+ "name": "extra_blacknov",
+ "pages": [
+  {
+   "text": "A maioria das pessoas não tem um problema de salário.\n\nTem um problema de mentalidade.",
+   "size": 64,
+   "highlight": [
+    "mentalidade."
+   ],
+   "bold": true
+  },
+  {
+   "text": "Recebe no dia 25.\nNo dia 10 já não resta nada.\n\nE no mês seguinte, repete exactamente o mesmo.",
+   "size": 56,
+   "highlight": [
+    "repete"
+   ]
+  },
+  {
+   "text": "Ninguém lhe ensinou a lidar com dinheiro.\n\nNem a escola.\nNem a família, porque também ninguém a ensinou.",
+   "size": 54,
+   "highlight": [
+    "ninguém"
+   ]
+  },
+  {
+   "kicker": "Por isso, os mesmos erros:",
+   "text": "— comprar para impressionar quem nem está atento\n— \"para o mês começo a poupar\"\n— viver à espera do próximo salário",
+   "size": 50
+  },
+  {
+   "text": "Quem mudou isto não ganhou a lotaria.\n\nMudou a forma de pensar sobre dinheiro.\n\nE, quase sempre, começou com um livro.",
+   "size": 54,
+   "highlight": [
+    "livro."
+   ]
+  },
+  {
+   "kicker": "Se for ler apenas um livro sobre dinheiro este ano:",
+   "text": "Que seja este. Mostra que o que controla as emoções também governa as finanças, e isso muda tudo o resto.",
+   "size": 44,
+   "book": {
+    "title": "Dinheiro é Emocional",
+    "author": "Tiago Brunet",
+    "cover": "livros/dinheiro-e-emocional.jpg",
+    "price": "1 500 MT",
+    "kicker": "Oferta Black November"
+   }
+  },
+  {
+   "text": "Guarde este post para o dia em que receber o próximo salário.\n\nEnvie-o a quem precisa de o ler.\n\nEncomendas: WhatsApp 87 943 1217",
+   "size": 52,
+   "highlight": [
+    "guarde",
+    "envie-o",
+    "87 943 1217"
+   ]
+  }
+ ]
+}
