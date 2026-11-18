@@ -1,0 +1,6 @@
+{"style": "nota", "size": "story", "out": "posts/2026-11-18", "name": "feed_tarde",
+ "pages": [
+  {"text": "Dizem que ler é luxo de quem tem dinheiro.", "size": 88, "bold": true, "highlight": ["luxo"]},
+  {"text": "Luxo é passar mais um ano a repetir os mesmos erros.\n\nUm livro custa menos do que isso.", "size": 70, "highlight": ["luxo", "menos"]},
+  {"kicker": "Esta semana, em Maputo:", "text": "A cidade abriu a sua 1.ª Feira Internacional do Livro.\n\nE você, quando abre o próximo?\n\nLeia. Regresse a si.", "size": 64, "highlight": ["próximo?", "Leia.", "Regresse", "si."]}
+ ]}
