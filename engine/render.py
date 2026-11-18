@@ -28,6 +28,7 @@ INK = (34, 29, 24)
 RED = (2, 36, 108)  # azul Nostos (cor do logo); nome mantido por compatibilidade
 NAVY = RED
 LOGO_CREME = (251, 248, 240)
+BEIGE = (241, 234, 220)  # off-white de livro, fundo padrão do estilo nota
 GREY = (110, 104, 96)
 SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
@@ -315,7 +316,8 @@ def _old_avatar(size):
 def nota_draw(W, H, p, n, total):
     """Cartão branco tipo 'nota/tweet' assinado pela Nostos.
     p: {"text": "...", "size": 54, "highlight": ["palavra", ...], "kicker": "...", "book": {"title","author"}}"""
-    canvas = Image.new("RGB", (W, H * 2), (255, 255, 255))
+    bg = tuple(p.get("bg", BEIGE))
+    canvas = Image.new("RGB", (W, H * 2), bg)
     d = ImageDraw.Draw(canvas)
     M = 90
     story = H > 1500
@@ -354,15 +356,43 @@ def nota_draw(W, H, p, n, total):
     if p.get("book"):
         b = p["book"]
         y += 30
-        d.rounded_rectangle([M, y, W - M, y + 170], radius=24, outline=(225, 225, 225), width=3, fill=(250, 248, 244))
-        d.rectangle([M + 30, y + 30, M + 38, y + 140], fill=RED)
-        d.text((M + 62, y + 30), b["title"], font=serif(52, 600), fill=INK)
-        if b.get("author"):
-            d.text((M + 62, y + 98), b["author"] + ("  ·  " + b["price"] if b.get("price") else ""), font=sans(30), fill=GREY)
-        y += 170
+        photo = b.get("photo")  # foto REAL do livro enviada pelo Yuri (pasta livros/); nunca desenhar capas
+        ph_path = os.path.join(os.path.dirname(HERE), photo) if photo else None
+        if ph_path and os.path.exists(ph_path):
+            ch = 520
+            pic = Image.open(ph_path).convert("RGB")
+            pw = int(pic.width * ch / pic.height)
+            pw = min(pw, W - 2 * M - 360)
+            pic = ImageOps.fit(pic, (pw, ch), Image.LANCZOS)
+            mask = Image.new("L", pic.size, 0)
+            ImageDraw.Draw(mask).rounded_rectangle([0, 0, pic.width - 1, pic.height - 1], radius=18, fill=255)
+            canvas.paste(pic, (M, int(y)), mask)
+            tx = M + pw + 44
+            ty = y + 40
+            d.text((tx, ty - 6), b.get("kicker", "Disponível na Nostos"), font=sans(26), fill=GREY)
+            ty += 44
+            for ln in wrap(d, b["title"], serif(54, 600), W - M - tx):
+                d.text((tx, ty), ln, font=serif(54, 600), fill=INK)
+                ty += 62
+            if b.get("author"):
+                d.text((tx, ty + 8), b["author"], font=sans(30), fill=GREY)
+                ty += 52
+            if b.get("price"):
+                d.text((tx, ty + 18), b["price"], font=sans(40, True), fill=RED)
+            y += ch
+        else:
+            box_h = 170
+            d.rounded_rectangle([M, y, W - M, y + box_h], radius=24, outline=(214, 204, 186), width=2,
+                                fill=tuple(min(255, c + 8) for c in bg))
+            d.rectangle([M + 30, y + 30, M + 36, y + box_h - 30], fill=RED)
+            d.text((M + 62, y + 30), b["title"], font=serif(52, 600), fill=INK)
+            if b.get("author"):
+                d.text((M + 62, y + 98), b["author"] + ("  ·  " + b["price"] if b.get("price") else ""),
+                       font=sans(30), fill=GREY)
+            y += box_h
     # centrar o bloco (cabeçalho + texto) na vertical
     content_h = int(y)
-    img = Image.new("RGB", (W, H), (255, 255, 255))
+    img = Image.new("RGB", (W, H), bg)
     area = H - (260 if story else 150)
     top = max(90, int((area - content_h) / 2))
     img.paste(canvas.crop((0, 0, W, content_h + 10)), (0, top))

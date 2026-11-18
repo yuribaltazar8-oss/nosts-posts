@@ -51,7 +51,8 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
 - **Penúltima/última**: livro do catálogo dos anúncios (quando fizer sentido) + CTA (guardar, enviar a alguém,
   comentar, WhatsApp).
 - Estilos, alternar:
-  - `nota` (fundo branco, a Nostos a escrever, tipo publicação/tweet) – **o principal (~50%)**.
+  - `nota` (fundo off-white bege de livro #F1EADC – nunca branco puro –, a Nostos a escrever, tipo publicação)
+    – **o principal (~50%)**. Texto limpo e elegante, sem sombras.
     Usar `highlight` para 1–3 palavras-chave em azul Nostos e `book` para mostrar um livro do catálogo.
   - `design` (creme, frases fortes) – ~25%.
   - `page` (página de livro) – ~25%, só com hook forte e conhecido.
@@ -128,6 +129,10 @@ Cada post tem de dar uma razão forte para seguir a página e para ler. Priorida
 - **Valor que dá vontade de seguir**: séries recorrentes que as pessoas esperam (ex.: "Palavra da semana",
   "O livro que te faltava", "Ninguém lhe diz isto sobre…"), listas úteis, verdades incómodas, perguntas que
   pedem resposta. Terminar muitas legendas com "Siga a @nostos_livraria_mz para mais" quando fizer sentido.
+- **Foto do livro**: quando um post menciona um livro, mostrar a **foto real do livro** se existir em
+  `livros/<nome-do-livro>.jpg` (fotos enviadas pelo Yuri): `"book": {"title", "author", "price", "photo": "livros/…jpg"}`.
+  Nunca desenhar, recriar ou descarregar capas. Sem foto em `livros/`, usar o cartão só com título e autor.
+  Preferir livros que tenham foto.
 - **Livros novos**: mostrar que há sempre livros novos e certos para cada fase da vida (catálogo dos anúncios).
 - **Pessoas no ecrã**: posts com pessoas reais chamam mais atenção. Sempre que `fotos/` tiver fotos ou vídeos
   reais ainda não usados (pessoas moçambicanas, leitores, clientes, entregas, a equipa), dar-lhes prioridade

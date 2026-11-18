@@ -39,13 +39,13 @@
    ]
   },
   {
-   "kicker": "Se for ler apenas um livro sobre dinheiro este ano:",
-   "text": "Que seja este. Obriga o leitor a olhar para a forma como pensa sobre dinheiro, e isso muda tudo o resto.",
+   "kicker": "Para quem quer mudar a relação com o dinheiro:",
+   "text": "Antes de mudar a conta bancária, é preciso mudar o que se sente pelo dinheiro.",
    "size": 46,
    "book": {
-    "title": "Os Segredos da Mente Milionária",
-    "author": "T. Harv Eker",
-    "price": "950 MT"
+    "title": "O Dinheiro Emocional",
+    "author": "Tiago Brunet",
+    "photo": "livros/o-dinheiro-emocional.jpg"
    }
   },
   {

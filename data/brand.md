@@ -14,7 +14,7 @@ Livraria em Maputo, vendas por WhatsApp, entregas em Maputo, Matola e todo o pa�
 
 ## Paleta
 - Papel / creme: #EADEC6 (páginas de livro) e #F5F1EA (design limpo)
-- Branco #FFFFFF (estilo nota: a Nostos a escrever, com avatar N e @nostos_livraria_mz)
+- Off-white bege de livro #F1EADC (fundo do estilo nota; nada de branco puro)
 - Tinta: #221D18
 - **Azul Nostos: #02246C** (cor do logo) – destaques, palavras-chave, CTA
 - Creme do logo: #FBF8F0
