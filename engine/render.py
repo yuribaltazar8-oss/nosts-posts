@@ -35,6 +35,7 @@ SIZES = {"feed": (1080, 1350), "story": (1080, 1920)}
 WA = "WhatsApp 87 943 1217"
 NAME = "Nostos Livraria MZ"
 HANDLE = "@nostos_livraria_mz"
+LAST_TOP = None
 
 
 def serif(size, w=400, it=False):
@@ -456,6 +457,10 @@ def nota_draw(W, H, p, n, total):
     img = paper(W, H, 7 + n, base=PAPEL_CLARO, through=0.025, vignette=0.05)
     area = H - (260 if story else 150)
     top = max(90, int((area - content_h) / 2))
+    if p.get("top") is not None:
+        top = p["top"]
+    global LAST_TOP
+    LAST_TOP = top
     crop = canvas.crop((0, 0, W, content_h + 10))
     cm = np.array(crop, float); diff = np.abs(cm - np.array(bg, float)).sum(2)
     img.paste(crop, (0, top), Image.fromarray((np.clip(diff * 40, 0, 255)).astype(np.uint8)))
@@ -465,7 +470,9 @@ def nota_draw(W, H, p, n, total):
     # rodapé
     fy = H - (260 if story else 110)
     d.text((M, fy), "📚" if False else NAME, font=sans(26), fill=(140, 140, 140))
-    if total > 1:
+    if p.get("no_footer"):
+        pass
+    elif total > 1:
         t = f"{n}/{total}" + ("  →" if n < total else "")
         d.text((W - M - d.textlength(t, font=sans(28, True)), fy), t, font=sans(28, True), fill=RED if n < total else (140, 140, 140))
     else:

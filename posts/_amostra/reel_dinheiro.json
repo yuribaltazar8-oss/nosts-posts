@@ -1,0 +1,5 @@
+{"out": "posts/_amostra/reel_dinheiro.mp4", "scenes": [
+ {"type": "text", "text": "O salário acaba no dia 10.\n\nO problema não é o salário.", "size": 84, "bold": true, "highlight": ["salário."], "dur": 2.6},
+ {"type": "text", "text": "É a emoção que decide por si:\n\n— a compra para impressionar\n— o \"depois começo a poupar\"\n— o medo de olhar para a conta", "size": 62, "highlight": ["emoção"], "dur": 3.0},
+ {"type": "book", "kicker": "Livro-casa para quem recebe e não vê o dinheiro:", "cover": "livros/dinheiro-e-emocional.jpg", "title": "Dinheiro é Emocional", "author": "Tiago Brunet", "line": "Leia. Regresse a si.", "dur": 3.0}
+]}

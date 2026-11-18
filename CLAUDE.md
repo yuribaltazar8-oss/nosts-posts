@@ -163,9 +163,27 @@ Regras de rigor e direitos:
 - Sáb: photo se houver fotos; senão "Perfil do livro" (nota, livro em 3D)
 - Dom: design ou page – amor, família, recomeços
 
+## Vídeos: feedback do Yuri (18/11/2026) – "mortos, sem sentido, não chamam atenção"
+O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lento) é o exemplo do que **não** fazer.
+- **Usar `engine/reel.py`** (não `video.py`): texto a entrar parágrafo a parágrafo, cortes secos com punch-in,
+  livro 3D a subir e a flutuar, cenas `photo` com fotos reais. Exemplo: `posts/_amostra/reel_dinheiro.json`.
+- **Todo o vídeo gira à volta de um LIVRO REAL**, com imagem real: cena `book` com a capa de `livros/` (livro 3D
+  grande) ou cena `photo` com fotos/vídeos reais de `fotos/`. Sem imagem real do livro → não fazer vídeo;
+  fazer carrossel e, no aviso, pedir a foto ao Yuri.
+- **Tem de ter sentido**: uma história simples – problema que a pessoa sente (cena 1, hook) → o que está por trás
+  (cena 2) → o livro que resolve, em grande (cena 3) com "Leia. Regresse a si.". Nada de frases soltas/abstractas,
+  nada de notícia colada à força. A atualidade só entra se ligar de forma óbvia ao livro mostrado.
+- **Livros mais elaborados** (também nos carrosséis): mostrar o livro grande e bonito, dizer em concreto o que
+  ensina (2–3 ideias), para quem é, e porque agora. Preferir sempre fotos reais de livros (abertos, na mão,
+  estantes, entregas) quando existirem em `fotos/`.
+- Antes de publicar, extrair 6–8 frames do vídeo (ffmpeg) e ver com Read: o 1.º frame já tem texto e o livro
+  aparece grande e nítido.
+- Enquanto `fotos/` estiver vazia e `livros/` só tiver 1 capa, pedir ao Yuri no aviso: fotos dos livros mais
+  vendidos (capa de frente, livro aberto, na mão) e pequenos vídeos reais de livros/entregas.
+
 ## Rotação – FEED DA TARDE (19:47): atenção máxima
-- Seg, Qua, Sex, Sáb: **vídeo curto 5–8 s** (`engine/video.py`, 2–3 cenas 9:16; 1ª cena = hook de ≤ 8 palavras,
-  durations ex.: [2, 3, 2.5]). Estilo nota, design ou page.
+- Seg, Qua, Sex, Sáb: **vídeo curto 7–10 s** (`engine/reel.py`, 3 cenas 9:16: hook ≤ 8 palavras → desenvolvimento → livro real
+  em grande; ver "Vídeos: feedback do Yuri"). Estilo nota, design ou page.
 - Ter, Qui: **carrossel de atualidade** (nota) – tema do momento ligado à leitura.
 - Dom: **pergunta polémica da semana** (carrossel nota 3–5 imagens) para gerar debate.
 Livros do catálogo aparecem em pelo menos 3 posts por semana, sempre naturais.
