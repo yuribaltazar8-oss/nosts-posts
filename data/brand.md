@@ -29,7 +29,8 @@ Nada de néon, gradientes chamativos, emojis dentro das imagens ou aspecto de "I
 - Calma, profunda e directa. Toca a alma; às vezes provocadora ("invasiva mas profunda"), nunca agressiva nem ofensiva a grupos.
 - Pouca venda. A maioria dos posts é sobre ler e sobre a vida; o livro aparece com naturalidade.
 - Textos originais. Nunca copiar frases de livros modernos, músicas ou outras páginas; nunca inventar citações atribuídas a autores reais.
-  Excepção: citações curtas de clássicos em domínio público (Aristóteles, Séneca, Marco Aurélio…), confirmadas e com a obra indicada.
+  Excepções: citações curtas de clássicos em domínio público (Aristóteles, Séneca, Marco Aurélio…) e citações curtas
+  (1–2 frases) de autores e figuras moçambicanas – sempre confirmadas e com autor e obra indicados (ver CLAUDE.md).
 - Não reproduzir capas de livros em desenho. Livro = título + autor tipografados.
 
 ## Contacto (sempre na legenda, no fim)
@@ -64,5 +65,7 @@ Nascem do nome: **Nostos = o regresso a casa**. Nunca alterar as palavras destes
 5. **Marca visual**: creme de papel + Garamond + só azul Nostos (#02246C) como cor de destaque, 1–3 palavras
    por imagem. Nada de outras cores de destaque. Logo oficial na última imagem.
 6. **Hashtag própria**: `#regresseasi` em todas as legendas (junto de #nostoslivraria).
-7. **Palavras da casa** (usar com naturalidade, não forçar): casa, regressar, voltar a si, a página certa,
+7. **Orgulho moçambicano**: a Nostos é de Maputo para todo o país – vozes, provérbios e autores moçambicanos
+   aparecem todas as semanas (ver "Identidade moçambicana" em CLAUDE.md).
+8. **Palavras da casa** (usar com naturalidade, não forçar): casa, regressar, voltar a si, a página certa,
    na hora certa. Evitar clichês vazios ("viaje pelas páginas", "o mundo mágico dos livros").

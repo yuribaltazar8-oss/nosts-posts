@@ -86,6 +86,35 @@ Regras de rigor (a página tem de ser **referência de confiança**):
 - Preferir autores/livros que estão no catálogo dos anúncios (clássicos e filosofia é o anúncio com
   melhores resultados) e, no fim, mostrar o livro.
 
+## Identidade moçambicana (pedido do Yuri, 18/11/2026)
+A Nostos valoriza a cultura de Moçambique e as pessoas têm de o sentir. **Pelo menos 1–2 posts por semana**
+(feed ou story) com voz moçambicana, e um post dedicado nas datas nacionais.
+- **Autores moçambicanos**: Paulina Chiziane, Mia Couto, José Craveirinha, Noémia de Sousa,
+  Ungulani Ba Ka Khosa, Lília Momplé, Luís Bernardo Honwana, Rui Knopfli e outros reconhecidos.
+  Formatos: "Uma frase moçambicana que devia estar em todas as casas", "O que Paulina Chiziane nos ensina sobre…",
+  "Escritores moçambicanos que todo o país devia ler", perfil do autor (quem é, porque importa, 1 ideia forte).
+- **Figuras históricas já falecidas** (ex.: Eduardo Mondlane, Samora Machel, Josina Machel): só citações sobre
+  temas que unem – educação, trabalho, unidade, cultura, dignidade, juventude. **Nunca** ligar a partidos,
+  eleições, governos actuais ou polémicas políticas; nunca usar para criticar ou elogiar quem está no poder.
+  Pessoas vivas da política: nunca.
+- **Provérbios e sabedoria popular** (changana, ronga, macua, sena, ndau…): só com a versão original e a
+  tradução confirmadas em fonte fiável; indicar a língua.
+- **Datas nacionais** (post temático, sem política): 3 de Fevereiro (Dia dos Heróis Moçambicanos),
+  7 de Abril (Dia da Mulher Moçambicana), 25 de Junho (Independência), 4 de Outubro (Dia da Paz e Reconciliação),
+  Dia da Cidade de Maputo (10 de Novembro). Confirmar a data na web antes de publicar.
+- **Vida real moçambicana** nos exemplos: o salário que acaba antes do mês, o chapa, a família alargada,
+  o negócio de bairro, a xima de domingo, Maputo, Matola, Beira, Nampula… sempre com respeito.
+Regras de rigor e direitos:
+- Toda a citação é confirmada em ≥ 2 fontes fiáveis (de preferência a obra ou o discurso original) e leva
+  autor + obra/discurso + ano na legenda. Muitas frases que circulam atribuídas a moçambicanos famosos são falsas:
+  se não houver confirmação, não usar.
+- Autores com obra protegida (todos os acima): citação **curta** (1–2 frases), entre aspas, com autor e obra,
+  para comentar ou homenagear. Nunca poemas inteiros, estrofes longas ou páginas copiadas.
+- Livros de autores moçambicanos que não estão nos anúncios: não prometer stock; convidar a perguntar no
+  WhatsApp ("pergunte-nos no WhatsApp").
+- Nunca usar fotos de pessoas reais tiradas da internet (só fotos em `fotos/`). Retrato do autor = cartão
+  tipográfico com o nome.
+
 ## Perfil do livro e imagens bonitas de livros (pedido do Yuri, 18/11/2026)
 - **"Perfil do livro"** (série, 1–2x por semana, carrossel 5–7 imagens): 1) hook sobre o problema que o livro
   resolve; 2) o livro em destaque (3D a partir da capa real, grande e bonito); 3) quem é o autor (1 frase,
