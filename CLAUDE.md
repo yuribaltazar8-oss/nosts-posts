@@ -164,6 +164,8 @@ Regras de rigor e direitos:
 - Dom: design ou page – amor, família, recomeços
 
 ## REELS = LIVROS + SOM (pedido do Yuri, 18/11/2026 – manda sobre as regras de vídeo abaixo)
+- **NÃO usar `livros/dinheiro-e-emocional_foto.jpg` nem `livros/dinheiro-e-emocional.jpg` em vídeos** (o Yuri pediu,
+  18/11: qualidade insuficiente). Usar só material novo de alta qualidade.
 - **"As pessoas compram vendo os livros, não os textos."** Os carrosséis são de texto; os **vídeos são dos livros**:
   o livro aparece em TODAS as cenas (foto/vídeo real na mão, aberto, na estante, capa 3D real). Nada de cenas só de texto.
 - Motor: **`engine/livros.py`** (exemplo: `posts/2026-11-18/livros_reel_teste1.json`). Cenas `intro` (hook a escrever-se
