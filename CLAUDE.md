@@ -16,6 +16,12 @@ Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últim
    Depois calcular o **Score viral** de cada post (fórmula em `data/insights.md`), actualizar o ranking e as
    "Fórmulas vencedoras / a evitar" em `insights.md` e escrever no aviso ao Yuri o melhor e o pior post de ontem
    e o que se vai copiar ou mudar hoje. Aos domingos, revisão maior dos pesos (regra em `insights.md`).
+1b. **Datas comemorativas** (todos os dias, slots feed_manha e story): ver `data/datas.md`. Se hoje for uma data,
+   o post do dia é sobre ela (imagens próprias da data no estilo da marca: creme/azul Nostos, Garamond, livro em 3D
+   quando fizer sentido, assinatura "Leia. Regresse a si."; nada de clip-art, ícones genéricos, imagens da
+   internet ou imagens geradas por IA). Se for amanhã, o story de hoje anuncia-a. Datas maiores (23 Abr, 25 Jun,
+   25 Dez) podem ter carrossel + vídeo + story. No aviso ao Yuri, lembrar as datas dos próximos 7 dias
+   (para ele preparar fotos ou promoções, se quiser).
 2. **Catálogo** (só às segundas): actualizar `data/catalogo.md` com os anúncios ACTIVE da conta de anúncios.
 3. **Escolher o post** segundo a rotação abaixo (ajustada por `insights.md`). Nunca repetir tema, frase ou livro
    dos últimos 10 dias (ver log).
