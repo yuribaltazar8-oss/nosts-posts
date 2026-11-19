@@ -1,0 +1,12 @@
+{"out": "posts/2026-11-19/feed_tarde.mp4", "bpm": 120, "music": "lofi", "seed": 1947,
+ "scenes": [
+  {"kind": "intro", "photo": "fotos/livros/riqueza-das-nacoes_capa_mao.jpg", "focus": [0.5, 0.42], "zoom": [1.0, 1.08],
+   "text": "Os preços sobem. O salário não acompanha.", "bold": ["salário"], "card_y": 1440, "beats": 7},
+  {"kind": "book", "photo": "fotos/livros/riqueza-das-nacoes_capa_mao.jpg", "focus": [0.52, 0.30], "zoom": [1.12, 1.22],
+   "line": "Em 1776, Adam Smith já explicava porquê.", "bold": ["porquê."], "label": "A Riqueza das Nações", "card_y": 1480, "beats": 6},
+  {"kind": "book", "photo": "fotos/livros/riqueza-das-nacoes_contracapa_mao.jpg", "focus": [0.5, 0.35], "zoom": [1.05, 1.15],
+   "line": "O preço real de tudo é o esforço para o ter.", "bold": ["esforço"], "label": "Adam Smith", "card_y": 1440, "beats": 7},
+  {"kind": "book", "photo": "fotos/livros/riqueza-das-nacoes_capa_mao.jpg", "focus": [0.45, 0.6], "zoom": [1.15, 1.05],
+   "line": "Quem entende isto deixa de gastar à toa.", "bold": ["à toa."], "label": "Livro-casa", "card_y": 1440, "beats": 6},
+  {"kind": "outro", "text": "Leia. Regresse a si.", "sub": "A Riqueza das Nações · WhatsApp 87 943 1217", "beats": 5}
+ ]}
