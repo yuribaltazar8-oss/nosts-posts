@@ -1,0 +1,6 @@
+{"style": "nota", "size": "feed", "out": "posts/2026-11-19", "name": "feed_manha_fim",
+ "pages": [
+  {"kicker": "Aristóteles na Nostos", "text": "Um livro-casa para o homem que quer pensar melhor, falar melhor e decidir melhor.\n\nDo filósofo que, há 2 300 anos, já sabia que o carácter se treina.", "size": 44, "highlight": ["livro-casa", "treina."], "no_footer": true,
+   "book": {"title": "Retórica", "author": "Aristóteles", "photo": "fotos/livros/retorica_capa_mao.jpg", "kicker": "Disponível na Nostos"}},
+  {"text": "Que hábito vai repetir a partir de hoje?\n\nA) Poupar\nB) Cumprir o que promete\n\nResponda nos comentários e envie isto a um homem que precisa de o ler hoje.\n\nLeia. Regresse a si.", "size": 54, "highlight": ["repetir", "envie", "Leia.", "Regresse", "si."], "no_footer": true}
+ ]}

@@ -1,0 +1,10 @@
+{"style": "page", "size": "feed", "out": "posts/2026-11-19", "name": "feed_manha", "seed": 1911,
+ "pages": [
+  {"kind": "section", "title": "Página que fica  ·  Dia Internacional do Homem", "title_size": 32,
+   "body": "Um homem não se mede pelo que promete.\n\nMede-se pelo que repete.", "size": 82},
+  {"kind": "section", "title": "Há 2 300 anos…", "body": "Aristóteles escreveu uma ideia que muitos homens, ainda hoje, não querem aceitar.\n\nE ela explica quase tudo o que corre mal na vida de um homem.\n\nEstá na página seguinte.", "size": 50},
+  {"kind": "quote", "text": "«Tornamo-nos justos praticando actos justos; temperantes, praticando actos temperantes; corajosos, praticando actos corajosos.»", "sub": "Aristóteles, Ética a Nicómaco, Livro II"},
+  {"kind": "section", "title": "Ou seja", "body": "Ninguém nasce responsável.\nNinguém nasce disciplinado.\nNinguém nasce corajoso.\n\nO carácter não é um dom. É um hábito.\n\nE é aqui que começa a doer.", "size": 52},
+  {"kind": "section", "title": "No dia-a-dia", "body": "O homem que diz «para o mês começo a poupar» e repete a frase há três anos.\n\nO que promete aos filhos «no fim-de-semana» e o fim-de-semana nunca chega.\n\nNão lhe falta vontade. Falta-lhe repetição.\n\nMas há uma boa notícia.", "size": 46},
+  {"kind": "section", "title": "A coragem, segundo Aristóteles", "body": "Fica entre dois erros: a cobardia e a temeridade.\n\nO homem forte não é o que grita, nem o que foge.\n\nÉ o que faz o que está certo, outra vez, mesmo cansado. E isso aprende-se.", "size": 50}
+ ]}
