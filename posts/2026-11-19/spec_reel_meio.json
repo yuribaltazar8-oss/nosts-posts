@@ -1,0 +1,10 @@
+{"out": "posts/2026-11-19/reel_meio.mp4", "bpm": 120, "music": "afro", "seed": 1119,
+ "scenes": [
+  {"kind": "intro", "photo": "fotos/livros/1984_capa_mao.jpg", "focus": [0.42, 0.5], "zoom": [1.0, 1.08],
+   "text": "O livro para quem não consegue largar o telemóvel.", "bold": ["telemóvel."], "card_y": 1440, "beats": 7},
+  {"kind": "book", "photo": "fotos/livros/1984_capa_mao.jpg", "focus": [0.42, 0.40], "zoom": [1.10, 1.22],
+   "line": "Em 1949, já falava de um ecrã que nos vigia.", "bold": ["vigia."], "label": "1984", "card_y": 1480, "beats": 6},
+  {"kind": "book", "photo": "fotos/livros/1984_contracapa_mao.jpg", "focus": [0.45, 0.5], "zoom": [1.05, 1.18],
+   "line": "E mostra: quem perde palavras perde a forma de pensar.", "bold": ["pensar."], "label": "George Orwell", "card_y": 1440, "beats": 6},
+  {"kind": "outro", "text": "Leia. Regresse a si.", "sub": "1984 · Orwell · WhatsApp 87 943 1217", "beats": 5}
+ ]}
