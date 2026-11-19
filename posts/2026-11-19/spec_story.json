@@ -1,0 +1,25 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-19",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Dia Internacional do Homem",
+   "text": "Muitos homens aprenderam a não chorar.\n\nPoucos aprenderam a conversar consigo mesmos.\n\nQue livro todo o homem devia ler antes dos 30?\n\nResponda-nos por mensagem.",
+   "size": 50,
+   "highlight": [
+    "consigo",
+    "mesmos.",
+    "livro"
+   ],
+   "book": {
+    "title": "Crime e Castigo",
+    "author": "Fiódor Dostoiévski",
+    "photo": "fotos/livros/crime-e-castigo_capa_mao.jpg",
+    "kicker": "Na estante da Nostos"
+   },
+   "top": 50
+  }
+ ]
+}
