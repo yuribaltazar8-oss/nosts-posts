@@ -9,7 +9,12 @@ Score = (partilhas×4 + guardados×3 + comentários×3 + novos seguidores×5 + g
 - Só comparar posts com ≥ 24 h de vida.
 
 ## Ranking (actualizar diariamente: top 5 e piores 3 dos últimos 14 dias)
-(a preencher na próxima execução do feed_manha)
+Actualizado 19/11 (Windsor não devolve gostos/comentários/seguidores: usa-se engagement no lugar de gostos+comentários).
+Top 5: 09/11 06:35 reel romances (Score 19,0; alcance 3 353; skip 45%) · 13/11 14:56 reel (18,8; 564; skip 61%) ·
+10/11 08:36 reel Noites Brancas (16,6; 1 799) · 11/11 10:29 reel (16,4; 379) · 17/11 14:08 carrossel página de livro (15,9; 428).
+Piores 3: 18/11 19:52 reel "ler é luxo" (1,5; 130; skip 64%) · 18/11 06:46 imagem tsundoku (2,6; 116) ·
+18/11 10:35 carrossel dinheiro (5,3; 151).
+Nota 19/11: o 18/11 foi o pior dia da quinzena (alcance ~120–150 em todos). Reels com cartões de texto e imagem única falham.
 
 ## Fórmulas vencedoras (copiar e variar)
 - Listas de romances intensos (Yarros/Hazelwood) – 09/11: 3 329 alcance, 370 interacções.
