@@ -1,0 +1,10 @@
+{"out": "posts/2026-11-20/feed_tarde.mp4", "bpm": 120, "music": "lofi", "seed": 2011,
+ "scenes": [
+  {"kind": "intro", "instant": true, "photo": "fotos/livros/retorica_capa_mao.jpg", "focus": [0.5, 0.55], "zoom": [1.2, 1.0],
+   "text": "Abrir um negócio ficou\nmais fácil. Vender, não.", "bold": ["Vender,", "não."], "card_y": 110, "beats": 7},
+  {"kind": "book", "photo": "fotos/livros/retorica_capa_mao.jpg", "focus": [0.5, 0.4], "zoom": [1.05, 1.25],
+   "line": "Há 2 300 anos, Aristóteles\nexplicou porquê.", "bold": ["porquê."], "label": "Retórica", "card_y": 1360, "beats": 6},
+  {"kind": "book", "photo": "fotos/livros/retorica_contracapa_mao.jpg", "focus": [0.5, 0.5], "zoom": [1.0, 1.15],
+   "line": "Confiança. Emoção. Razão.\nSe faltar uma, ninguém compra.", "bold": ["Confiança.", "Emoção.", "Razão."], "label": "Aristóteles", "card_y": 110, "beats": 8},
+  {"kind": "outro", "text": "Leia. Regresse a si.", "sub": "Retórica · WhatsApp 87 943 1217", "beats": 5}
+ ]}
