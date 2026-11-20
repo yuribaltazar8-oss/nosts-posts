@@ -1,0 +1,83 @@
+{
+ "style": "nota",
+ "size": "feed",
+ "out": "posts/2026-11-20",
+ "name": "feed_manha",
+ "pages": [
+  {
+   "kicker": "O que a leitura faz",
+   "text": "Quem lê livros vive, em média, quase 2 anos a mais.\n\nNão é frase motivacional.\nÉ ciência.",
+   "size": 66,
+   "bold": true,
+   "highlight": [
+    "2",
+    "anos",
+    "ciência."
+   ]
+  },
+  {
+   "text": "Universidade de Yale.\n3 635 pessoas com mais de 50 anos, acompanhadas durante 12 anos.\n\nUma só pergunta: quem lê livros vive mais?\n\nA resposta está na próxima página.",
+   "size": 52,
+   "highlight": [
+    "Yale."
+   ]
+  },
+  {
+   "text": "Quem lia livros teve menos 20% de risco de morrer nesses 12 anos.\n\nCerca de 23 meses de vida a mais.\n\nE não foi por serem mais ricos.",
+   "size": 56,
+   "highlight": [
+    "20%",
+    "23",
+    "meses"
+   ]
+  },
+  {
+   "text": "Os investigadores descontaram a idade, a escolaridade, o dinheiro e a saúde de cada pessoa.\n\nA vantagem continuou lá.\n\nMas atenção: não é qualquer leitura.",
+   "size": 52,
+   "highlight": [
+    "continuou"
+   ]
+  },
+  {
+   "text": "Jornais e revistas não deram o mesmo resultado.\n\nOs livros ganharam, e por muito.\n\nE quem lia mais horas por semana teve ainda mais vantagem.\n\nPorquê? É aqui que tudo muda.",
+   "size": 50,
+   "highlight": [
+    "livros",
+    "ganharam,"
+   ]
+  },
+  {
+   "text": "Um livro obriga o cérebro a trabalhar: seguir uma história, ligar ideias, pôr-se no lugar do outro.\n\nSegundo o estudo, é essa actividade mental que ajuda a explicar a diferença.\n\nO scroll não faz isto.",
+   "size": 48,
+   "highlight": [
+    "cérebro",
+    "scroll"
+   ]
+  },
+  {
+   "kicker": "Para quem quer voltar a ler",
+   "text": "Um livro-casa curto, que se lê numa semana e não se esquece numa vida.\n\nPeça no WhatsApp 87 943 1217.",
+   "size": 44,
+   "highlight": [
+    "livro-casa"
+   ],
+   "no_footer": true,
+   "book": {
+    "title": "A Revolução dos Bichos",
+    "author": "George Orwell",
+    "photo": "fotos/livros/revolucao-dos-bichos_capa_mao.jpg",
+    "kicker": "Disponível na Nostos"
+   }
+  },
+  {
+   "text": "Quantas páginas leu esta semana?\n\nA) Nenhuma\nB) Mais de 50\n\nResponda nos comentários e envie isto a quem diz que não tem tempo para ler.\n\nLeia. Regresse a si.",
+   "size": 52,
+   "highlight": [
+    "envie",
+    "Leia.",
+    "Regresse",
+    "si."
+   ]
+  }
+ ]
+}
