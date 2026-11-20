@@ -1,0 +1,90 @@
+{
+ "out": "posts/2026-11-20/reel_meio.mp4",
+ "bpm": 120,
+ "music": "afro",
+ "seed": 1120,
+ "scenes": [
+  {
+   "kind": "intro",
+   "instant": true,
+   "photo": "fotos/livros/crime-e-castigo_capa_mao.jpg",
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "zoom": [
+    1.18,
+    1.0
+   ],
+   "text": "O pior castigo\nnão vem de fora.",
+   "bold": [
+    "castigo"
+   ],
+   "card_y": 110,
+   "beats": 6
+  },
+  {
+   "kind": "book",
+   "photo": "fotos/livros/crime-e-castigo_capa_mao.jpg",
+   "focus": [
+    0.55,
+    0.3
+   ],
+   "zoom": [
+    1.25,
+    1.4
+   ],
+   "line": "Em 1866, um jovem pobre convenceu-se de que tinha razão.",
+   "bold": [
+    "razão."
+   ],
+   "label": "Crime e Castigo",
+   "card_y": 1360,
+   "beats": 6
+  },
+  {
+   "kind": "book",
+   "photo": "fotos/livros/crime-e-castigo_contracapa_mao.jpg",
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "zoom": [
+    1.05,
+    1.18
+   ],
+   "line": "A desculpa era perfeita.\nA consciência não a aceitou.",
+   "bold": [
+    "consciência"
+   ],
+   "label": "Dostoiévski",
+   "card_y": 110,
+   "beats": 6
+  },
+  {
+   "kind": "book",
+   "photo": "fotos/livros/crime-e-castigo_capa_mao.jpg",
+   "focus": [
+    0.5,
+    0.62
+   ],
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "line": "O pior castigo é não\nconseguir viver consigo.",
+   "bold": [
+    "consigo."
+   ],
+   "label": "A resposta",
+   "card_y": 110,
+   "beats": 6
+  },
+  {
+   "kind": "outro",
+   "text": "Leia. Regresse a si.",
+   "sub": "Crime e Castigo · WhatsApp 87 943 1217",
+   "beats": 5
+  }
+ ]
+}

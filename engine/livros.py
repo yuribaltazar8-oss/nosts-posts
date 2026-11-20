@@ -247,7 +247,11 @@ def main(path):
             else:
                 if sc.get("clip") or sc.get("photo"):
                     if kind == "intro":
-                        vis = int(nchar * min(1, t / max(0.6, dur * 0.45)))
+                        if sc.get("instant"):   # hook inteiro no 1.º frame + punch-in (insights 20/11)
+                            vis = nchar
+                            img = punch(img, t)
+                        else:
+                            vis = int(nchar * min(1, t / max(0.6, dur * 0.45)))
                         img = card(img, lines, 74, sc.get("kicker"), sc.get("card_min", 0), visible=vis, bold=sc.get("bold", []), top=sc.get("card_y", 110))
                     else:
                         img = punch(img, t)
