@@ -1,0 +1,15 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-20",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Livro-casa da semana",
+   "text": "Pode-se viver rodeado de pessoas e, mesmo assim, ninguém o conhecer de verdade.\n\nDostoiévski escreveu sobre isso em 1848: quatro noites, um sonhador sozinho e uma conversa que muda tudo.\n\nPeça-o no WhatsApp.\n\nLeia. Regresse a si.",
+   "size": 50,
+   "highlight": ["ninguém", "Regresse"],
+   "book": {"title": "Noites Brancas", "author": "Fiódor Dostoiévski"}
+  }
+ ]
+}
