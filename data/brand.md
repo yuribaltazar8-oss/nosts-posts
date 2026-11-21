@@ -80,3 +80,12 @@ Nascem do nome: **Nostos = o regresso a casa**. Nunca alterar as palavras destes
   Nada de recortes rectangulares da foto com bordas tortas ou bocados do tapete/parede à volta.
 - **Sem barras de cor no fundo das imagens** ("a barra azul estraga a estética"). A frase que puxa para a imagem
   seguinte fica discreta: Garamond itálico, azul Nostos, no canto inferior direito, com "→".
+
+## Estilo dos reels (aprovado pelo Yuri, 21/11/2026)
+- Estilo "Sextante" com as cores Nostos: texto curto e centrado no topo (2 linhas, Inter), creme com sombra,
+  palavra-chave em creme sobre etiqueta azul Nostos; gancho a escrever-se; frases a entrar suaves; zoom lento;
+  topo ligeiramente escurecido para o texto se ler; fecho em azul com logo e "Leia. Regresse a si.".
+- **Livro recuado**: livro/vídeo mais pequeno (≈ 60–70 % da largura), um pouco à esquerda do centro, entre
+  y≈470 e y≈1560, sobre fundo desfocado da própria foto – para os botões do Instagram (gosto, partilhar,
+  guardar, à direita) e a legenda (em baixo) não taparem o livro.
+- Sons: o Yuri pode escolher sons em tendência; avisar que, publicados por aqui, podem ser silenciados.
