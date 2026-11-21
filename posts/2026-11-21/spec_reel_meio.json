@@ -1,0 +1,51 @@
+{
+ "out": "posts/2026-11-21/reel_meio.mp4",
+ "bpm": 120,
+ "music": "lofi",
+ "seed": 1121,
+ "scenes": [
+  {
+   "kind": "intro",
+   "instant": true,
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 1.5,
+   "text": "Ocupado o dia todo.\nE nada importante feito.",
+   "bold": [
+    "nada"
+   ],
+   "kicker": "O livro para quem…",
+   "card_y": 1300,
+   "beats": 6
+  },
+  {
+   "kind": "book",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 17.3,
+   "line": "Fazer tudo ao mesmo tempo\né a mentira que o cansa.",
+   "bold": [
+    "mentira"
+   ],
+   "label": "A Única Coisa",
+   "card_y": 1540,
+   "beats": 6
+  },
+  {
+   "kind": "book",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 22.8,
+   "line": "Qual é a ÚNICA coisa\nque facilita todo o resto?",
+   "bold": [
+    "ÚNICA"
+   ],
+   "label": "A resposta",
+   "card_y": 110,
+   "beats": 6
+  },
+  {
+   "kind": "outro",
+   "text": "Leia. Regresse a si.",
+   "sub": "A Única Coisa · Gary Keller e Jay Papasan",
+   "beats": 5
+  }
+ ]
+}
