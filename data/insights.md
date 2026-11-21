@@ -9,29 +9,33 @@ Score = (partilhas×4 + guardados×3 + comentários×3 + novos seguidores×5 + g
 - Só comparar posts com ≥ 24 h de vida.
 
 ## Ranking (actualizar diariamente: top 5 e piores 3 dos últimos 14 dias)
-Actualizado 20/11 (Windsor não devolve gostos/comentários: usa-se engagement no lugar de gostos+comentários; seguidores só nos carrosséis).
-Top 5: 13/11 14:56 reel (Score 19,3; alcance 591; skip 62%) · 09/11 06:35 reel romances (19,0; 3 372; skip 45%) ·
-16/11 10:01 reel (16,7; 299; skip 69%) · 10/11 08:36 reel Noites Brancas (16,3; 1 823; skip 49%) · 11/11 10:29 reel (15,6; 397).
-Carrosséis: 17/11 página de livro (15,3; 470) · 19/11 Aristóteles "Página que fica" (12,3; 334; +1 seguidor).
-Piores 3: 18/11 06:46 imagem tsundoku (2,1; 141) · 18/11 19:52 reel "ler é luxo" (2,2; 184; skip 66%) ·
-19/11 13:20 trial reel 1984 (6,5; 123; skip 84%).
-Nota 20/11: os 2 reels de 19/11 (fotos do livro na mão, livros.py) tiveram skip 81–84% e retenção de 2–3 s → o 1.º
-segundo não prende. O carrossel de clássico (Aristóteles) foi o melhor post do dia (alcance 334, o melhor desde 17/11).
-Copiar: carrossel com ideia de um clássico/estudo real + hook sobre a vida do leitor. Mudar nos reels: hook escrito
-grande no 1.º frame, mais movimento logo no início.
+Actualizado 21/11 (Windsor não devolve gostos/comentários: usa-se engagement no lugar de gostos+comentários; seguidores só nos carrosséis).
+Top 5: 13/11 14:56 reel (Score 19,1; alcance 601; skip 61%) · 09/11 06:35 reel romances (18,8; 3 388; skip 45%) ·
+16/11 10:01 reel (16,4; 313; skip 69%) · 20/11 10:13 reel publicado fora do motor (16,5; 121; skip 83%) ·
+10/11 08:36 reel Noites Brancas (16,4; 1 837; skip 49%).
+Carrosséis: 17/11 página de livro (14,6; 492) · 19/11 Aristóteles "Página que fica" (12,4; 387; +1 seguidor) ·
+20/11 estudo Yale "quem lê vive mais" (7,1; 156).
+Piores 3: 20/11 19:51 reel Retórica/licenciamento (0,7; 150; skip 80%) · 18/11 06:46 imagem tsundoku (3,2; 157) ·
+20/11 13:19 trial Crime e Castigo (6,2; 161; skip 72%).
+Nota 21/11: 6 reels seguidos de livros.py (19–20/11) com skip 72–84% e 2–3 s de visualização média → o formato
+"foto do livro na mão + texto" não prende no 1.º segundo; o reel com melhor skip foi o trial com hook inteiro no
+1.º frame (72%), ainda fraco. O carrossel-estudo (20/11) rendeu metade do carrossel Aristóteles: hook de "estudo"
+prende menos que hook sobre a vida do leitor. Hoje: "Perfil do livro" com Séneca (clássico + hook que dói sobre a
+vida). Mudar nos reels: mais movimento/pessoa real no 1.º frame; considerar menos reels até haver vídeos reais.
 
 ## Fórmulas vencedoras (copiar e variar)
 - Listas de romances intensos (Yarros/Hazelwood) – 09/11: 3 329 alcance, 370 interacções.
 - Clássico com emoção (Noites Brancas) – 10/11: 1 782 alcance.
 - Carrossel de páginas de livro – 17/11: ~11% de interacção.
-- Carrossel "Página que fica" com clássico (Aristóteles) – 19/11: Score 12,3, melhor do dia, +1 seguidor.
+- Carrossel "Página que fica" com clássico (Aristóteles) – 19/11: Score 12,4, +1 seguidor (melhor carrossel recente).
 - Temas: romance intenso, clássicos com emoção, reflexão sobre a vida.
 
 ## A evitar
 - Palavras desconhecidas / temas de nicho no hook (ex.: "tsundoku").
 - Publicar no meio da manhã (10:00–11:40) – piores resultados.
 - Imagem única no feed.
-- Reels com foto estática do livro na mão logo no 1.º frame (19/11: skip 81–84%).
+- Reels com foto estática do livro na mão logo no 1.º frame (19–20/11: 6 reels, skip 72–84%).
+- Hook de "estudo/dado" sem dor pessoal (20/11 Yale: Score 7,1, alcance 156).
 
 ## Regras actuais
 - Feed manhã: 06:45. Story: 12:37. Feed tarde: 19:47 (vídeos curtos e atualidade).
