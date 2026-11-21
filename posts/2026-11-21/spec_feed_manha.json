@@ -1,0 +1,32 @@
+{
+ "style": "nota",
+ "size": "feed",
+ "out": "posts/2026-11-21",
+ "name": "feed_manha",
+ "pages": [
+  {"kicker": "Perfil do livro",
+   "text": "A vida não é curta.\n\nVocê é que a deixa escapar.",
+   "size": 74, "bold": true, "highlight": ["escapar."]},
+  {"text": "O salário acaba antes do mês. Isso toda a gente sente.\n\nO tempo também acaba antes do dia. E quase ninguém repara.\n\nUm homem escreveu sobre isto há quase 2 000 anos. E continua certo.",
+   "size": 50, "highlight": ["tempo", "2 000"],
+   "book": {"title": "Sobre a Brevidade da Vida", "author": "Séneca"}},
+  {"kicker": "Quem escreveu",
+   "text": "Séneca. Filósofo romano, conselheiro do imperador Nero e um dos homens mais ricos de Roma.\n\nDinheiro não lhe faltava.\n\nMesmo assim, escreveu que aquilo que mais desperdiçamos é outra coisa.",
+   "size": 52, "highlight": ["Séneca.", "outra", "coisa."]},
+  {"kicker": "Ideia 1",
+   "text": "«Não temos pouco tempo. Perdemos muito.»\n\nA vida é longa para quem sabe usá-la.\n\nO problema não é a duração. É o desperdício.",
+   "size": 58, "highlight": ["Perdemos", "muito.»"]},
+  {"kicker": "Ideia 2",
+   "text": "Ninguém entrega o seu dinheiro a qualquer pessoa.\n\nMas o tempo, entrega-se a toda a gente: ao telemóvel até à 1h, à conversa que não leva a nada, ao grupo que só reclama.\n\nE há um ladrão de tempo ainda pior.",
+   "size": 50, "highlight": ["dinheiro", "tempo,"]},
+  {"kicker": "Ideia 3",
+   "text": "«Quando o salário aumentar.»\n«Quando os filhos crescerem.»\n«Segunda-feira começo.»\n\nPara Séneca, o maior obstáculo à vida é a espera.\n\nQuem vive pendurado no amanhã perde o dia de hoje.",
+   "size": 52, "highlight": ["espera."]},
+  {"kicker": "Livro-casa para quem…",
+   "text": "…sente que os dias passam e a vida fica à espera.\n\nUm texto curto, que se lê numa semana. Pergunte no WhatsApp 87 943 1217 pelas obras de Séneca.",
+   "size": 46, "highlight": ["livro-casa", "espera."], "no_footer": true,
+   "book": {"title": "Sobre a Brevidade da Vida", "author": "Séneca"}},
+  {"text": "Seja honesto: para onde vai a maior parte do seu tempo?\n\nA) Telemóvel\nB) Trabalho\nC) Preocupações\n\nResponda com uma letra e envie isto a quem vive à espera de segunda-feira.\n\nLeia. Regresse a si.",
+   "size": 50, "highlight": ["envie", "Leia.", "Regresse", "si."]}
+ ]
+}
