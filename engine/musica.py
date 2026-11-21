@@ -50,8 +50,8 @@ def midi(m):
 def make(seconds, bpm=112, style="afro", seed=7):
     rng = np.random.default_rng(seed)
     n = int(seconds * SR)
-    out = np.zeros(n + SR * 2)
     beat = 60 / bpm
+    out = np.zeros(n + int(SR * (beat * 4 + 1)))   # folga para o último acorde (4 batidas) não sair do buffer
     s16 = beat / 4
     # progressão quente (Am - F - C - G) / lofi: Dm9 - G13 - Cmaj9 - Am7
     prog = [[57, 60, 64, 67], [53, 57, 60, 64], [48, 55, 60, 64], [55, 59, 62, 67]] if style == "afro" else \
