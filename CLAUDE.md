@@ -131,8 +131,10 @@ Fotos em `fotos/livros/*_anuncio.jpg` (lista e preços em `data/catalogo.md`). U
    imagens seguintes = o que o livro ensina (3–5 ideias, uma por imagem, confirmadas); última = CTA.
 Qualidade: as imagens têm de parecer **caras, profissionais e chamativas** – foto do livro grande e nítida
 (melhorar nitidez/contraste/cor da foto real se preciso), composição limpa, azul Nostos + creme fortes.
-As fotos já trazem preço e texto por cima: recortar/ampliar para o livro e a mão, ou cobrir o texto antigo com
-as faixas azul/creme da Nostos, para não haver dois textos a competir. Nunca alterar a capa nem inventar livros.
+As fotos são anúncios já feitos no branding da Nostos (preço + WhatsApp): **usar tal como estão, sem tapar
+o preço nem o texto** (Yuri, 21/11). Usar a versão `*_4x5.jpg` (1080×1350, proporção certa do carrossel, fundo
+desfocado da própria foto nas margens) e não pôr texto novo por cima. O texto/hook vai nas imagens próprias
+(hook, ideias, CTA) entre as fotos. Nunca alterar a capa nem inventar livros.
 
 ## Perfil do livro e imagens bonitas de livros (pedido do Yuri, 18/11/2026)
 - **"Perfil do livro"** (série, 1–2x por semana, carrossel 5–7 imagens): 1) hook sobre o problema que o livro

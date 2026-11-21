@@ -27,7 +27,8 @@ Os Segredos da Mente Milionária – T. Harv Eker (950 MT) · Como Fazer Amigos 
 pacotes "20 livros", "50 livros", "9 livros" (psicologia, finanças, poder pessoal)
 
 ## Livros com foto real em stock (enviados pelo Yuri, 21/11/2026) – podem ser mencionados e mostrados
-Foto: `fotos/livros/<nome>_anuncio.jpg` (foto do Yuri com o livro na mão; já traz preço/texto do anúncio por cima).
+Foto: `fotos/livros/<nome>_4x5.jpg` (1080×1350, pronta para carrossel) e `<nome>_anuncio.jpg` (original melhorado).
+São os anúncios da Nostos já no branding (preço e WhatsApp incluídos) – usar tal como estão.
 - Como Mandar à Merda (de Forma Educada) – Alba Cardalda – 1 850 MT · `como-mandar-a-merda`
 - Ganhe o Mundo sem Perder a Alma – Tiago Brunet – 1 900 MT · `ganhe-o-mundo-sem-perder-a-alma`
 - Uma Vida com Propósitos – Rick Warren – 2 100 MT · `uma-vida-com-propositos`
@@ -47,6 +48,15 @@ Foto: `fotos/livros/<nome>_anuncio.jpg` (foto do Yuri com o livro na mão; já t
 - Uma Segunda Chance – Colleen Hoover – 1 799 MT · `uma-segunda-chance`
 - O Lado Calmo da Vida – Lucas Wilde – 2 050 MT · `o-lado-calmo-da-vida`
 - Hábitos Atômicos – James Clear – 1 900 MT (preço "por tempo limitado") · `habitos-atomicos`
-- Somente Quem Carrega Cicatrizes Sabe o Peso das Feridas – 2 250 MT (sem foto da capa; reel de 21/11)
+- Somente Quem Carrega Cicatrizes Sabe o Peso das Feridas – Felipe Reis Monteiro – 2 250 MT · `somente-quem-carrega-cicatrizes`, `somente-quem-carrega-cicatrizes-capa` (reel de 21/11)
+- O Pequeno Príncipe (capa dura) – Antoine de Saint-Exupéry – 1 350 MT · `o-pequeno-principe`
+- A Coragem de Ser Imperfeito – Brené Brown – 1 800 MT · `a-coragem-de-ser-imperfeito`
+- O Código Da Vinci – Dan Brown – 2 200 MT · `o-codigo-da-vinci`
+- O Poder da Garota que Ora – Stormie Omartian – 1 450 MT · `o-poder-da-garota-que-ora`
+- 1984 – George Orwell – 1 700 MT · `1984`
+- Como Parar de se Preocupar e Começar a Viver – Dale Carnegie – 2 300 MT · `como-parar-de-se-preocupar`
+- O Poder do Agora – Eckhart Tolle – 1 800 MT · `o-poder-do-agora`
+- 12 Regras para a Vida – Jordan B. Peterson – 2 300 MT · `12-regras-para-a-vida`
+- Verity – Colleen Hoover – 1 700 MT · `verity`
 
 Regra: preços só na legenda e só quando o post fala do livro. Nunca inventar preço.
