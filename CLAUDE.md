@@ -122,8 +122,8 @@ Regras de rigor e direitos:
   tipográfico com o nome.
 
 ## Carrosséis-anúncio com fotos reais dos livros (pedido do Yuri, 21/11/2026)
-Fotos em `fotos/livros/*_anuncio.jpg` (lista e preços em `data/catalogo.md`). Usar estes dois formatos com frequência
-(pelo menos 3x por semana no feed, alternando com os outros):
+Fotos em `fotos/livros/*_anuncio.jpg` (lista e preços em `data/catalogo.md`). Usar estes dois formatos com moderação
+(cerca de 1 em cada 3 posts – ver "Equilíbrio" abaixo), alternando com posts calmos:
 1. **"3 livros para aprender…"** (ex.: "…a dizer não", "…a lidar com dinheiro", "…a decidir melhor"):
    imagem 1 = hook forte; imagens 2–4 = um livro por imagem (foto real grande + 1 frase do que ensina);
    última = CTA (WhatsApp 87 943 1217, "Leia. Regresse a si.", logo).
@@ -135,6 +135,15 @@ As fotos são anúncios já feitos no branding da Nostos (preço + WhatsApp): **
 o preço nem o texto** (Yuri, 21/11). Usar a versão `*_4x5.jpg` (1080×1350, proporção certa do carrossel, fundo
 desfocado da própria foto nas margens) e não pôr texto novo por cima. O texto/hook vai nas imagens próprias
 (hook, ideias, CTA) entre as fotos. Nunca alterar a capa nem inventar livros.
+
+## Equilíbrio: posts calmos sem preço (pedido do Yuri, 21/11/2026)
+"A pessoa quer paz, ler, interessar-se e depois procurar saber mais." Não pôr banners de preço em todos os posts.
+- **A maioria dos posts (~2 em cada 3) é natural e calma**: sem preço nem WhatsApp nas imagens; o livro aparece
+  no seu contexto (página, ideia, foto limpa, vídeo real) e **o preço e o contacto ficam só na legenda**.
+  Para estes, usar imagens sem preço: `fotos/videos/`, `*-capa` sem preço, capa em 3D, ou a foto `*_anuncio.jpg`
+  recortada só ao livro e à mão (sem o preço/texto do anúncio).
+- **Só ~1 em cada 3 posts** é carrossel-anúncio com as fotos `*_4x5.jpg` (preço + WhatsApp visíveis).
+- Nunca dois posts seguidos com preço nas imagens. Registar no log, na coluna `style`, `anuncio` ou `calmo`.
 
 ## Perfil do livro e imagens bonitas de livros (pedido do Yuri, 18/11/2026)
 - **"Perfil do livro"** (série, 1–2x por semana, carrossel 5–7 imagens): 1) hook sobre o problema que o livro
