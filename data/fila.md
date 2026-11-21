@@ -1,0 +1,49 @@
+# Fila de posts prontos (aprovados pelo Yuri)
+
+Antes de gerar um post novo nos slots `feed_tarde` e `reel_meio`, ver esta fila. Se houver um item
+`pendente`, publicar ESSE (tal como está – não editar o vídeo) em vez de criar outro, pela ordem abaixo
+(1 por slot). Depois: mudar o estado para `publicado AAAA-MM-DD HH:MM (media_id)`, registar no log
+(style `calmo`) e fazer commit + push. Os vídeos já têm o som escolhido pelo Yuri; se o Instagram recusar
+ou silenciar, avisar o Yuri.
+
+## 1. Reel – A Única Coisa · estado: pendente (slot: feed_tarde de 21/11/2026)
+- Vídeo: `posts/prontos/reel_a_unica_coisa.mp4` · capa: `posts/prontos/reel_a_unica_coisa_capa.jpg`
+- Publicar normal (não trial), `share_to_feed: true`.
+- Legenda:
+Faz 20 coisas por dia e, no fim, nenhuma avançou?
+
+Gary Keller e Jay Papasan chamam a isto uma mentira: o multitarefa. Em "A Única Coisa", mostram que os
+resultados extraordinários vêm de estreitar o foco, reservar tempo só para o que mais importa e fazer uma
+pergunta todos os dias: qual é a única coisa que, se eu a fizer, torna o resto mais fácil ou desnecessário?
+
+Qual é a sua única coisa desta semana?
+
+Leia. Regresse a si.
+
+📖 A Única Coisa – Gary Keller e Jay Papasan: 1 800 MT
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #foco #produtividade
+
+## 2. Reel – Livros para quem não consegue desligar a cabeça · estado: pendente (próximo slot de reel)
+- Vídeo: `posts/prontos/reel_desligar_a_cabeca.mp4` · capa: `posts/prontos/reel_desligar_a_cabeca_capa.jpg`
+- Publicar normal (não trial), `share_to_feed: true`.
+- Legenda:
+Há cabeças que nunca desligam. Nem à noite.
+
+Se vive preso ao que já passou, sofre pelo que ainda não aconteceu ou gasta energia com o que não controla,
+um destes livros foi escrito para si.
+
+Qual destes é o seu: 1, 2, 3 ou 4?
+
+Leia. Regresse a si.
+
+📖 1. O Poder do Agora – Eckhart Tolle: 1 800 MT
+📖 2. Como Parar de se Preocupar e Começar a Viver – Dale Carnegie: 2 300 MT
+📖 3. Deixa pra Lá – Mel Robbins: 1 900 MT
+📖 4. O Lado Calmo da Vida – Lucas Wilde: 2 050 MT
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #ansiedade #paz
