@@ -26,4 +26,27 @@ Uma Vida com Propósitos – Rick Warren (2 100 MT)
 Os Segredos da Mente Milionária – T. Harv Eker (950 MT) · Como Fazer Amigos e Influenciar Pessoas ·
 pacotes "20 livros", "50 livros", "9 livros" (psicologia, finanças, poder pessoal)
 
+## Livros com foto real em stock (enviados pelo Yuri, 21/11/2026) – podem ser mencionados e mostrados
+Foto: `fotos/livros/<nome>_anuncio.jpg` (foto do Yuri com o livro na mão; já traz preço/texto do anúncio por cima).
+- Como Mandar à Merda (de Forma Educada) – Alba Cardalda – 1 850 MT · `como-mandar-a-merda`
+- Ganhe o Mundo sem Perder a Alma – Tiago Brunet – 1 900 MT · `ganhe-o-mundo-sem-perder-a-alma`
+- Uma Vida com Propósitos – Rick Warren – 2 100 MT · `uma-vida-com-propositos`
+- As 48 Leis do Poder (edição concisa) – Robert Greene – 1 650 MT · `48-leis-do-poder`
+- A Única Coisa – Gary Keller e Jay Papasan – 1 800 MT · `a-unica-coisa`
+- Deixa pra Lá (A Teoria Let Them) – Mel Robbins – 1 900 MT · `deixa-pra-la`
+- A Vida É Curta Demais pra Viver o Mínimo das Coisas – Iandê Albuquerque – 1 650 MT · `a-vida-e-curta-demais`
+- Retórica – Aristóteles – 2 100 MT · `retorica`
+- A Revolução dos Bichos – George Orwell – 1 500 MT · `revolucao-dos-bichos`
+- Todas as Suas Imperfeições – Colleen Hoover – 1 650 MT · `todas-as-suas-imperfeicoes`
+- A Metamorfose (capa dura) – Franz Kafka – 1 400 MT · `a-metamorfose`
+- Ikigai – Héctor García e Francesc Miralles – 1 680 MT · `ikigai`
+- A Psicologia Financeira – Morgan Housel – 1 800 MT · `psicologia-financeira`, `psicologia-financeira-2`
+- A Riqueza das Nações (versão condensada) – Adam Smith – 2 950 MT · `riqueza-das-nacoes`
+- A Arte de Pensar Claramente – Rolf Dobelli – 2 100 MT · `a-arte-de-pensar-claramente`
+- Essencialismo – Greg McKeown – 1 860 MT · `essencialismo`
+- Uma Segunda Chance – Colleen Hoover – 1 799 MT · `uma-segunda-chance`
+- O Lado Calmo da Vida – Lucas Wilde – 2 050 MT · `o-lado-calmo-da-vida`
+- Hábitos Atômicos – James Clear – 1 900 MT (preço "por tempo limitado") · `habitos-atomicos`
+- Somente Quem Carrega Cicatrizes Sabe o Peso das Feridas – 2 250 MT (sem foto da capa; reel de 21/11)
+
 Regra: preços só na legenda e só quando o post fala do livro. Nunca inventar preço.

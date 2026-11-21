@@ -121,6 +121,19 @@ Regras de rigor e direitos:
 - Nunca usar fotos de pessoas reais tiradas da internet (só fotos em `fotos/`). Retrato do autor = cartão
   tipográfico com o nome.
 
+## Carrosséis-anúncio com fotos reais dos livros (pedido do Yuri, 21/11/2026)
+Fotos em `fotos/livros/*_anuncio.jpg` (lista e preços em `data/catalogo.md`). Usar estes dois formatos com frequência
+(pelo menos 3x por semana no feed, alternando com os outros):
+1. **"3 livros para aprender…"** (ex.: "…a dizer não", "…a lidar com dinheiro", "…a decidir melhor"):
+   imagem 1 = hook forte; imagens 2–4 = um livro por imagem (foto real grande + 1 frase do que ensina);
+   última = CTA (WhatsApp 87 943 1217, "Leia. Regresse a si.", logo).
+2. **"O livro primeiro"**: imagem 1 = a foto do livro em destaque (bonita, com um hook curto por cima);
+   imagens seguintes = o que o livro ensina (3–5 ideias, uma por imagem, confirmadas); última = CTA.
+Qualidade: as imagens têm de parecer **caras, profissionais e chamativas** – foto do livro grande e nítida
+(melhorar nitidez/contraste/cor da foto real se preciso), composição limpa, azul Nostos + creme fortes.
+As fotos já trazem preço e texto por cima: recortar/ampliar para o livro e a mão, ou cobrir o texto antigo com
+as faixas azul/creme da Nostos, para não haver dois textos a competir. Nunca alterar a capa nem inventar livros.
+
 ## Perfil do livro e imagens bonitas de livros (pedido do Yuri, 18/11/2026)
 - **"Perfil do livro"** (série, 1–2x por semana, carrossel 5–7 imagens): 1) hook sobre o problema que o livro
   resolve; 2) o livro em destaque (3D a partir da capa real, grande e bonito); 3) quem é o autor (1 frase,
