@@ -85,8 +85,8 @@ Nascem do nome: **Nostos = o regresso a casa**. Nunca alterar as palavras destes
 - Estilo "Sextante" com as cores Nostos: texto curto e centrado no topo (2 linhas, Inter), creme com sombra,
   palavra-chave em creme sobre etiqueta azul Nostos; gancho a escrever-se; frases a entrar suaves; zoom lento;
   topo ligeiramente escurecido para o texto se ler; fecho em azul com logo e "Leia. Regresse a si.".
-- **Livro um pouco recuado** (Yuri, 21/11): foto do livro em cartão com **contornos nítidos** (cantos arredondados,
-  sombra suave – nunca bordas esbatidas/desfocadas), ≈ 80 % da largura, um pouco à esquerda do centro, entre
+- **Livro um pouco recuado** (Yuri, 21/11): foto do livro com as **bordas a fundir-se num degradê subtil** no fundo desfocado
+  (faixa de transição curta, ~20 px – sem moldura nem caixa à volta, e sem esbater demasiado), ≈ 80 % da largura, um pouco à esquerda do centro, entre
   y≈440 e y≈1670, sobre fundo desfocado claro da própria foto – para os botões do Instagram (direita) e a legenda
   (em baixo) não taparem o livro. Não recuar demasiado. Vídeos reais de entrada (ex.: embrulho) ficam em ecrã inteiro.
 - Sons: o Yuri pode escolher sons em tendência; avisar que, publicados por aqui, podem ser silenciados.
