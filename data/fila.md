@@ -6,7 +6,7 @@ Antes de gerar um post novo nos slots `feed_tarde` e `reel_meio`, ver esta fila.
 (style `calmo`) e fazer commit + push. Os vídeos já têm o som escolhido pelo Yuri; se o Instagram recusar
 ou silenciar, avisar o Yuri.
 
-## 1. Reel – A Única Coisa · estado: pendente (slot: feed_tarde de 21/11/2026)
+## 1. Reel – A Única Coisa · estado: publicado 2026-11-21 19:49 (18079183283765515)
 - Vídeo: `posts/prontos/reel_a_unica_coisa.mp4` · capa: `posts/prontos/reel_a_unica_coisa_capa.jpg`
 - Publicar normal (não trial), `share_to_feed: true`.
 - Legenda:
