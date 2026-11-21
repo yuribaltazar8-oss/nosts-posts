@@ -73,3 +73,10 @@ Nascem do nome: **Nostos = o regresso a casa**. Nunca alterar as palavras destes
    aparecem todas as semanas (ver "Identidade moçambicana" em CLAUDE.md).
 8. **Palavras da casa** (usar com naturalidade, não forçar): casa, regressar, voltar a si, a página certa,
    na hora certa. Evitar clichês vazios ("viaje pelas páginas", "o mundo mágico dos livros").
+
+## Acabamento das imagens (feedback do Yuri, 21/11/2026)
+- **Livro com contornos limpos**: quando o livro aparece sobre fundo creme/azul, recortá-lo da foto real
+  (sem restos do fundo, do texto ou do preço) e endireitar as arestas, com sombra suave por baixo.
+  Nada de recortes rectangulares da foto com bordas tortas ou bocados do tapete/parede à volta.
+- **Sem barras de cor no fundo das imagens** ("a barra azul estraga a estética"). A frase que puxa para a imagem
+  seguinte fica discreta: Garamond itálico, azul Nostos, no canto inferior direito, com "→".
