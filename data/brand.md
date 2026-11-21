@@ -20,6 +20,10 @@ Livraria em Maputo, vendas por WhatsApp, entregas em Maputo, Matola e todo o pa�
 - Creme do logo: #FBF8F0
 - Cinzento quente: #6E6860
 Nada de néon, gradientes chamativos, emojis dentro das imagens ou aspecto de "IA".
+- **Azul + creme sempre em destaque (pedido do Yuri, 21/11/2026)**: cada post e cada vídeo usa as DUAS cores da
+  Nostos de forma forte e visível – blocos/faixas de azul Nostos com texto creme do logo (#FBF8F0) e fundos creme
+  com texto e destaques em azul. Contraste alto, cores vivas e chamativas, nunca apagadas ou acinzentadas.
+  Em vídeos com imagens reais (livro, páginas), faixas de texto, gancho e cartão final em azul Nostos + creme.
 
 ## Tipografia
 - EB Garamond: páginas de livro, títulos de livros e frases calmas
