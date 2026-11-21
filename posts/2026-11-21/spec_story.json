@@ -1,0 +1,14 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-21",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Pergunta de sábado",
+   "text": "Você conhece autores do mundo inteiro.\n\nMas quantos são de Moçambique?\n\nMia Couto, Paulina Chiziane, José Craveirinha, Noémia de Sousa…\n\nQual foi o primeiro escritor moçambicano que você leu?\n\nResponda-nos por mensagem.\n\nLeia. Regresse a si.",
+   "size": 56,
+   "highlight": ["Moçambique?", "moçambicano", "Regresse"]
+  }
+ ]
+}
