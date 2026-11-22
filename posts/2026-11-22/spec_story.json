@@ -1,0 +1,24 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-22",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Pergunta de domingo",
+   "text": "A sua família não precisa de mais dinheiro seu.\nPrecisa de mais tempo seu.\n\n«Foi o tempo que dedicaste à tua rosa que fez a tua rosa tão importante.»\n\nA quem vai dar o seu tempo hoje?\n\nLeia. Regresse a si.",
+   "size": 52,
+   "highlight": [
+    "tempo",
+    
+    "Regresse"
+   ],
+   "book": {
+    "title": "O Pequeno Príncipe",
+    "author": "Antoine de Saint-Exupéry",
+    "photo": "fotos/livros/recortes/o-pequeno-principe.jpg",
+    "kicker": "Capítulo XXI · na Nostos"
+   }
+  }
+ ]
+}
