@@ -161,18 +161,25 @@ pelo género que rendeu mais.
   Moçambique (autores, provérbios, datas) · curiosidades sobre livros e leitura · humor leve com livros e leitores.
 - Os exemplos de gancho deste ficheiro que falam de salário são só exemplos de FORMA, não de tema.
 
-## Tom misturado: nem tudo é sério (Yuri, 22/11/2026: "Nós não vendemos só coisas sérias tipo coach")
-Mais ou menos **1 em cada 3 posts é leve/divertido**. Rodar entre:
-- **Humor de leitor** (situações que todos os leitores reconhecem): "Eu a dizer que só vou ver livros",
-  "A pilha de livros por ler a olhar para mim", "Quando alguém pergunta se já acabei o livro", "Leitores no chapa".
-- **Conversa em chat** (`engine/chat.py`, balões creme/azul): diálogos curtos e engraçados entre "Eu" e a Nostos,
-  "Eu vs. a minha estante", "Livro a falar com o leitor". É encenação da marca e tem de se perceber que é piada:
-  nunca apresentar como conversa real de um cliente, nunca nomes/números reais, nunca inventar elogios de clientes.
-- **Trends/memes** do momento adaptados aos livros: "POV:", "Ninguém: / Eu:", "Me at 2 AM", "Red flag ou green flag?",
-  "Diga-me o seu signo e eu digo o livro", "Livros como pessoas que conhece", "Escolha um: A ou B".
-  Pesquisar na web as trends da semana (Instagram/TikTok, Brasil/Portugal/Moçambique) e adaptar 1–2 por semana.
-- Mesmo nos posts divertidos: o livro aparece (foto real ou nome) e a legenda tem a pergunta para comentar.
-- Voz: nos posts divertidos pode ser mais solta (mas sem palavrões e sem gozar com pessoas ou grupos).
+## Tom misturado: nem tudo é sério – GENERALIZAR (Yuri, 22/11/2026: "Nós não vendemos só coisas sérias tipo coach";
+"conversa no ChatGPT, por vezes um sorriso de meme etc! Generaliza")
+Cerca de **1 em cada 3 posts (reels, carrosséis e stories) é leve/divertido**. Variar SEMPRE o formato – nunca o mesmo
+formato divertido 2 vezes seguidas. Banco de formatos (inventar outros no mesmo espírito):
+- **"Perguntei à IA…"** (`engine/chat.py` com `"style": "ia"`): conversa curta e engraçada com uma IA genérica sobre
+  livros ("Perguntei à IA que livro ler depois de um desgosto"). Aspecto genérico de app de IA, **sem logótipo,
+  nome ou visual copiado do ChatGPT ou de outra marca**; os lados chamam-se "Eu" e "IA".
+- **Conversa com a Nostos / com a estante / com o livro** (`engine/chat.py`, estilo creme/azul).
+- **Reacções tipo meme com emoji grande** (`"react": "😭"`, "😂", "🙂", "😳", "🤡", "💀"…) no fim de uma conversa ou
+  de um carrossel. Só emojis – **nunca fotos de memes com pessoas reais ou personagens com direitos**.
+- **Humor de leitor**: "só vou ver livros", a pilha por ler a olhar para nós, ler no chapa, "já acabaste?",
+  "o livro acabou e eu não estou bem", "livro emprestado que nunca voltou".
+- **Trends/memes da semana** adaptados a livros: "POV:", "Ninguém: / Eu:", "Me at 2 AM", "Red flag ou green flag?",
+  "Diga o seu signo e eu digo o livro", "Livros como pessoas que conhece", "Escolha um: A ou B", "Antes vs. depois
+  de ler…". Pesquisar na web as trends da semana (Instagram/TikTok – Brasil, Portugal, Moçambique) e usar 1–2.
+- **Nos reels**: o mesmo humor cabe no estilo aprovado (texto no topo, frases curtas, emoji de reacção no texto).
+Regras: é encenação/piada da marca e tem de parecer piada – nunca apresentar como conversa real de um cliente,
+nunca nomes/números reais, nunca inventar elogios ou testemunhos. O livro aparece sempre (foto real ou nome)
+e a legenda tem a pergunta para comentar. Voz mais solta nestes posts, sem palavrões e sem gozar com ninguém.
 
 ## Equilíbrio: posts calmos sem preço (pedido do Yuri, 21/11/2026)
 "A pessoa quer paz, ler, interessar-se e depois procurar saber mais." Não pôr banners de preço em todos os posts.
