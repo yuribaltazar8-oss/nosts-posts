@@ -36,8 +36,7 @@ def wrap(d, text, f, maxw):
     return out
 
 
-def main(path):
-    s = json.load(open(path))
+def render(s, size):
     im = Image.new('RGB', (W, H), CREAM); d = ImageDraw.Draw(im)
     y = 90
     if s.get('title'):
@@ -45,25 +44,36 @@ def main(path):
         for line in wrap(d, s['title'], ft, W - 160):
             d.text(((W - d.textlength(line, font=ft)) / 2, y), line, font=ft, fill=INK); y += 78
         y += 40
-    fm = font('Inter-Medium.otf', 50); fn = font('Inter-Medium.otf', 28)
+    fm = font('Inter-Medium.otf', size); fn = font('Inter-Medium.otf', 28); lh = int(size * 1.28)
     who = s.get('who', ['', ''])
     for side, text in s['msgs']:
         lines = wrap(d, text, fm, 640)
-        bw = max(d.textlength(l, font=fm) for l in lines) + 70; bh = len(lines) * 64 + 40
+        bw = max(d.textlength(l, font=fm) for l in lines) + 70; bh = len(lines) * lh + 40
         x = 80 if side == 0 else W - 80 - bw
         if who[side]:
             nx = x + 10 if side == 0 else x + bw - 10 - d.textlength(who[side], font=fn)
             d.text((nx, y), who[side], font=fn, fill=GREY); y += 40
         d.rounded_rectangle([x, y, x + bw, y + bh], 34, fill=WHITE if side == 0 else NAVY)
         for i, l in enumerate(lines):
-            d.text((x + 35, y + 20 + i * 64), l, font=fm, fill=INK if side == 0 else (251, 248, 240))
-        y += bh + 34
+            d.text((x + 35, y + 20 + i * lh), l, font=fm, fill=INK if side == 0 else (251, 248, 240))
+        y += bh + 26
     if s.get('footer'):
         ff = font('EBGi.ttf', 46); t = s['footer']
-        d.text(((W - d.textlength(t, font=ff)) / 2, H - 120), t, font=ff, fill=NAVY)
+        d.text(((W - d.textlength(t, font=ff)) / 2, H - 110), t, font=ff, fill=NAVY)
+    return im, y
+
+
+def main(path):
+    s = json.load(open(path))
+    strip = lambda t: ''.join(ch for ch in t if ord(ch) < 0x2190)   # a letra não tem emojis: tirá-los
+    s['msgs'] = [[a, strip(t)] for a, t in s['msgs']]
+    for size in (52, 48, 44, 40):                                   # reduzir até caber (mín. 40)
+        im, y = render(s, size)
+        if y <= H - 150: break
+    else:
+        print('AVISO: texto demasiado longo mesmo a 40 px – encurtar a conversa')
     out = os.path.join(ROOT, s['out']) if not os.path.isabs(s['out']) else s['out']
     os.makedirs(os.path.dirname(out), exist_ok=True); im.save(out, quality=93)
-    if y > H - 140: print('AVISO: texto demasiado longo, encurtar')
     print(out)
 
 
