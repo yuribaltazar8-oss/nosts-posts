@@ -161,6 +161,19 @@ pelo género que rendeu mais.
   Moçambique (autores, provérbios, datas) · curiosidades sobre livros e leitura · humor leve com livros e leitores.
 - Os exemplos de gancho deste ficheiro que falam de salário são só exemplos de FORMA, não de tema.
 
+## Tom misturado: nem tudo é sério (Yuri, 22/11/2026: "Nós não vendemos só coisas sérias tipo coach")
+Mais ou menos **1 em cada 3 posts é leve/divertido**. Rodar entre:
+- **Humor de leitor** (situações que todos os leitores reconhecem): "Eu a dizer que só vou ver livros",
+  "A pilha de livros por ler a olhar para mim", "Quando alguém pergunta se já acabei o livro", "Leitores no chapa".
+- **Conversa em chat** (`engine/chat.py`, balões creme/azul): diálogos curtos e engraçados entre "Eu" e a Nostos,
+  "Eu vs. a minha estante", "Livro a falar com o leitor". É encenação da marca e tem de se perceber que é piada:
+  nunca apresentar como conversa real de um cliente, nunca nomes/números reais, nunca inventar elogios de clientes.
+- **Trends/memes** do momento adaptados aos livros: "POV:", "Ninguém: / Eu:", "Me at 2 AM", "Red flag ou green flag?",
+  "Diga-me o seu signo e eu digo o livro", "Livros como pessoas que conhece", "Escolha um: A ou B".
+  Pesquisar na web as trends da semana (Instagram/TikTok, Brasil/Portugal/Moçambique) e adaptar 1–2 por semana.
+- Mesmo nos posts divertidos: o livro aparece (foto real ou nome) e a legenda tem a pergunta para comentar.
+- Voz: nos posts divertidos pode ser mais solta (mas sem palavrões e sem gozar com pessoas ou grupos).
+
 ## Equilíbrio: posts calmos sem preço (pedido do Yuri, 21/11/2026)
 "A pessoa quer paz, ler, interessar-se e depois procurar saber mais." Não pôr banners de preço em todos os posts.
 - **A maioria dos posts (~2 em cada 3) é natural e calma**: sem preço nem WhatsApp nas imagens; o livro aparece
