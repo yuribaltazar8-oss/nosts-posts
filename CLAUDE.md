@@ -151,6 +151,16 @@ pelo género que rendeu mais.
 - Os dados (insights) decidem o FORMATO e o tipo de gancho; o catálogo inteiro decide os LIVROS.
 - Trial reels: no máximo 1 a cada 2 dias (rendem metade dos normais).
 
+## Temas variados – NADA de "salário" a toda a hora (Yuri, 22/11/2026: "Você só fala de salário… não gostei dos posts")
+- **Dinheiro/salário/custo de vida: no máximo 1 post por semana** (contar no log os últimos 7 dias antes de escolher).
+  A palavra "salário" não aparece em mais nenhum gancho nessa semana.
+- Rodar por esta roda de temas – nunca o mesmo tema 2 vezes no mesmo dia, nem em 2 dias seguidos no mesmo slot:
+  amor e relações · amizade · família e filhos · fé e espiritualidade · ansiedade e paz interior · autoestima e
+  coragem · solidão · perdão e recomeços · mistério e suspense · histórias que prendem (romance, thriller, clássicos) ·
+  poder e pessoas difíceis · hábitos e disciplina · decisões e pensar melhor · propósito e sentido da vida ·
+  Moçambique (autores, provérbios, datas) · curiosidades sobre livros e leitura · humor leve com livros e leitores.
+- Os exemplos de gancho deste ficheiro que falam de salário são só exemplos de FORMA, não de tema.
+
 ## Equilíbrio: posts calmos sem preço (pedido do Yuri, 21/11/2026)
 "A pessoa quer paz, ler, interessar-se e depois procurar saber mais." Não pôr banners de preço em todos os posts.
 - **A maioria dos posts (~2 em cada 3) é natural e calma**: sem preço nem WhatsApp nas imagens; o livro aparece
@@ -177,7 +187,7 @@ pelo género que rendeu mais.
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
   disciplina, família, fé, amor, telemóvel, solidão, sucesso). Nada de palavras desconhecidas ou temas de nicho
   (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
-  ("A maioria das pessoas não tem um problema de salário. Tem um problema de mentalidade."). Máx. ~15 palavras.
+  ("Há pessoas que nunca o abandonaram. Só deixaram de responder."). Máx. ~15 palavras.
 - **Desenvolvimento**: cada imagem uma ideia, frases curtas, ritmo que obriga a deslizar.
 - **1.ª imagem = SÓ o hook polémico.** Nunca CTA na 1.ª imagem ("guarde este post", "envie a alguém", WhatsApp,
   preço) – isso não chama atenção. CTAs, livro e contacto vão **só nas últimas imagens**.
