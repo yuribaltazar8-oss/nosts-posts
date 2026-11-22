@@ -47,3 +47,24 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #ansiedade #paz
+
+## 3. Reel – Trabalha muito e não sai do lugar? · estado: pendente (próximo slot de reel depois do item 2)
+- Vídeo: `posts/prontos/reel_nao_sai_do_lugar.mp4` · capa: `posts/prontos/reel_nao_sai_do_lugar_capa.jpg`
+- Som: som_01_felipe_reis. Publicar normal (não trial), `share_to_feed: true`.
+- Legenda:
+Trabalha o mês inteiro e, no fim, parece que ficou no mesmo sítio?
+
+Às vezes o problema não é o esforço. É para onde vai o dinheiro, os hábitos que não ficam, o "sim" que se diz a tudo. Estes quatro livros falam disso, cada um à sua maneira.
+
+Qual destes começa amanhã: 1, 2, 3 ou 4?
+
+Leia. Regresse a si.
+
+📖 1. A Psicologia Financeira – Morgan Housel: 1 800 MT
+📖 2. Hábitos Atômicos – James Clear: 1 900 MT
+📖 3. Essencialismo – Greg McKeown: 1 860 MT
+📖 4. Ganhe o Mundo sem Perder a Alma – Tiago Brunet: 1 900 MT
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #dinheiro #habitos

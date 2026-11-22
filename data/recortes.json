@@ -1,7 +1,51 @@
 {
  "_nota": "Recorte (x0,y0,x1,y1) de fotos/livros/<nome>_anuncio.jpg em 1350 px de largura: só livro + mão, sem preço nem texto do anúncio. Para um livro novo: medir com uma grelha (ver CLAUDE.md, reels) e acrescentar aqui.",
- "o-poder-do-agora": [405, 150, 1075, 1160],
- "como-parar-de-se-preocupar": [452, 160, 1062, 1160],
- "deixa-pra-la": [380, 280, 985, 1170],
- "o-lado-calmo-da-vida": [395, 290, 1000, 1170]
+ "o-poder-do-agora": [
+  405,
+  150,
+  1075,
+  1160
+ ],
+ "como-parar-de-se-preocupar": [
+  452,
+  160,
+  1062,
+  1160
+ ],
+ "deixa-pra-la": [
+  380,
+  280,
+  985,
+  1170
+ ],
+ "o-lado-calmo-da-vida": [
+  395,
+  290,
+  1000,
+  1170
+ ],
+ "psicologia-financeira": [
+  380,
+  170,
+  1010,
+  1110
+ ],
+ "ganhe-o-mundo-sem-perder-a-alma": [
+  360,
+  215,
+  1000,
+  1200
+ ],
+ "habitos-atomicos": [
+  445,
+  200,
+  1060,
+  1110
+ ],
+ "essencialismo": [
+  390,
+  220,
+  1010,
+  1130
+ ]
 }
