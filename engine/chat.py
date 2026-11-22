@@ -4,7 +4,7 @@ Uso:  python3 engine/chat.py spec.json
 {
   "out": "posts/AAAA-MM-DD/feed_tarde_1.jpg",
   "title": "Eu a tentar comprar só UM livro",          # opcional, no topo
-  "who": ["Eu", "Nostos"],                             # nomes dos dois lados (esquerda, direita)
+  "who": ["Eu", "Nostos"],                             # [quem envia = DIREITA, quem responde = ESQUERDA]
   "msgs": [[0, "Só vou ver, não vou comprar nada."], [1, "Claro 🙂"], [0, "…manda também esse."]],
   "footer": "Leia. Regresse a si.",                     # opcional
   "style": "nostos" | "ia",                            # "ia" = conversa com uma IA (tema escuro, genérico)
@@ -52,7 +52,7 @@ def emoji(ch, px):
 
 def render(s, size):
     ia = s.get('style') == 'ia'
-    bg, b0, b1, t0, t1, lab = ((33, 33, 36), (52, 53, 58), (2, 36, 108), (236, 236, 236), (251, 248, 240), (160, 160, 165)) if ia \
+    bg, b0, b1, t0, t1, lab = ((12, 12, 14), (40, 40, 44), (2, 36, 108), (236, 236, 236), (251, 248, 240), (160, 160, 165)) if ia \
         else (CREAM, WHITE, NAVY, INK, (251, 248, 240), GREY)
     im = Image.new('RGB', (W, H), bg); d = ImageDraw.Draw(im)
     y = 90
@@ -63,20 +63,29 @@ def render(s, size):
         y += 40
     fm = font('Inter-Medium.otf', size); fn = font('Inter-Medium.otf', 28); lh = int(size * 1.28)
     who = s.get('who', ['', ''])
+    # Como nas apps: "Eu" (lado 0) à DIREITA em balão; o outro lado à ESQUERDA.
+    # Estilo "ia": a resposta da IA é texto corrido sem balão (como nas apps de IA), sem nomes.
     for side, text in s['msgs']:
+        me = side == 0
+        if ia and not me:
+            lines = wrap(d, text, fm, W - 160)
+            for i, l in enumerate(lines):
+                d.text((80, y + i * lh), l, font=fm, fill=t0)
+            y += len(lines) * lh + 46
+            continue
         lines = wrap(d, text, fm, 640)
         bw = max(d.textlength(l, font=fm) for l in lines) + 70; bh = len(lines) * lh + 40
-        x = 80 if side == 0 else W - 80 - bw
-        if who[side]:
-            nx = x + 10 if side == 0 else x + bw - 10 - d.textlength(who[side], font=fn)
-            d.text((nx, y), who[side], font=fn, fill=lab); y += 40
-        d.rounded_rectangle([x, y, x + bw, y + bh], 34, fill=b0 if side == 0 else b1)
+        x = W - 80 - bw if me else 80
+        if who[side] and not ia:
+            nx = x + bw - 10 - d.textlength(who[side], font=fn) if me else x + 10
+            d.text((nx, y), who[side], font=fn, fill=lab); y += 34
+        d.rounded_rectangle([x, y, x + bw, y + bh], 40 if ia else 34, fill=b1 if me else b0)
         for i, l in enumerate(lines):
-            d.text((x + 35, y + 20 + i * lh), l, font=fm, fill=t0 if side == 0 else t1)
-        y += bh + 26
+            d.text((x + 35, y + 20 + i * lh), l, font=fm, fill=t1 if me else t0)
+        y += bh + (46 if ia else 26)
     if s.get('react'):
         e = emoji(s['react'], 150)
-        if e: im.paste(e, (W - 230, y - 10), e); y += 150
+        if e: im.paste(e, (80, y - 10), e); y += 150
     if s.get('footer'):
         ff = font('EBGi.ttf', 46); t = s['footer']
         d.text(((W - d.textlength(t, font=ff)) / 2, H - 110), t, font=ff, fill=(201, 207, 224) if ia else NAVY)
