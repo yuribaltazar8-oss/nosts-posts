@@ -173,7 +173,7 @@ pelo género que rendeu mais.
   manhã, pedir ao Yuri a foto desse livro para `livros/`.
 
 ## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
-**O feed é SÓ carrosséis (5–8 imagens) ou reels de livros (8–14 segundos, com som).** Nunca imagem única.
+**O feed é sobretudo REELS de livros (estilo aprovado, com som viral); carrosséis (5–8 imagens) só 1–2 por semana.** Nunca imagem única.
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
   disciplina, família, fé, amor, telemóvel, solidão, sucesso). Nada de palavras desconhecidas ou temas de nicho
   (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
@@ -193,7 +193,7 @@ pelo género que rendeu mais.
   - `photo` sempre que houver fotos reais por usar em `fotos/`.
 - Exemplo de referência: `posts/_amostra/spec_dinheiro.json` (carrossel "dinheiro", estilo nota, voz formal).
 
-## Rotação – FEED DA MANHÃ (06:45): carrossel
+## Rotação – FEED DA MANHÃ (06:45): tema do dia (agora em REEL, ver Cadência)
 - Seg: nota – "Ninguém lhe diz isto sobre…" (dinheiro/trabalho/relações) + livro do catálogo
 - Ter: design – verdades incómodas (5–7 frases fortes)
 - Qua: nota – lista "X livros para quem…" (livros do catálogo, 1 por imagem)
@@ -225,13 +225,17 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
   - Se o Instagram silenciar ou recusar um vídeo por causa do som, avisar o Yuri com o nome do som e não o usar mais.
 - Fila primeiro: `data/fila.md`.
 
-## Cadência: 3 publicações por dia (pedido do Yuri, 18/11/2026)
-- 06:45 `feed_manha` – carrossel. · 12:37 `story`. · **13:13 `reel_meio`** – reel de livro **em teste** (Trial Reel).
-  · 19:47 `feed_tarde` – reel de livro para todos os seguidores.
-- **Trial Reels** (`create_video_post` com `trial_params: {"graduation_strategy": "SS_PERFORMANCE"}`): só aparece a
-  quem não segue e o Instagram passa-o para o feed sozinho se render. Máximo **3 reels em teste ao mesmo tempo**
-  (os `trial` dos últimos 3 dias no log); se já houver 3, o `reel_meio` sai normal. Registar `trial` na coluna `format`.
-- O `feed_tarde` repete o formato/livro/hook do trial com melhor Score (ver `insights.md`) com outra ideia.
+## Cadência: MAIS VÍDEOS – 3 reels por dia (pedido do Yuri, 22/11/2026: "Passe a postar mais vídeos! No período da manhã quero vídeos")
+- **06:45 `feed_manha` – REEL** (já não é carrossel). Usa o tema do dia da "Rotação – FEED DA MANHÃ" abaixo,
+  mas em vídeo (`engine/sextante.py`, som viral). · 12:37 `story`. · 13:13 `reel_meio` – reel. · 19:47 `feed_tarde` – reel.
+- Carrosséis: só quando não houver material para um vídeo bom (ex.: livro sem foto nem recorte) ou para
+  "Página que fica" com clássicos – no máximo 2 por semana, no lugar do reel_meio.
+- Fila primeiro (`data/fila.md`) em TODOS os slots de reel, incluindo o `feed_manha`.
+- **Trial Reels**: no máximo 1 a cada 2 dias, sempre no `reel_meio` (`trial_params: {"graduation_strategy":
+  "SS_PERFORMANCE"}`); registar `trial` na coluna `format`. Os outros saem normais para todos os seguidores.
+- Variar: 3 reels por dia com livros, géneros e ganchos diferentes (ver "Todos os livros têm de sair") e sons
+  diferentes quando houver mais do que um em `sons/` (só música, nunca fala).
+- O reel seguinte copia o formato/gancho do reel com melhor Score dos últimos 7 dias, com outra ideia e outros livros.
 
 ## Vídeos: feedback do Yuri (18/11/2026) – "mortos, sem sentido, não chamam atenção"
 O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lento) é o exemplo do que **não** fazer.
