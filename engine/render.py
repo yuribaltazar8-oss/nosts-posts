@@ -139,7 +139,7 @@ def page_layers(p, W, H, n):
     def center(d, y, t, f):
         d.text(((W - d.textlength(t, font=f)) / 2, y), t, font=f, fill=255)
 
-    def body(d, y, text, size=42, lh=1.5, italic=False):
+    def body(d, y, text, size=50, lh=1.5, italic=False):
         f = serif(size, it=italic)
         for ln in wrap(d, text, f, W - 2 * M):
             if ln:
@@ -165,7 +165,7 @@ def page_layers(p, W, H, n):
                 y += int(f.size * 1.18)
         elif k == "section":
             d.text((M, 250 + top), p["title"], font=serif(p.get("title_size", 62), 600), fill=255)
-            body(d, 400 + top, p["body"], p.get("size", 44), 1.55)
+            body(d, 400 + top, p["body"], p.get("size", 52), 1.55)
         elif k == "word":
             center(d, 250 + top, p["word"], serif(118, 600))
             y = 410 + top
@@ -384,8 +384,8 @@ def nota_draw(W, H, p, n, total):
     if p.get("kicker"):
         d.text((M, y), p["kicker"], font=serif(38, 600, it=True), fill=RED)
         y += 60
-    size = p.get("size", 54)
-    if p.get("font", "serif") == "serif":
+    size = max(p.get("size", 80), 72)       # Yuri 22/11: letra MAIOR e mais nítida (mínimo 72)
+    if p.get("font", "sans") == "serif":
         size = int(size * 1.12)
         f, fb = serif(size, 450), serif(size, 650)
     else:

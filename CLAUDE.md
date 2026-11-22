@@ -2,7 +2,7 @@
 
 Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37), `reel_meio` (13:13), `feed_tarde` (19:47) ou `comentarios` (09:23, 15:23, 22:23).
 Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últimas 14 linhas de `data/log.csv`.
-**Fila primeiro:** nos slots `feed_tarde` e `reel_meio`, ver `data/fila.md`. Se houver um post `pendente`
+**Fila primeiro:** em todos os slots de feed, ver `data/fila.md`. Se houver um post `pendente`
 aprovado pelo Yuri, publicar esse (como está) em vez de criar um novo, e seguir as instruções da fila.
 
 ## IDs
@@ -173,7 +173,7 @@ pelo género que rendeu mais.
   manhã, pedir ao Yuri a foto desse livro para `livros/`.
 
 ## Regra de ouro do feed (pedido do Yuri, 18/11/2026)
-**O feed é sobretudo REELS de livros (estilo aprovado, com som viral); carrosséis (5–8 imagens) só 1–2 por semana.** Nunca imagem única.
+**O feed é: 2 reels por dia (manhã e 13:13, estilo aprovado, som viral) + 1 carrossel à noite (5–8 imagens, letra grande e nítida).** Nunca imagem única.
 - **Hook na 1ª imagem**: tema que toda a gente conhece e sente (dinheiro, salário, relações, ansiedade, trabalho,
   disciplina, família, fé, amor, telemóvel, solidão, sucesso). Nada de palavras desconhecidas ou temas de nicho
   (ex.: "tsundoku" ficou morto). O hook tem de fazer parar o dedo: frase curta, concreta, que dói ou intriga
@@ -227,10 +227,12 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
 
 ## Cadência: MAIS VÍDEOS – 3 reels por dia (pedido do Yuri, 22/11/2026: "Passe a postar mais vídeos! No período da manhã quero vídeos")
 - **06:45 `feed_manha` – REEL** (já não é carrossel). Usa o tema do dia da "Rotação – FEED DA MANHÃ" abaixo,
-  mas em vídeo (`engine/sextante.py`, som viral). · 12:37 `story`. · 13:13 `reel_meio` – reel. · 19:47 `feed_tarde` – reel.
-- Carrosséis: só quando não houver material para um vídeo bom (ex.: livro sem foto nem recorte) ou para
-  "Página que fica" com clássicos – no máximo 2 por semana, no lugar do reel_meio.
-- Fila primeiro (`data/fila.md`) em TODOS os slots de reel, incluindo o `feed_manha`.
+  mas em vídeo (`engine/sextante.py`, som viral). · 12:37 `story`. · 13:13 `reel_meio` – reel.
+  · **19:47 `feed_tarde` – CARROSSEL** (Yuri, 22/11: "de noite ou de tarde pode ser carrossel"), com o tema do dia.
+- **Carrosséis com letra GRANDE e NÍTIDA** (Yuri, 22/11): corpo em Inter (sans) ≥ 72 px (padrão 80), títulos ≥ 90 px;
+  Garamond só em títulos grandes ou assinatura, nunca em texto pequeno; no máximo ~25 palavras por imagem.
+  `render.py` já usa por defeito `nota` em Inter 80 px (mínimo 72) – não baixar o tamanho.
+- Fila primeiro (`data/fila.md`) em TODOS os slots (um item pendente sai no slot seguinte, seja qual for).
 - **Trial Reels**: no máximo 1 a cada 2 dias, sempre no `reel_meio` (`trial_params: {"graduation_strategy":
   "SS_PERFORMANCE"}`); registar `trial` na coluna `format`. Os outros saem normais para todos os seguidores.
 - Variar: 3 reels por dia com livros, géneros e ganchos diferentes (ver "Todos os livros têm de sair") e sons
