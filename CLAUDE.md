@@ -165,7 +165,9 @@ pelo género que rendeu mais.
 "conversa no ChatGPT, por vezes um sorriso de meme etc! Generaliza")
 Cerca de **1 em cada 3 posts (reels, carrosséis e stories) é leve/divertido**. Variar SEMPRE o formato – nunca o mesmo
 formato divertido 2 vezes seguidas. Banco de formatos (inventar outros no mesmo espírito):
-- **"Perguntei à IA…"** (`engine/chat.py` com `"style": "ia"`): conversa curta e engraçada com uma IA genérica sobre
+- **"Perguntei à IA…"** (`engine/chat.py` com `"style": "app"` – o preferido do Yuri: parecido com a app de IA do
+  telemóvel, fundo preto, pergunta à direita em balão azul, resposta em texto corrido com ícones, barra de escrever
+  em baixo; ou `"style": "ia"`): conversa curta e engraçada com uma IA genérica sobre
   livros ("Perguntei à IA que livro ler depois de um desgosto"). Aspecto genérico de app de IA, **sem logótipo,
   nome ou visual copiado do ChatGPT ou de outra marca**; os lados chamam-se "Eu" e "IA".
 - **Conversa com a Nostos / com a estante / com o livro** (`engine/chat.py`, estilo creme/azul).

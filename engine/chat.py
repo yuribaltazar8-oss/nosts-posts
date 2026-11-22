@@ -7,7 +7,7 @@ Uso:  python3 engine/chat.py spec.json
   "who": ["Eu", "Nostos"],                             # [quem envia = DIREITA, quem responde = ESQUERDA]
   "msgs": [[0, "Só vou ver, não vou comprar nada."], [1, "Claro 🙂"], [0, "…manda também esse."]],
   "footer": "Leia. Regresse a si.",                     # opcional
-  "style": "nostos" | "ia",                            # "ia" = conversa com uma IA (tema escuro, genérico)
+  "style": "nostos" | "ia" | "app",                    # "app" = parecido com a app de IA do telemóvel (genérico)                            # "ia" = conversa com uma IA (tema escuro, genérico)
   "react": "😭"                                         # opcional: emoji grande de reacção (estilo meme)
 }
 "ia": formato "Perguntei à IA…" com aspecto genérico de app de IA (sem logótipos nem nomes de marcas reais,
@@ -92,12 +92,75 @@ def render(s, size):
     return im, y
 
 
+def icon_row(d, x, y, col):
+    """Ícones genéricos de acção (copiar, gosto, som, partilhar, mais) – desenhados, sem marca."""
+    w = 4
+    d.rounded_rectangle([x, y + 8, x + 26, y + 34], 6, outline=col, width=w)
+    d.rounded_rectangle([x + 10, y, x + 36, y + 26], 6, outline=col, width=w, fill=(0, 0, 0))
+    x += 80
+    d.polygon([(x, y + 14), (x + 10, y + 14), (x + 18, y), (x + 24, y + 4), (x + 22, y + 14), (x + 36, y + 14),
+               (x + 32, y + 34), (x, y + 34)], outline=col, width=w)
+    x += 80
+    d.polygon([(x, y + 12), (x + 10, y + 12), (x + 22, y + 2), (x + 22, y + 34), (x + 10, y + 24), (x, y + 24)], outline=col, width=w)
+    d.arc([x + 22, y + 6, x + 36, y + 30], -60, 60, fill=col, width=w)
+    x += 80
+    d.line([x + 18, y, x + 18, y + 24], fill=col, width=w); d.line([x + 8, y + 10, x + 18, y, x + 28, y + 10], fill=col, width=w)
+    d.line([x + 2, y + 18, x + 2, y + 34, x + 34, y + 34, x + 34, y + 18], fill=col, width=w)
+    x += 80
+    for k in range(3): d.ellipse([x + k * 14, y + 14, x + k * 14 + 8, y + 22], fill=col)
+
+
+def render_app(s, size):
+    """Estilo "app": parecido com uma app de IA no telemóvel (fundo preto, pergunta à direita num balão,
+    resposta em texto corrido, ícones, barra de escrever) – genérico, SEM nome/logo de nenhuma marca."""
+    im = Image.new('RGB', (W, H), (0, 0, 0)); d = ImageDraw.Draw(im)
+    G = (38, 38, 40); TX = (236, 236, 236); LB = (150, 150, 155)
+    d.ellipse([50, 50, 150, 150], fill=G)
+    for k in range(3): d.line([78, 84 + k * 16, 122 - (k == 2) * 14, 84 + k * 16], fill=TX, width=6)
+    d.rounded_rectangle([W - 290, 50, W - 50, 150], 50, fill=G)
+    d.rounded_rectangle([W - 252, 78, W - 206, 124], 10, outline=TX, width=5)
+    d.line([W - 232, 112, W - 200, 76], fill=TX, width=6)
+    for k in range(3): d.ellipse([W - 150 + k * 22, 94, W - 138 + k * 22, 106], fill=TX)
+    y = 200
+    if s.get('title'):
+        ft = font('Inter-ExtraBold.otf', 52)
+        for line in wrap(d, s['title'], ft, W - 160):
+            d.text(((W - d.textlength(line, font=ft)) / 2, y), line, font=ft, fill=TX); y += 64
+        y += 30
+    fm = font('Inter-Medium.otf', size); lh = int(size * 1.3)
+    for side, text in s['msgs']:
+        if side == 0:
+            lines = wrap(d, text, fm, 620)
+            bw = max(d.textlength(l, font=fm) for l in lines) + 76; bh = len(lines) * lh + 44
+            d.rounded_rectangle([W - 50 - bw, y, W - 50, y + bh], min(56, bh // 2), fill=(10, 14, 110))
+            for i, l in enumerate(lines): d.text((W - 50 - bw + 38, y + 22 + i * lh), l, font=fm, fill=(220, 224, 255))
+            y += bh + 60
+        else:
+            for para in text.split('\n\n'):
+                lines = wrap(d, para, fm, W - 120)
+                for i, l in enumerate(lines): d.text((50, y + i * lh), l, font=fm, fill=TX)
+                y += len(lines) * lh + 30
+            icon_row(d, 52, y + 6, (200, 200, 205)); y += 90
+    if s.get('react'):
+        e = emoji(s['react'], 130)
+        if e: im.paste(e, (50, y - 10), e); y += 130
+    by = H - 190
+    d.rounded_rectangle([50, by, W - 50, by + 130], 65, fill=(28, 28, 30), outline=(60, 60, 64), width=2)
+    d.line([115, by + 65, 155, by + 65], fill=TX, width=5); d.line([135, by + 45, 135, by + 85], fill=TX, width=5)
+    d.text((190, by + 42), s.get('placeholder', 'Pergunte qualquer coisa'), font=font('Inter-Medium.otf', 40), fill=LB)
+    d.rounded_rectangle([W - 300, by + 38, W - 276, by + 80], 12, outline=TX, width=5)
+    d.arc([W - 310, by + 58, W - 266, by + 96], 0, 180, fill=TX, width=5)
+    d.ellipse([W - 185, by + 15, W - 85, by + 115], fill=(60, 90, 230))
+    for k, hh in enumerate((16, 30, 22, 30, 16)): d.line([W - 160 + k * 12, by + 65 - hh, W - 160 + k * 12, by + 65 + hh], fill=WHITE, width=6)
+    return im, y + 140
+
+
 def main(path):
     s = json.load(open(path))
     strip = lambda t: ''.join(ch for ch in t if ord(ch) < 0x2190)   # a letra não tem emojis: tirá-los
     s['msgs'] = [[a, strip(t)] for a, t in s['msgs']]
     for size in (52, 48, 44, 40):                                   # reduzir até caber (mín. 40)
-        im, y = render(s, size)
+        im, y = (render_app if s.get('style') == 'app' else render)(s, size)
         if y <= H - 125: break
     else:
         print('AVISO: texto demasiado longo mesmo a 40 px – encurtar a conversa')
