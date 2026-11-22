@@ -189,29 +189,28 @@ desfocado da própria foto nas margens) e não pôr texto novo por cima. O texto
 - Sáb: photo se houver fotos; senão "Perfil do livro" (nota, livro em 3D)
 - Dom: design ou page – amor, família, recomeços
 
-## REELS = LIVROS + SOM (pedido do Yuri, 18/11/2026 – manda sobre as regras de vídeo abaixo)
-- **NÃO usar `livros/dinheiro-e-emocional_foto.jpg` nem `livros/dinheiro-e-emocional.jpg` em vídeos** (o Yuri pediu,
-  18/11: qualidade insuficiente). Usar só material novo de alta qualidade.
-- **"As pessoas compram vendo os livros, não os textos."** Os carrosséis são de texto; os **vídeos são dos livros**:
-  o livro aparece em TODAS as cenas (foto/vídeo real na mão, aberto, na estante, capa 3D real). Nada de cenas só de texto.
-- Motor: **`engine/livros.py`** (exemplo: `posts/2026-11-18/livros_reel_teste1.json`). Cenas `intro` (hook a escrever-se
-  num cartão creme Nostos), `book` (1 frase curta por corte: o que o livro resolve), `outro` (azul Nostos, logo,
-  "Leia. Regresse a si.", WhatsApp). Usar `photo`/`clip` de `fotos/` e `livros/` (reais), `focus`/`zoom` para variar
-  o enquadramento; `cover` (capa real → 3D) quando não houver foto.
-- Formatos que vendem: "O livro para quem…", "3 livros para quem…" (1 livro por corte), "1 livro, 3 lições",
-  página aberta com a frase do livro (como a referência do Yuri: mão a segurar o livro aberto em frente à estante).
-- **Som obrigatório**: o Yuri escolheu música livre de direitos. `engine/livros.py` junta sempre a batida original Nostos
-  (`engine/musica.py`, `"music": "afro"` ou `"lofi"`, `"seed"` diferente em cada vídeo, mesmo `bpm` dos cortes).
-  Nunca usar músicas de terceiros (o Instagram corta o som ou bloqueia).
-- Pessoas: só fotos/vídeos reais (de `fotos/`, `livros/` ou enviados pelo Yuri). Não há gerador de imagens aqui e não se
-  inventam pessoas. Pedir ao Yuri, no aviso, vídeos curtos (5–10 s) de mãos a segurar cada livro do catálogo.
-- **Vídeo só de texto = proibido** (Yuri, 18/11, sobre a amostra `posts/_amostra/reel_homem.mp4`: "o conteúdo é bom,
-  mas para carrossel, não para vídeo" e "está rápido"). Ideias fortes só de texto vão para carrossel.
-  O vídeo segue a referência do Yuri: imagens reais de livros (mão a segurar/abrir o livro, estante, páginas),
-  pouco texto por cena e tempo para ler: ≥ 3 s por frase curta (≤ 10 palavras), no máximo 1 frase por cena.
-  Sem filmagens reais em `fotos/videos/` ou capas em `livros/`, não se faz vídeo: carrossel + pedido ao Yuri.
-- Hook (cena 1) = problema que a pessoa sente + o livro já visível. Pergunta → resposta só no fim (ciclo aberto).
-- Verificar 8–10 frames (ffmpeg) com Read antes de publicar.
+## REELS – estilo e som APROVADOS pelo Yuri (22/11/2026) – manda sobre tudo o resto sobre vídeo
+O Yuri viu os reels de teste com cartões creme e música Nostos e **não quer mais esse tipo de edição** ("eu pedi
+para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agora isto:
+- **Motor: `engine/sextante.py`** (ver o cabeçalho do ficheiro). `engine/livros.py`, `reel.py` e `video.py` com
+  cartões creme **já não se usam** para reels. Exemplo aprovado: `posts/prontos/reel_desligar_a_cabeca.mp4`.
+- **Estilo "Sextante" com cores Nostos**: texto curto no topo (2 linhas), creme com sombra, palavra-chave em creme
+  sobre etiqueta azul; gancho a escrever-se; frases a entrar suaves; zoom lento; fecho azul com logo,
+  "Leia. Regresse a si." e uma pergunta. Sem cartões/caixas creme, sem barras.
+- **Imagens**: vídeos reais em `fotos/videos/` em ecrã inteiro; fotos de livros com `"kind": "photo"` + `"crop"`
+  de `data/recortes.json` (livro + mão, sem preço). Livro novo sem recorte: medir com grelha (desenhar linhas de 100 px
+  sobre `*_anuncio.jpg`, ver com Read) e acrescentar o recorte a `recortes.json`. Ver 6–8 frames antes de publicar.
+- **Som = SONS VIRAIS escolhidos pelo Yuri** (`sons/`). "Quero sons virais e não mortos que ninguém conhece."
+  - Usar só ficheiros de `sons/` (enviados pelo Yuri, a partir de reels em tendência). Preferir os mais recentes;
+    não repetir o mesmo som em 2 reels seguidos; registar no log (coluna `theme`) o som usado.
+  - **Nunca** usar a batida gerada `engine/musica.py` nem música inventada.
+  - Se `sons/` só tiver sons com mais de 7 dias ou já gastos (usados ≥ 3 vezes), continuar com o menos usado e,
+    no aviso ao Yuri, pedir 2–3 sons novos em tendência (ele envia um reel com o som; extrair com
+    `ffmpeg -i video.mp4 -vn -c:a aac sons/som_NN_<nome>.m4a`).
+  - Uma vez por semana (domingo), pesquisar na web que sons/músicas estão em tendência nos Reels (Moçambique,
+    Brasil, Portugal) e sugerir ao Yuri os nomes, para ele enviar os que quiser. Não descarregar música da internet.
+  - Se o Instagram silenciar ou recusar um vídeo por causa do som, avisar o Yuri com o nome do som e não o usar mais.
+- Fila primeiro: `data/fila.md`.
 
 ## Cadência: 3 publicações por dia (pedido do Yuri, 18/11/2026)
 - 06:45 `feed_manha` – carrossel. · 12:37 `story`. · **13:13 `reel_meio`** – reel de livro **em teste** (Trial Reel).
@@ -223,8 +222,7 @@ desfocado da própria foto nas margens) e não pôr texto novo por cima. O texto
 
 ## Vídeos: feedback do Yuri (18/11/2026) – "mortos, sem sentido, não chamam atenção"
 O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lento) é o exemplo do que **não** fazer.
-- **Usar `engine/reel.py`** (não `video.py`): texto a entrar parágrafo a parágrafo, cortes secos com punch-in,
-  livro 3D a subir e a flutuar, cenas `photo` com fotos reais. Exemplo: `posts/_amostra/reel_dinheiro.json`.
+- Motor e estilo: ver "REELS – estilo e som APROVADOS" acima (`engine/sextante.py`).
 - **Todo o vídeo gira à volta de um LIVRO REAL**, com imagem real: cena `book` com a capa de `livros/` (livro 3D
   grande) ou cena `photo` com fotos/vídeos reais de `fotos/`. Sem imagem real do livro → não fazer vídeo;
   fazer carrossel e, no aviso, pedir a foto ao Yuri.
@@ -240,7 +238,7 @@ O vídeo de 18/11 ("Dizem que ler é luxo…", 3 cartões de texto com zoom lent
   vendidos (capa de frente, livro aberto, na mão) e pequenos vídeos reais de livros/entregas.
 
 ## Rotação – FEED DA TARDE (19:47) e REEL_MEIO (13:13): reels de livros, todos os dias
-- Ambos são **reels de livros** (`engine/livros.py`, com som). Variar: "O livro para quem…", "3 livros para quem…",
+- Ambos são **reels de livros** (`engine/sextante.py`, com som viral de `sons/`). Variar: "O livro para quem…", "3 livros para quem…",
   "1 livro, 3 lições", página aberta com frase. Tema da atualidade só se ligar de forma óbvia ao livro.
 - A pergunta polémica de domingo e o carrossel de atualidade passam para a legenda / carrossel da manhã.
 Livros do catálogo aparecem em pelo menos 3 posts por semana, sempre naturais.
@@ -318,5 +316,4 @@ Cada post tem de dar uma razão forte para seguir a página e para ler. Priorida
 ## Limites
 - Não apagar posts nem alterar a bio. Não apagar nem ocultar comentários de clientes (só spam evidente pode ser ocultado com hide_comment).
 - Se a publicação falhar, tentar 1 vez; se voltar a falhar, avisar o Yuri com o erro e parar.
-- Não se publica música por aqui (o Instagram não deixa); os vídeos saem com faixa silenciosa. O texto tem de
-  funcionar sem som (legível, cenas curtas).
+- Os reels levam o som viral de `sons/` já dentro do vídeo; o texto tem de funcionar também sem som.
