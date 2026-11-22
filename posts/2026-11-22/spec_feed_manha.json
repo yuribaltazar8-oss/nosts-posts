@@ -1,0 +1,10 @@
+{"style": "page", "size": "feed", "out": "posts/2026-11-22", "name": "feed_manha", "seed": 2211,
+ "pages": [
+  {"kind": "section", "title": "A pergunta de domingo", "title_size": 34,
+   "body": "O que destrói um casamento não é a discussão.\n\nÉ o silêncio.", "size": 84},
+  {"kind": "section", "title": "Há quase 150 anos…", "body": "Tolstói abriu um dos maiores romances de sempre com uma frase sobre famílias.\n\nQuem já viveu numa casa onde ninguém fala reconhece-se nela.\n\nEstá na página seguinte.", "size": 50},
+  {"kind": "quote", "text": "«Todas as famílias felizes se parecem umas com as outras; cada família infeliz é infeliz à sua maneira.»", "sub": "Liev Tolstói, Anna Karénina, 1877"},
+  {"kind": "section", "title": "Mas há um ponto em comum", "body": "Em muitas casas, a infelicidade começa no mesmo sítio: deixa-se de dizer o que dói.\n\nPrimeiro cala-se uma mágoa pequena, para não estragar o almoço de domingo.\n\nDepois outra. E outra.\n\nE o pior é que isto parece paz.", "size": 48},
+  {"kind": "section", "title": "O silêncio parece paz", "body": "Não há gritos. Não há portas a bater.\n\nCada um no seu telemóvel, na mesma sala, na mesma cama.\n\nVivem juntos. Já não se conhecem.\n\nE é aqui que tudo pode mudar.", "size": 50},
+  {"kind": "section", "title": "Recomeçar", "body": "Um recomeço raramente nasce de uma viagem ou de um presente caro.\n\nNasce de uma frase difícil, dita com calma:\n\n«Isto tem-me magoado. Podemos falar?»", "size": 54}
+ ]}

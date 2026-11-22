@@ -1,0 +1,37 @@
+{
+ "style": "nota",
+ "size": "feed",
+ "out": "posts/2026-11-22",
+ "name": "feed_manha_fim",
+ "pages": [
+  {
+   "kicker": "Livro-casa para quem…",
+   "text": "…ama alguém, mas já não sabe como lhe falar.\n\nQuinn e Graham amam-se. Mas anos a tentar ter um filho foram enchendo o casamento de silêncio.\n\nUm romance sobre amor, perdão e recomeços.",
+   "size": 40,
+   "highlight": [
+    "livro-casa",
+    "silêncio.",
+    "recomeços."
+   ],
+   "no_footer": true,
+   "book": {
+    "title": "Todas as Suas Imperfeições",
+    "author": "Colleen Hoover",
+    "photo": "fotos/livros/todas-as-suas-imperfeicoes_livro.jpg",
+    "kicker": "Na estante da Nostos"
+   }
+  },
+  {
+   "text": "Numa relação, o que magoa mais?\n\nA) Uma palavra dura\nB) Um silêncio longo\n\nResponda com uma letra e envie isto a quem precisa de conversar hoje.\n\nSe este post foi casa para si, comente CASA.\n\nLeia. Regresse a si.",
+   "size": 50,
+   "highlight": [
+    "magoa",
+    "CASA.",
+    "Leia.",
+    "Regresse",
+    "si."
+   ],
+   "no_footer": true
+  }
+ ]
+}
