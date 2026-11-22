@@ -48,7 +48,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #ansiedade #paz
 
-## 3. Reel – Trabalha muito e não sai do lugar? · estado: pendente (próximo slot de reel depois do item 2)
+## 3. Reel – Trabalha muito e não sai do lugar? · estado: publicado 2026-11-22 19:50 (18119145428591542)
 - Vídeo: `posts/prontos/reel_nao_sai_do_lugar.mp4` · capa: `posts/prontos/reel_nao_sai_do_lugar_capa.jpg`
 - Som: som_02_curto (o Yuri pediu música, não fala; pode repetir o som do reel anterior). Publicar normal (não trial), `share_to_feed: true`.
 - Legenda:
