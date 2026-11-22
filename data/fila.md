@@ -26,7 +26,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #foco #produtividade
 
-## 2. Reel – Livros para quem não consegue desligar a cabeça · estado: pendente (próximo slot de reel)
+## 2. Reel – Livros para quem não consegue desligar a cabeça · estado: publicado 2026-11-22 13:15 (18030371750878745)
 - Vídeo: `posts/prontos/reel_desligar_a_cabeca.mp4` · capa: `posts/prontos/reel_desligar_a_cabeca_capa.jpg`
 - Publicar normal (não trial), `share_to_feed: true`.
 - Legenda:
