@@ -138,6 +138,19 @@ o preço nem o texto** (Yuri, 21/11). Usar a versão `*_4x5.jpg` (1080×1350, pr
 desfocado da própria foto nas margens) e não pôr texto novo por cima. O texto/hook vai nas imagens próprias
 (hook, ideias, CTA) entre as fotos. Nunca alterar a capa nem inventar livros.
 
+## Todos os livros têm de sair (pedido do Yuri, 22/11/2026)
+"Não use só romances. Quero que todos os livros saiam." Os posts rodam por **todo o catálogo** com foto
+(`data/catalogo.md`: autoajuda, finanças, fé, clássicos, filosofia, romance, produtividade, poder…), não só
+pelo género que rendeu mais.
+- Antes de escolher o livro de um post, ver no log a última vez que cada livro do catálogo saiu e dar
+  prioridade aos que **nunca saíram ou saíram há mais tempo**. Cada livro com foto deve aparecer pelo menos
+  1 vez a cada 2 semanas.
+- Nunca dois posts seguidos do mesmo género. Romance no máximo 1 post em cada 3.
+- Listas "3/4 livros para quem…" ajudam a mostrar mais livros de uma vez – misturar géneros quando fizer sentido
+  (ex.: ansiedade = Tolle + Carnegie + Robbins + Wilde).
+- Os dados (insights) decidem o FORMATO e o tipo de gancho; o catálogo inteiro decide os LIVROS.
+- Trial reels: no máximo 1 a cada 2 dias (rendem metade dos normais).
+
 ## Equilíbrio: posts calmos sem preço (pedido do Yuri, 21/11/2026)
 "A pessoa quer paz, ler, interessar-se e depois procurar saber mais." Não pôr banners de preço em todos os posts.
 - **A maioria dos posts (~2 em cada 3) é natural e calma**: sem preço nem WhatsApp nas imagens; o livro aparece
