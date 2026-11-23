@@ -21,3 +21,11 @@ Os vídeos de referência NÃO se publicam: usa-se só o som (em `sons/`) e a id
 - Abrir com a frase (texto no ecrã a escrever-se ao mesmo tempo), depois música (02–06) e 3–5 livros que dão repertório:
   A República, Retórica, A Arte de Pensar Claramente, 1984, A Hora da Estrela… Fecho: "Leia. Regresse a si." +
   "Qual destes já leu?". No máximo 1x por semana.
+
+## 4. "A sua mente precisa de descanso, não de mais batalhas imaginárias." (som_09) – folhear o livro, calmo
+- Referência: 1 livro só (Carnegie), filmado de cima a ser folheado devagar – páginas com títulos grandes e frases curtas;
+  texto pequeno fixo em cima durante o folhear; no fim muda para "Se a sua mente anda cansada, talvez este livro ajude."
+  com o livro fechado (contracapa → capa). 15–20 s, sem cortes bruscos.
+- Nossa versão: precisa de VÍDEO REAL do Yuri a folhear o livro (pedir: Como Parar de se Preocupar, O Poder do Agora,
+  Deixa pra Lá, O Lado Calmo da Vida, Ikigai…). Texto formal em 2 tempos (problema → "talvez este livro o ajude"),
+  sem etiqueta azul (estilo calmo), preço só na legenda.

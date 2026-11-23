@@ -10,6 +10,7 @@
 | som_06_11_livros.m4a | reel "11 livros que toda pessoa deveria ler" (Yuri) | 47,2 s | 23/11/2026 | 0 |
 | som_07_fala_valorizam_inteligente.m4a | **FALA (excepção aprovada pelo Yuri, 23/11)** – só os 1.os 3 s do reel do podcast: "As pessoas valorizam quem é muito inteligente." (o resto tem palavrão, não usar) | 3,0 s | 23/11/2026 | 0 |
 | som_08_fala_livros_mulher.m4a | **FALA** – reel de uma criadora a apresentar livros (O Poder do Hábito, Mindset, Hábitos Atómicos, Essencialismo, Como Fazer Amigos…) – aprovado pelo Yuri 23/11; usar só um trecho curto, à espera de o Yuri dizer qual | 44,4 s | 23/11/2026 | 0 |
+| som_09_mente_descanso.m4a | reel "Sua mente precisa de descanso" (52 Reflexões, Carnegie) – música calma (Yuri) | 18,6 s | 23/11/2026 | 0 |
 
 Actualizar a coluna "Usos" sempre que um som for usado. Sons novos: `ffmpeg -i reel.mp4 -vn -c:a aac sons/som_NN_<nome>.m4a`.
 
