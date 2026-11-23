@@ -24,7 +24,8 @@ Spec (caminhos relativos à raiz do repositório):
 - "cover": SÓ a capa de frente, limpa e direita (fotos/livros/capas/<slug>.png, feita com engine/capas.py),
   colada nítida com sombra suave por cima de um fundo real: "bg_clip" (vídeo de fotos/videos/, + "start")
   ou, por defeito, a própria foto do livro desfocada. Ex.: {"kind": "cover", "cover": "a-republica", "dur": 3.6,
-  "bg_clip": "fotos/videos/...mp4", "start": 2, "lines": [...]}  (Yuri 23/11: "só a parte da frente, bem cortada")
+  "bg_clip": "fotos/videos/...mp4", "start": 2, "lines": [...], "price": "2 150 MT", "old_price": "2 500 MT"}
+  "price" (opcional) = autocolante azul no canto da capa – só em reels-anúncio (~1 em 3); outro com "wa": true.  (Yuri 23/11: "só a parte da frente, bem cortada")
 - "clip": vídeo real em ecrã inteiro (opcional "inset": 0.6 para recuar – só se pedido).
 """
 import json, os, subprocess, sys
@@ -70,6 +71,25 @@ def cover_layer(slug, width=640):
     lay.putalpha(sh.filter(ImageFilter.GaussianBlur(22))); lay = Image.composite(Image.new('RGBA', lay.size, (0, 0, 0, 255)), Image.new('RGBA', lay.size, (0, 0, 0, 0)), lay.getchannel('A'))
     lay.paste(c, (pad, pad), m)
     return lay
+
+
+def price_badge(price, old=None):
+    """Etiqueta de preço tipo autocolante: azul Nostos, preço em creme; "old" = preço antigo riscado (promoção)."""
+    fb, fs = font('Inter-ExtraBold.otf', 64), font('Inter-Medium.otf', 32)
+    tmp = ImageDraw.Draw(Image.new('RGB', (1, 1)))
+    pw = tmp.textlength(price, font=fb); ow = tmp.textlength(old, font=fs) if old else 0
+    w = int(max(pw, ow) + 76); h = 112 + (44 if old else 0)
+    b = Image.new('RGBA', (w + 40, h + 40), (0, 0, 0, 0))
+    sh = Image.new('L', b.size, 0); ImageDraw.Draw(sh).rounded_rectangle([24, 28, w + 24, h + 28], 26, fill=140)
+    b.putalpha(sh.filter(ImageFilter.GaussianBlur(10)))
+    b = Image.composite(Image.new('RGBA', b.size, (0, 0, 0, 255)), Image.new('RGBA', b.size, (0, 0, 0, 0)), b.getchannel('A'))
+    d = ImageDraw.Draw(b); d.rounded_rectangle([20, 20, w + 20, h + 20], 26, fill=NAVY + (255,), outline=CREAM + (255,), width=3)
+    y = 34
+    if old:
+        x = 20 + (w - ow) / 2; d.text((x, y), old, font=fs, fill=(201, 207, 224))
+        d.line([(x - 4, y + 21), (x + ow + 4, y + 17)], fill=(235, 90, 90), width=4); y += 44
+    d.text((20 + (w - pw) / 2, y), price, font=fb, fill=CREAM)
+    return b.rotate(4, resample=Image.BICUBIC, expand=True)
 
 
 def cover_bg(slug, n, sc):
@@ -127,7 +147,7 @@ def text_layer(lines, size, top, chars=None):
     return Image.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(6)), lay)
 
 
-def outro(dur, sub):
+def outro(dur, sub, wa=False):
     base = Image.new('RGB', (W, H), NAVY)
     logo = Image.open(os.path.join(ROOT, 'engine', 'logo_azul.jpg')).resize((420, 420))
     base.paste(logo, ((W - 420) // 2, 560))
@@ -136,6 +156,10 @@ def outro(dur, sub):
     d.text(((W - d.textlength(t, font=f)) / 2, 1080), t, font=f, fill=CREAM)
     f2 = font('Inter-Medium.otf', 36)
     d.text(((W - d.textlength(sub, font=f2)) / 2, 1210), sub, font=f2, fill=(201, 207, 224))
+    if wa:                                                  # contacto (só nos reels com preço)
+        f3 = font('Inter-ExtraBold.otf', 46); t3 = 'WhatsApp 87\u00a0943\u00a01217'; tw = d.textlength(t3, font=f3)
+        d.rounded_rectangle([(W - tw) / 2 - 36, 1300, (W + tw) / 2 + 36, 1392], 46, fill=CREAM)
+        d.text(((W - tw) / 2, 1318), t3, font=f3, fill=NAVY)
     return [base] * int(round(dur * FPS))
 
 
@@ -158,10 +182,10 @@ def main(spec_path):
                f'afade=t=out:st={total - 1.6}:d=1.6[a]'),
            '-map', '0:v', '-map', '[a]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
            '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-shortest', '-movflags', '+faststart', out]
-    ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    ff = subprocess.Popen(cmd, stdin=subprocess.PIPE); badges = {}
     for sc in spec['scenes']:
         if sc['kind'] == 'outro':
-            for k, fr in enumerate(outro(sc['dur'], sc['sub'])):
+            for k, fr in enumerate(outro(sc['dur'], sc['sub'], sc.get('wa'))):
                 ff.stdin.write(Image.blend(Image.new('RGB', (W, H)), fr, ease(k / (0.4 * FPS))).tobytes())
             continue
         n = int(round(sc['dur'] * FPS))
@@ -190,7 +214,16 @@ def main(spec_path):
                 cl = cov.resize((cw, ch), Image.BILINEAR)
                 if a < 1: cl.putalpha(cl.getchannel('A').point(lambda v: int(v * a)))
                 cy = sc.get('cover_y', 1130)                # centro vertical da capa
-                img.alpha_composite(cl, ((W - cw) // 2 - 20, cy - ch // 2))
+                cx0, cy0 = (W - cw) // 2 - 20, cy - ch // 2
+                img.alpha_composite(cl, (cx0, cy0))
+                if sc.get('price'):                         # preço: autocolante no canto de baixo da capa
+                    pb = badges.setdefault(id(sc), price_badge(sc['price'], sc.get('old_price')))
+                    pa = ease((t - 0.35) / 0.3)
+                    if pa > 0:
+                        ps = 0.7 + 0.3 * pa; pl = pb.rotate(-8, resample=Image.BICUBIC, expand=True).resize((int(pb.width * ps), int(pb.height * ps)), Image.BILINEAR)
+                        pl.putalpha(pl.getchannel('A').point(lambda v: int(v * pa)))
+                        img.alpha_composite(pl, (max(10, cx0 - int(pl.width * 0.25)),   # canto esquerdo: longe dos botões do Instagram
+                                                 cy0 + ch - int(pl.height * 0.7)))
             if sc.get('type'):
                 img.alpha_composite(text_layer(sc['lines'], size, top, int(total_chars * min(1, t / sc['type']))))
             else:
