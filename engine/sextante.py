@@ -177,7 +177,7 @@ def text_layer(lines, size, top, chars=None, color=None, plain=False, align='cen
     return Image.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(6)), lay)
 
 
-def outro(dur, sub, wa=False, bg=None, price=None):
+def outro(dur, sub, wa=False, bg=None, price=None, old=None, tag=None):
     """Fecho Nostos. bg = frames de um vídeo real → azul translúcido por cima do vídeo desfocado (Yuri 23/11:
     "um azul meio desfocado, dá para ver um pouco o fundo"). price = preço em letra elegante branca."""
     n = int(round(dur * FPS))
@@ -195,9 +195,20 @@ def outro(dur, sub, wa=False, bg=None, price=None):
     f2 = font('Inter-Medium.otf', 36)
     d.text(((W - d.textlength(sub, font=f2)) / 2, 1210), sub, font=f2, fill=(220, 224, 236))
     y = 1300
+    if tag:                                                 # ex.: "BLACK OFERTA"
+        f5 = font('Inter-ExtraBold.otf', 34); tw5 = d.textlength(tag, font=f5)
+        d.text(((W - tw5) / 2, y), tag, font=f5, fill=(255, 214, 120)); y += 56
     if price:
-        f4 = font('DMSerifDisplay-Italic.ttf', 74)
-        d.text(((W - d.textlength(price, font=f4)) / 2, y - 10), price, font=f4, fill=(255, 255, 255)); y += 110
+        f4 = font('DMSerifDisplay-Italic.ttf', 80)
+        if old:                                             # preço antigo riscado ao lado
+            f6 = font('DMSerifDisplay-Italic.ttf', 50); ow = d.textlength(old, font=f6); pw = d.textlength(price, font=f4)
+            x0 = (W - (ow + 34 + pw)) / 2
+            d.text((x0, y + 18), old, font=f6, fill=(200, 205, 222))
+            d.line([(x0 - 4, y + 50), (x0 + ow + 4, y + 42)], fill=(235, 90, 90), width=4)
+            d.text((x0 + ow + 34, y - 6), price, font=f4, fill=(255, 255, 255))
+        else:
+            d.text(((W - d.textlength(price, font=f4)) / 2, y - 6), price, font=f4, fill=(255, 255, 255))
+        y += 116
     if wa:                                                  # contacto
         f3 = font('Inter-ExtraBold.otf', 46); t3 = 'WhatsApp 87\u00a0943\u00a01217'; tw = d.textlength(t3, font=f3)
         d.rounded_rectangle([(W - tw) / 2 - 36, y, (W + tw) / 2 + 36, y + 92], 46, fill=CREAM)
@@ -240,7 +251,7 @@ def main(spec_path):
         if sc['kind'] == 'outro':
             bgf = clip_frames(sc['bg_clip'], sc.get('start', 0), sc['dur']) if sc.get('bg_clip') else None
             fr_prev = last if (bgf and last is not None) else Image.new('RGB', (W, H))
-            for k, fr in enumerate(outro(sc['dur'], sc['sub'], sc.get('wa'), bgf, sc.get('price'))):
+            for k, fr in enumerate(outro(sc['dur'], sc['sub'], sc.get('wa'), bgf, sc.get('price'), sc.get('old_price'), sc.get('tag'))):
                 ff.stdin.write(Image.blend(fr_prev, fr, ease(k / (0.5 * FPS))).tobytes())
             continue
         n = int(round(sc['dur'] * FPS))

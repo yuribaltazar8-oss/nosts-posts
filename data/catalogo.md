@@ -58,7 +58,7 @@ São os anúncios da Nostos já no branding (preço e WhatsApp incluídos) – u
 - O Código Da Vinci – Dan Brown – 2 200 MT · `o-codigo-da-vinci`
 - O Poder da Garota que Ora – Stormie Omartian – 1 450 MT · `o-poder-da-garota-que-ora`
 - 1984 – George Orwell – 1 700 MT · `1984`
-- Como Parar de se Preocupar e Começar a Viver – Dale Carnegie – 2 300 MT · `como-parar-de-se-preocupar`
+- Como Parar de se Preocupar e Começar a Viver – Dale Carnegie – 2 300 MT (BLACK OFERTA desde 23/11: 1 850 MT) · `como-parar-de-se-preocupar`
 - O Poder do Agora – Eckhart Tolle – 1 800 MT · `o-poder-do-agora`
 - 12 Regras para a Vida – Jordan B. Peterson – 2 300 MT · `12-regras-para-a-vida`
 - Verity – Colleen Hoover – 1 700 MT · `verity`
