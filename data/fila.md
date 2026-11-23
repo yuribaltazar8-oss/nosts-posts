@@ -68,3 +68,21 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #dinheiro #habitos
+
+## 4. Carrossel – "Perguntei à IA" (desgosto) · estado: pendente (slot: feed_tarde de 23/11/2026, 19:47)
+- Imagens (pela ordem): `posts/prontos/carrossel_ia_desgosto_1.jpg`, `posts/prontos/carrossel_ia_desgosto_2.jpg`
+  → `create_carousel_post`. Estilo `anuncio` (a 2.ª imagem tem preço) – humor, aprovado pelo Yuri.
+- Legenda:
+Perguntei à IA que livro ler para esquecer alguém. A resposta foi honesta demais. 😭
+
+Todas as Suas Imperfeições, da Colleen Hoover, não ajuda a esquecer ninguém. Mas faz chorar por outra história até à última página, e às vezes é disso que se precisa.
+
+Já leu algum livro que o fez chorar mais do que um desgosto real? Conte nos comentários.
+
+Leia. Regresse a si.
+
+📖 Todas as Suas Imperfeições – Colleen Hoover: 1 650 MT
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #colleenhoover #humor
