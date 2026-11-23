@@ -129,3 +129,22 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #colleenhoover #livros #presente #romance #mocambique #maputo
+
+## 7. Reel – Carnegie "A sua mente não precisa de mais preocupações" (Black Oferta) · estado: pendente (slot: reel_meio de 26/11/2026, 13:13)
+- Vídeo: `posts/prontos/reel_carnegie_descanso.mp4` · capa: `posts/prontos/reel_carnegie_descanso_capa.jpg`
+- Vídeo real do Yuri (`fotos/videos/carnegie-preocupar-folhear.mp4`) · som_09 · estilo `anuncio` (preço no fecho), aprovado pelo Yuri 23/11.
+- Legenda:
+A sua mente não precisa de mais preocupações. Precisa de descanso.
+
+Dale Carnegie escreveu um manual contra a preocupação: viver um dia de cada vez, aceitar o pior e trabalhar para o melhorar, lembrar que a maioria das preocupações nunca chega a acontecer – e não chorar pelo leite derramado.
+
+Qual destas lições lhe faz mais falta? Diga o número nos comentários – e envie a quem anda a pensar demais.
+
+Leia. Regresse a si.
+
+📖 Como Parar de se Preocupar e Começar a Viver – Dale Carnegie
+🖤 BLACK OFERTA: 1 850 MT (antes 2 300 MT)
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #dalecarnegie #ansiedade #blackfriday #livros #mocambique #maputo
