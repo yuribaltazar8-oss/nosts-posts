@@ -246,7 +246,7 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
   de `data/recortes.json` (livro + mão, sem preço). Livro novo sem recorte: medir com grelha (desenhar linhas de 100 px
   sobre `*_anuncio.jpg`, ver com Read) e acrescentar o recorte a `recortes.json`. Ver 6–8 frames antes de publicar.
 - **Som = SONS VIRAIS escolhidos pelo Yuri** (`sons/`). "Quero sons virais e não mortos que ninguém conhece."
-  - Usar só ficheiros de `sons/` (enviados pelo Yuri, a partir de reels em tendência). Preferir os mais recentes;
+  - Usar só ficheiros de `sons/` (enviados pelo Yuri, a partir de reels em tendência ou dos reels da Sextante – Yuri, 23/11). Preferir os mais recentes;
     não repetir o mesmo som em 2 reels seguidos; registar no log (coluna `theme`) o som usado.
   - **Nunca** usar a batida gerada `engine/musica.py` nem música inventada.
   - Se `sons/` só tiver sons com mais de 7 dias ou já gastos (usados ≥ 3 vezes), continuar com o menos usado e,
