@@ -3,7 +3,7 @@
 | Ficheiro | Origem | Duração | Recebido | Usos |
 |---|---|---|---|---|
 | ~~som_01_felipe_reis.m4a~~ **NÃO USAR – é fala, não música (Yuri, 22/11)** | reel do livro de Felipe Reis Monteiro | 120 s | 21/11/2026 | 1 (A Única Coisa 21/11) |
-| som_02_curto.m4a | reel enviado pelo Yuri | 11,5 s (usar com loop) | 21/11/2026 | 2 (Desligar a cabeça; Não sai do lugar – fila) |
+| som_02_curto.m4a | reel enviado pelo Yuri | 11,5 s (usar com loop) | 21/11/2026 | 3 (Desligar a cabeça; Não sai do lugar – fila; Bonzinho demais 23/11) |
 
 Actualizar a coluna "Usos" sempre que um som for usado. Sons novos: `ffmpeg -i reel.mp4 -vn -c:a aac sons/som_NN_<nome>.m4a`.
 

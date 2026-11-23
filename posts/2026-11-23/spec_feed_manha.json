@@ -1,0 +1,17 @@
+{
+  "out": "posts/2026-11-23/feed_manha.mp4",
+  "audio": "sons/som_02_curto.m4a", "audio_start": 0, "audio_loop": true,
+  "scenes": [
+    {"kind": "clip", "clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 0, "dur": 4.5, "type": 1.4, "size": 60,
+     "lines": [[["Ninguém lhe diz: ser", false]], [["bonzinho demais ", false], ["custa caro.", true]]]},
+    {"kind": "photo", "photo": "fotos/livros/como-mandar-a-merda_anuncio.jpg", "crop": [365,365,1055,1390], "dur": 3.6,
+     "lines": [[["1. Dizer «não» também é", false]], [["uma forma de ", false], ["respeito.", true]]]},
+    {"kind": "photo", "photo": "fotos/livros/48-leis-do-poder_anuncio.jpg", "crop": [370,285,960,1190], "dur": 3.6,
+     "lines": [[["2. Quem fala demais", false]], [["entrega o ", false], ["jogo.", true]]]},
+    {"kind": "photo", "photo": "fotos/livros/12-regras-para-a-vida_anuncio.jpg", "crop": [250,85,1060,1170], "dur": 3.6,
+     "lines": [[["3. Fique perto de quem", false]], [["quer o seu ", false], ["melhor.", true]]]},
+    {"kind": "photo", "photo": "fotos/livros/a-coragem-de-ser-imperfeito_anuncio.jpg", "crop": [320,210,985,1170], "dur": 3.6,
+     "lines": [[["4. Mostrar a fraqueza", false]], [["também é ", false], ["coragem.", true]]]},
+    {"kind": "outro", "dur": 3.4, "sub": "Qual destes lhe faz falta: 1, 2, 3 ou 4?"}
+  ]
+}
