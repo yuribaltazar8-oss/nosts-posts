@@ -7,6 +7,7 @@ Spec (caminhos relativos à raiz do repositório):
   "out": "posts/AAAA-MM-DD/reel_meio.mp4",
   "audio": "sons/som_01_felipe_reis.m4a",    # um dos sons em sons/ (rodar; nunca música gerada)
   "audio_start": 0.3, "audio_loop": true,      # loop quando o som é mais curto do que o vídeo
+  "audio_intro": "sons/som_07_fala_valorizam_inteligente.m4a", "intro_dur": 3,  # opcional: frase falada antes da música
   "scenes": [
     {"kind": "clip", "clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 0, "dur": 4.5,
      "type": 1.5, "size": 62,                  # "type" = gancho a escrever-se (segundos)
@@ -121,7 +122,13 @@ def main(spec_path):
     cmd = ['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}',
            '-r', str(FPS), '-i', '-'] + (['-stream_loop', '-1'] if spec.get('audio_loop') else []) + \
           ['-ss', str(spec.get('audio_start', 0)), '-i', P(spec['audio']),
-           '-filter_complex', f'[1:a]atrim=0:{total},afade=t=in:d=0.3,afade=t=out:st={total - 1.6}:d=1.6[a]',
+           ] + (['-i', P(spec['audio_intro'])] if spec.get('audio_intro') else []) + [
+           '-filter_complex', (f'[1:a]atrim=0:{total},afade=t=in:d=0.3,afade=t=out:st={total - 1.6}:d=1.6[a]'
+               if not spec.get('audio_intro') else
+               # frase falada no início (ex.: som_07, 3 s) e a música entra logo a seguir
+               f'[1:a]atrim=0:{total - spec.get("intro_dur", 3)},afade=t=in:d=0.4,adelay={int(spec.get("intro_dur", 3) * 1000)}:all=1[m];'
+               f'[2:a]apad[v];[v][m]amix=inputs=2:duration=longest:normalize=0,atrim=0:{total},'
+               f'afade=t=out:st={total - 1.6}:d=1.6[a]'),
            '-map', '0:v', '-map', '[a]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
            '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-shortest', '-movflags', '+faststart', out]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
