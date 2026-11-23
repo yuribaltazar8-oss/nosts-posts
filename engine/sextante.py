@@ -26,6 +26,9 @@ Spec (caminhos relativos à raiz do repositório):
   ou, por defeito, a própria foto do livro desfocada. Ex.: {"kind": "cover", "cover": "a-republica", "dur": 3.6,
   "bg_clip": "fotos/videos/...mp4", "start": 2, "lines": [...], "price": "2 150 MT", "old_price": "2 500 MT"}
   "price" (opcional) = autocolante azul no canto da capa – só em reels-anúncio (~1 em 3); outro com "wa": true.  (Yuri 23/11: "só a parte da frente, bem cortada")
+- "sfx": "sons/sfx/whoosh.m4a" (opcional) – som de transição no 1.º segundo para parar o dedo.
+- clip/cover: "focus": 0.8 (fundo desfocado → nítido), "plain": true + "color": [255,227,150] (gancho sem etiqueta,
+  amarelo-creme), "price_text": "1 650 MT" (preço branco em DM Serif Display Italic, sem fundo; "price_y").
 - "clip": vídeo real em ecrã inteiro (opcional "inset": 0.6 para recuar – só se pedido).
 """
 import json, os, subprocess, sys
@@ -71,6 +74,16 @@ def cover_layer(slug, width=640):
     lay.putalpha(sh.filter(ImageFilter.GaussianBlur(22))); lay = Image.composite(Image.new('RGBA', lay.size, (0, 0, 0, 255)), Image.new('RGBA', lay.size, (0, 0, 0, 0)), lay.getchannel('A'))
     lay.paste(c, (pad, pad), m)
     return lay
+
+
+def price_text(price, size=92):
+    """Preço escrito à mão-elegante (DM Serif Display Italic), branco, sem fundo – só sombra suave."""
+    f = font('DMSerifDisplay-Italic.ttf', size)
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(sh).text((0, 0), price, font=f, fill=(0, 0, 0, 200))
+    d.text((0, 0), price, font=f, fill=(255, 255, 255, 255))
+    bb = lay.getbbox(); lay = Image.alpha_composite(sh.filter(ImageFilter.GaussianBlur(7)), lay)
+    return lay.crop((0, 0, bb[2] + 30, bb[3] + 30))
 
 
 def price_badge(price, old=None):
@@ -123,8 +136,11 @@ def book_still(photo, crop):
     return bg
 
 
-def text_layer(lines, size, top, chars=None):
+def text_layer(lines, size, top, chars=None, color=None, plain=False):
+    """plain=True: sem etiqueta azul, tudo em negrito na cor "color" (gancho amarelo-creme, Yuri 23/11)."""
     reg, bold = font('Inter-Medium.otf', size), font('Inter-ExtraBold.otf', size)
+    if plain: reg = bold
+    col = tuple(color) if color else CREAM
     lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
     shadow = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(shadow)
     lh = int(size * 1.32); y = top; left = chars if chars is not None else 10 ** 6
@@ -135,13 +151,13 @@ def text_layer(lines, size, top, chars=None):
             f = bold if b else reg
             shown = t[:max(0, left)]; left -= len(t)
             if not shown: break
-            if b:
+            if b and not plain:
                 pw = d.textlength(shown, font=f)
                 d.rounded_rectangle([x - 12, y - 4, x + pw + 12, y + size * 1.18], 12, fill=NAVY + (235,))
                 d.text((x, y), shown, font=f, fill=CREAM)
             else:
-                sd.text((x, y + 3), shown, font=f, fill=(0, 0, 0, 220))
-                d.text((x, y), shown, font=f, fill=CREAM)
+                sd.text((x, y + 4), shown, font=f, fill=(0, 0, 0, 230))
+                d.text((x, y), shown, font=f, fill=col)
             x += w
         y += lh
     return Image.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(6)), lay)
@@ -173,14 +189,17 @@ def main(spec_path):
     cmd = ['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}',
            '-r', str(FPS), '-i', '-'] + (['-stream_loop', '-1'] if spec.get('audio_loop') else []) + \
           ['-ss', str(spec.get('audio_start', 0)), '-i', P(spec['audio']),
-           ] + (['-i', P(spec['audio_intro'])] if spec.get('audio_intro') else []) + [
+           ] + (['-i', P(spec['audio_intro'])] if spec.get('audio_intro') else []) + \
+          (['-i', P(spec['sfx'])] if spec.get('sfx') else []) + [
            '-filter_complex', (f'[1:a]atrim=0:{total},afade=t=in:d=0.3,afade=t=out:st={total - 1.6}:d=1.6[a]'
                if not spec.get('audio_intro') else
                # frase falada no início (ex.: som_07, 3 s) e a música entra logo a seguir
                f'[1:a]atrim=0:{total - spec.get("intro_dur", 3)},afade=t=in:d=0.4,adelay={int(spec.get("intro_dur", 3) * 1000)}:all=1[m];'
                f'[2:a]apad[v];[v][m]amix=inputs=2:duration=longest:normalize=0,atrim=0:{total},'
-               f'afade=t=out:st={total - 1.6}:d=1.6[a]'),
-           '-map', '0:v', '-map', '[a]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
+               f'afade=t=out:st={total - 1.6}:d=1.6[a]')
+               + (f';[a]volume=1[mm];[{3 if spec.get("audio_intro") else 2}:a]volume={spec.get("sfx_vol", 0.9)},apad[sx];'
+                  f'[mm][sx]amix=inputs=2:duration=first:normalize=0[a2]' if spec.get('sfx') else ''),
+           '-map', '0:v', '-map', '[a2]' if spec.get('sfx') else '[a]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
            '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-shortest', '-movflags', '+faststart', out]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE); badges = {}
     for sc in spec['scenes']:
@@ -196,7 +215,9 @@ def main(spec_path):
                 else clip_frames(sc['clip'], sc.get('start', 0), sc['dur'])
         size = sc.get('size', 54)
         total_chars = sum(len(t) for l in sc['lines'] for t, _ in l)
-        cache = None if sc.get('type') else text_layer(sc['lines'], size, top)
+        tk = dict(color=sc.get('color'), plain=sc.get('plain', False))
+        cache = None if sc.get('type') else text_layer(sc['lines'], size, top, **tk)
+        ptxt = price_text(sc['price_text'], sc.get('price_size', 92)) if sc.get('price_text') else None
         for k, fr in enumerate(frames):
             t = k / FPS; z = 1 + 0.05 * (k / n); zw, zh = int(W * z), int(H * z)
             img = fr.resize((zw, zh), Image.BILINEAR).crop(((zw - W) // 2, (zh - H) // 2,
@@ -207,7 +228,15 @@ def main(spec_path):
                 iw, ih = int(W * sc['inset']), int(H * sc['inset'])
                 small.alpha_composite(img.resize((iw, ih), Image.BILINEAR), ((W - iw) // 2 - 30, 440))
                 img = small
+            if sc.get('focus'):                             # fundo desfocado que fica nítido (abertura)
+                r = 26 * (1 - ease(t / sc['focus']))
+                if r > 0.3: img = img.filter(ImageFilter.GaussianBlur(r))
             img.alpha_composite(grad)
+            if ptxt is not None:                            # preço em letra elegante branca, sem fundo
+                pa = ease((t - 0.45) / 0.4)
+                if pa > 0:
+                    pl = ptxt.copy(); pl.putalpha(pl.getchannel('A').point(lambda v: int(v * pa)))
+                    img.alpha_composite(pl, ((W - pl.width) // 2, sc.get('price_y', 470) + int(16 * (1 - pa))))
             if sc['kind'] == 'cover':                       # capa entra a crescer e respira devagar
                 a = ease(t / 0.45); sc_ = (0.9 + 0.1 * a) * (1 + 0.025 * k / n)
                 cw, ch = int(cov.width * sc_), int(cov.height * sc_)
@@ -225,7 +254,7 @@ def main(spec_path):
                         img.alpha_composite(pl, (max(10, cx0 - int(pl.width * 0.25)),   # canto esquerdo: longe dos botões do Instagram
                                                  cy0 + ch - int(pl.height * 0.7)))
             if sc.get('type'):
-                img.alpha_composite(text_layer(sc['lines'], size, top, int(total_chars * min(1, t / sc['type']))))
+                img.alpha_composite(text_layer(sc['lines'], size, top, int(total_chars * min(1, t / sc['type'])), **tk))
             else:
                 a = ease(t / 0.35)
                 lay = cache.copy(); lay.putalpha(lay.getchannel('A').point(lambda v: int(v * a)))

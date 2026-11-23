@@ -62,6 +62,8 @@ São os anúncios da Nostos já no branding (preço e WhatsApp incluídos) – u
 - O Poder do Agora – Eckhart Tolle – 1 800 MT · `o-poder-do-agora`
 - 12 Regras para a Vida – Jordan B. Peterson – 2 300 MT · `12-regras-para-a-vida`
 - Verity – Colleen Hoover – 1 700 MT · `verity`
+- É Assim que Começa – Colleen Hoover – 1 600 MT (preço do Yuri, 23/11; foto só no vídeo `fotos/videos/colleen-hoover-5-livros.mp4`)
+- Mulher em Queda – Colleen Hoover – 1 740 MT (idem)
 - Nunca Desista de Seus Sonhos – Augusto Cury – 1 800 MT · `nunca-desista-de-seus-sonhos` (23/11)
 - A Arte de Gastar Dinheiro – Morgan Housel – 1 900 MT · `a-arte-de-gastar-dinheiro` (23/11; a foto não tem preço, pôr na legenda)
 - A República – Platão – 2 150 MT (Black Oferta, antes 2 500 MT) · `a-republica` (23/11; `a-republica_calmo.jpg` = sem preço, `a-republica_anuncio.jpg` = com preço Black)
