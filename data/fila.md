@@ -87,7 +87,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #colleenhoover #humor
 
-## 5. Reel – "As pessoas valorizam quem é muito inteligente" (com preço) · estado: pendente (slot: reel_meio de 23/11/2026, 13:13)
+## 5. Reel – "As pessoas valorizam quem é muito inteligente" (com preço) · estado: publicado 2026-11-23 13:15 (18124070129286708, trial)
 - Vídeo: `posts/prontos/reel_valorizam_inteligente_preco.mp4` · capa: `posts/prontos/reel_valorizam_inteligente_preco_capa.jpg`
 - Som: som_07 (frase, 3 s) + som_04_sextante_vida_com_proposito · estilo `anuncio` (preço nas capas), aprovado pelo Yuri.
 - Legenda:
