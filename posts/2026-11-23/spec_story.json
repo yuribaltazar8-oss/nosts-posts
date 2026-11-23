@@ -1,0 +1,23 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-23",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Livro-casa da semana",
+   "text": "Um homem acorda e já não pode trabalhar.\n\nEm casa, passa a ser um peso.\n\nVocê é amado pelo que é ou pelo que faz?",
+   "size": 72,
+   "highlight": [
+    "peso",
+    "amado"
+   ],
+   "book": {
+    "title": "A Metamorfose",
+    "author": "Franz Kafka, 1915",
+    "photo": "fotos/livros/recortes/a-metamorfose.jpg",
+    "kicker": "Leia. Regresse a si."
+   }
+  }
+ ]
+}
