@@ -1,0 +1,18 @@
+{"out": "posts/prontos/reel_carnegie_descanso.mp4", "audio": "sons/som_09_mente_descanso.m4a", "audio_loop": true, "text_y": 200,
+ "scenes": [
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 4.0, "dur": 2.6, "type": 1.7, "size": 56, "plain": true, "focus": 0.7,
+   "lines": [[["A sua mente não precisa de", false]], [["mais preocupações.", false]], [["Precisa de descanso.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 7.2, "dur": 3.0, "size": 56, "plain": true, "hold": true,
+   "lines": [[["A sua mente não precisa de", false]], [["mais preocupações.", false]], [["Precisa de descanso.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 12.2, "dur": 3.0, "size": 56, "plain": true, "hold": true,
+   "lines": [[["A sua mente não precisa de", false]], [["mais preocupações.", false]], [["Precisa de descanso.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 25.3, "dur": 2.3, "size": 56, "plain": true, "hold": true,
+   "lines": [[["A sua mente não precisa de", false]], [["mais preocupações.", false]], [["Precisa de descanso.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 31.2, "dur": 2.5, "size": 56, "plain": true, "hold": true,
+   "lines": [[["A sua mente não precisa de", false]], [["mais preocupações.", false]], [["Precisa de descanso.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 42.0, "dur": 1.8, "size": 56, "plain": true,
+   "lines": [[["Se anda cansado de pensar em tudo,", false]], [["comece por este livro.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 44.2, "dur": 3.0, "size": 56, "plain": true, "hold": true,
+   "lines": [[["Se anda cansado de pensar em tudo,", false]], [["comece por este livro.", false]]]},
+  {"kind": "outro", "dur": 3.8, "sub": "Já se sentiu assim?", "bg_clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 44.5, "price": "2 300 MT", "wa": true}
+ ]}

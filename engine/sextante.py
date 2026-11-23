@@ -29,6 +29,8 @@ Spec (caminhos relativos à raiz do repositório):
 - "sfx": "sons/sfx/whoosh.m4a" (opcional) – som de transição no 1.º segundo para parar o dedo.
 - clip/cover: "focus": 0.8 (fundo desfocado → nítido), "plain": true + "color": [255,227,150] (gancho sem etiqueta,
   amarelo-creme), "price_text": "1 650 MT" (preço branco em DM Serif Display Italic, sem fundo; "price_y").
+- "hold": true = o texto continua da cena anterior sem voltar a aparecer (vários cortes, a mesma frase).
+- outro: "bg_clip"+"start" = azul translúcido sobre o vídeo desfocado; "price" = preço elegante; "wa": true.
 - "clip": vídeo real em ecrã inteiro (opcional "inset": 0.6 para recuar – só se pedido).
 """
 import json, os, subprocess, sys
@@ -163,20 +165,40 @@ def text_layer(lines, size, top, chars=None, color=None, plain=False):
     return Image.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(6)), lay)
 
 
-def outro(dur, sub, wa=False):
-    base = Image.new('RGB', (W, H), NAVY)
-    logo = Image.open(os.path.join(ROOT, 'engine', 'logo_azul.jpg')).resize((420, 420))
-    base.paste(logo, ((W - 420) // 2, 560))
-    d = ImageDraw.Draw(base)
+def outro(dur, sub, wa=False, bg=None, price=None):
+    """Fecho Nostos. bg = frames de um vídeo real → azul translúcido por cima do vídeo desfocado (Yuri 23/11:
+    "um azul meio desfocado, dá para ver um pouco o fundo"). price = preço em letra elegante branca."""
+    n = int(round(dur * FPS))
+    d0 = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(d0)
+    if bg:
+        lg = Image.open(os.path.join(ROOT, 'engine', 'logo_marca.png')).convert('RGBA')
+        lg = Image.merge('RGBA', [Image.new('L', lg.size, c) for c in CREAM] + [lg.getchannel('A')])
+        lw = 460; lg = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
+        d0.alpha_composite(lg, ((W - lw) // 2, 640))
+    else:
+        logo = Image.open(os.path.join(ROOT, 'engine', 'logo_azul.jpg')).resize((420, 420)).convert('RGBA')
+        d0.alpha_composite(logo, ((W - 420) // 2, 560))
     f = font('EBGi.ttf', 78); t = 'Leia. Regresse a si.'
     d.text(((W - d.textlength(t, font=f)) / 2, 1080), t, font=f, fill=CREAM)
     f2 = font('Inter-Medium.otf', 36)
-    d.text(((W - d.textlength(sub, font=f2)) / 2, 1210), sub, font=f2, fill=(201, 207, 224))
-    if wa:                                                  # contacto (só nos reels com preço)
+    d.text(((W - d.textlength(sub, font=f2)) / 2, 1210), sub, font=f2, fill=(220, 224, 236))
+    y = 1300
+    if price:
+        f4 = font('DMSerifDisplay-Italic.ttf', 74)
+        d.text(((W - d.textlength(price, font=f4)) / 2, y - 10), price, font=f4, fill=(255, 255, 255)); y += 110
+    if wa:                                                  # contacto
         f3 = font('Inter-ExtraBold.otf', 46); t3 = 'WhatsApp 87\u00a0943\u00a01217'; tw = d.textlength(t3, font=f3)
-        d.rounded_rectangle([(W - tw) / 2 - 36, 1300, (W + tw) / 2 + 36, 1392], 46, fill=CREAM)
-        d.text(((W - tw) / 2, 1318), t3, font=f3, fill=NAVY)
-    return [base] * int(round(dur * FPS))
+        d.rounded_rectangle([(W - tw) / 2 - 36, y, (W + tw) / 2 + 36, y + 92], 46, fill=CREAM)
+        d.text(((W - tw) / 2, y + 18), t3, font=f3, fill=NAVY)
+    if not bg:
+        base = Image.new('RGBA', (W, H), NAVY + (255,)); base.alpha_composite(d0)
+        return [base.convert('RGB')] * n
+    out = []
+    for k in range(n):
+        fr = bg[min(k, len(bg) - 1)].filter(ImageFilter.GaussianBlur(18)).convert('RGBA')
+        fr.alpha_composite(Image.new('RGBA', (W, H), NAVY + (200,)))
+        fr.alpha_composite(d0); out.append(fr.convert('RGB'))
+    return out
 
 
 def main(spec_path):
@@ -201,11 +223,13 @@ def main(spec_path):
                   f'[mm][sx]amix=inputs=2:duration=first:normalize=0[a2]' if spec.get('sfx') else ''),
            '-map', '0:v', '-map', '[a2]' if spec.get('sfx') else '[a]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
            '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-shortest', '-movflags', '+faststart', out]
-    ff = subprocess.Popen(cmd, stdin=subprocess.PIPE); badges = {}
+    ff = subprocess.Popen(cmd, stdin=subprocess.PIPE); badges = {}; last = None
     for sc in spec['scenes']:
         if sc['kind'] == 'outro':
-            for k, fr in enumerate(outro(sc['dur'], sc['sub'], sc.get('wa'))):
-                ff.stdin.write(Image.blend(Image.new('RGB', (W, H)), fr, ease(k / (0.4 * FPS))).tobytes())
+            bgf = clip_frames(sc['bg_clip'], sc.get('start', 0), sc['dur']) if sc.get('bg_clip') else None
+            fr_prev = last if (bgf and last is not None) else Image.new('RGB', (W, H))
+            for k, fr in enumerate(outro(sc['dur'], sc['sub'], sc.get('wa'), bgf, sc.get('price'))):
+                ff.stdin.write(Image.blend(fr_prev, fr, ease(k / (0.5 * FPS))).tobytes())
             continue
         n = int(round(sc['dur'] * FPS))
         if sc['kind'] == 'cover':
@@ -256,10 +280,10 @@ def main(spec_path):
             if sc.get('type'):
                 img.alpha_composite(text_layer(sc['lines'], size, top, int(total_chars * min(1, t / sc['type'])), **tk))
             else:
-                a = ease(t / 0.35)
+                a = 1 if sc.get('hold') else ease(t / 0.35)       # hold: mesmo texto da cena anterior, sem piscar
                 lay = cache.copy(); lay.putalpha(lay.getchannel('A').point(lambda v: int(v * a)))
                 img.alpha_composite(lay, (0, int(30 * (1 - a))))
-            ff.stdin.write(img.convert('RGB').tobytes())
+            last = img.convert('RGB'); ff.stdin.write(last.tobytes())
     ff.stdin.close(); ff.wait()
     print(json.dumps({'video': spec['out'], 'seconds': total}))
 
