@@ -86,3 +86,24 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #colleenhoover #humor
+
+## 5. Reel – "As pessoas valorizam quem é muito inteligente" (com preço) · estado: pendente (slot: reel_meio de 23/11/2026, 13:13)
+- Vídeo: `posts/prontos/reel_valorizam_inteligente_preco.mp4` · capa: `posts/prontos/reel_valorizam_inteligente_preco_capa.jpg`
+- Som: som_07 (frase, 3 s) + som_04_sextante_vida_com_proposito · estilo `anuncio` (preço nas capas), aprovado pelo Yuri.
+- Legenda:
+As pessoas valorizam quem é muito inteligente. Mas ninguém nasce assim.
+
+Inteligência constrói-se: pensar no que é justo, ver quem ninguém vê, decidir sem ser levado pela emoção e escolher só o que importa. Quatro livros, quatro formas de pensar melhor.
+
+Qual destes já leu? Responda nos comentários.
+
+Leia. Regresse a si.
+
+📖 A República – Platão: 2 150 MT (Black Oferta, antes 2 500 MT)
+📖 A Hora da Estrela – Clarice Lispector: 1 350 MT
+📖 A Psicologia Financeira – Morgan Housel: 1 800 MT
+📖 Essencialismo – Greg McKeown: 1 860 MT
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #platao #clarice

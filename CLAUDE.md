@@ -2,7 +2,7 @@
 
 Este repositório é o motor dos posts diários. Cada execução agendada diz qual é o SLOT: `feed_manha` (06:45), `story` (12:37), `reel_meio` (13:13), `feed_tarde` (19:47) ou `comentarios` (09:23, 15:23, 22:23).
 Ler primeiro `data/brand.md`, `data/catalogo.md`, `data/insights.md` e as últimas 14 linhas de `data/log.csv`.
-**Fila primeiro:** em todos os slots de feed, ver `data/fila.md`. Se houver um post `pendente`
+**Fila primeiro:** em todos os slots de feed, ver `data/fila.md`. Depois ver `data/semana.md` (plano da semana aprovado), se existir para a semana actual. Se houver um post `pendente`
 aprovado pelo Yuri, publicar esse (como está) em vez de criar um novo, e seguir as instruções da fila.
 
 ## IDs
