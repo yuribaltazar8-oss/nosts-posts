@@ -29,6 +29,8 @@ Spec (caminhos relativos à raiz do repositório):
 - "sfx": "sons/sfx/whoosh.m4a" (opcional) – som de transição no 1.º segundo para parar o dedo.
 - clip/cover: "focus": 0.8 (fundo desfocado → nítido), "plain": true + "color": [255,227,150] (gancho sem etiqueta,
   amarelo-creme), "price_text": "1 650 MT" (preço branco em DM Serif Display Italic, sem fundo; "price_y").
+- texto por cena: "text_y" (posição vertical), "align": left|center|right, "boxed": true (caixa creme por linha,
+  texto azul; legível por cima de páginas brancas). Variar a posição de cena para cena prende mais (Yuri 23/11).
 - "hold": true = o texto continua da cena anterior sem voltar a aparecer (vários cortes, a mesma frase).
 - outro: "bg_clip"+"start" = azul translúcido sobre o vídeo desfocado; "price" = preço elegante; "wa": true.
 - "clip": vídeo real em ecrã inteiro (opcional "inset": 0.6 para recuar – só se pedido).
@@ -138,7 +140,7 @@ def book_still(photo, crop):
     return bg
 
 
-def text_layer(lines, size, top, chars=None, color=None, plain=False):
+def text_layer(lines, size, top, chars=None, color=None, plain=False, align='center', boxed=False):
     """plain=True: sem etiqueta azul, tudo em negrito na cor "color" (gancho amarelo-creme, Yuri 23/11)."""
     reg, bold = font('Inter-Medium.otf', size), font('Inter-ExtraBold.otf', size)
     if plain: reg = bold
@@ -148,12 +150,22 @@ def text_layer(lines, size, top, chars=None, color=None, plain=False):
     lh = int(size * 1.32); y = top; left = chars if chars is not None else 10 ** 6
     for line in lines:
         widths = [d.textlength(t, font=bold if b else reg) for t, b in line]
-        x = (W - sum(widths)) / 2
+        tw = sum(widths)
+        x = 80 if align == 'left' else (W - 150 - tw if align == 'right' else (W - tw) / 2)  # direita: longe dos botões
+        if boxed and left > 0:                       # caixa creme por linha, texto azul (estilo legenda de referência)
+            shown_w = 0; ll = left
+            for (t, b), w in zip(line, widths):
+                k = min(len(t), max(0, ll)); ll -= len(t)
+                shown_w += d.textlength(t[:k], font=bold if b else reg)
+            if shown_w > 0:
+                d.rounded_rectangle([x - 22, y - 10, x + shown_w + 22, y + size * 1.22], 14, fill=CREAM + (242,))
         for (t, b), w in zip(line, widths):
             f = bold if b else reg
             shown = t[:max(0, left)]; left -= len(t)
             if not shown: break
-            if b and not plain:
+            if boxed:
+                d.text((x, y), shown, font=f, fill=NAVY)
+            elif b and not plain:
                 pw = d.textlength(shown, font=f)
                 d.rounded_rectangle([x - 12, y - 4, x + pw + 12, y + size * 1.18], 12, fill=NAVY + (235,))
                 d.text((x, y), shown, font=f, fill=CREAM)
@@ -239,8 +251,10 @@ def main(spec_path):
                 else clip_frames(sc['clip'], sc.get('start', 0), sc['dur'])
         size = sc.get('size', 54)
         total_chars = sum(len(t) for l in sc['lines'] for t, _ in l)
-        tk = dict(color=sc.get('color'), plain=sc.get('plain', False))
-        cache = None if sc.get('type') else text_layer(sc['lines'], size, top, **tk)
+        tk = dict(color=sc.get('color'), plain=sc.get('plain', False), align=sc.get('align', 'center'),
+                  boxed=sc.get('boxed', False))
+        ty = sc.get('text_y', top)                      # posição do texto por cena (topo, meio, baixo)
+        cache = None if sc.get('type') else text_layer(sc['lines'], size, ty, **tk)
         ptxt = price_text(sc['price_text'], sc.get('price_size', 92)) if sc.get('price_text') else None
         for k, fr in enumerate(frames):
             t = k / FPS; z = 1 + 0.05 * (k / n); zw, zh = int(W * z), int(H * z)
@@ -278,7 +292,7 @@ def main(spec_path):
                         img.alpha_composite(pl, (max(10, cx0 - int(pl.width * 0.25)),   # canto esquerdo: longe dos botões do Instagram
                                                  cy0 + ch - int(pl.height * 0.7)))
             if sc.get('type'):
-                img.alpha_composite(text_layer(sc['lines'], size, top, int(total_chars * min(1, t / sc['type'])), **tk))
+                img.alpha_composite(text_layer(sc['lines'], size, ty, int(total_chars * min(1, t / sc['type'])), **tk))
             else:
                 a = 1 if sc.get('hold') else ease(t / 0.35)       # hold: mesmo texto da cena anterior, sem piscar
                 lay = cache.copy(); lay.putalpha(lay.getchannel('A').point(lambda v: int(v * a)))
