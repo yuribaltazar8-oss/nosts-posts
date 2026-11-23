@@ -1,0 +1,80 @@
+{
+ "nunca-desista-de-seus-sonhos": {
+  "photo": "fotos/livros/nunca-desista-de-seus-sonhos_anuncio.jpg",
+  "quad": [
+   376,
+   196,
+   918,
+   179,
+   933,
+   1005,
+   384,
+   1010
+  ]
+ },
+ "a-arte-de-gastar-dinheiro": {
+  "photo": "fotos/livros/a-arte-de-gastar-dinheiro_anuncio.jpg",
+  "quad": [
+   361,
+   195,
+   982,
+   172,
+   998,
+   1116,
+   368,
+   1114
+  ]
+ },
+ "a-republica": {
+  "photo": "fotos/livros/a-republica_calmo.jpg",
+  "quad": [
+   400,
+   246,
+   906,
+   238,
+   911,
+   1015,
+   410,
+   1012
+  ]
+ },
+ "a-hora-da-estrela": {
+  "photo": "fotos/livros/a-hora-da-estrela_anuncio.jpg",
+  "quad": [
+   381,
+   248,
+   898,
+   232,
+   916,
+   1012,
+   385,
+   1013
+  ]
+ },
+ "psicologia-financeira": {
+  "photo": "fotos/livros/psicologia-financeira_anuncio.jpg",
+  "quad": [
+   374,
+   195,
+   981,
+   190,
+   1009,
+   1092,
+   382,
+   1098
+  ]
+ },
+ "essencialismo": {
+  "photo": "fotos/livros/essencialismo_anuncio.jpg",
+  "quad": [
+   398,
+   245,
+   984,
+   242,
+   995,
+   1124,
+   402,
+   1130
+  ]
+ }
+}

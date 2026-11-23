@@ -21,6 +21,10 @@ Spec (caminhos relativos à raiz do repositório):
 - "photo" + "crop" (x0,y0,x1,y1 na foto de 1350 px de largura): recorte SÓ ao livro e à mão, sem preço/texto do
   anúncio (ver data/recortes.json). O livro fica a ~80 % da largura, um pouco à esquerda, com bordas em degradê
   subtil sobre o fundo desfocado da própria foto (longe dos botões e da legenda do Instagram).
+- "cover": SÓ a capa de frente, limpa e direita (fotos/livros/capas/<slug>.png, feita com engine/capas.py),
+  colada nítida com sombra suave por cima de um fundo real: "bg_clip" (vídeo de fotos/videos/, + "start")
+  ou, por defeito, a própria foto do livro desfocada. Ex.: {"kind": "cover", "cover": "a-republica", "dur": 3.6,
+  "bg_clip": "fotos/videos/...mp4", "start": 2, "lines": [...]}  (Yuri 23/11: "só a parte da frente, bem cortada")
 - "clip": vídeo real em ecrã inteiro (opcional "inset": 0.6 para recuar – só se pedido).
 """
 import json, os, subprocess, sys
@@ -54,6 +58,29 @@ def clip_frames(path, start, dur):
     need = int(round(dur * FPS))
     while len(fr) < need: fr.append(fr[-1])
     return fr[:need]
+
+
+def cover_layer(slug, width=640):
+    """Capa plana com cantos levemente arredondados e sombra suave (RGBA, já com margem para a sombra)."""
+    c = Image.open(P(f'fotos/livros/capas/{slug}.png')).convert('RGB')
+    h = int(c.height * width / c.width); c = c.resize((width, h), Image.LANCZOS)
+    m = Image.new('L', (width, h), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, width - 1, h - 1], 8, fill=255)
+    pad = 60; lay = Image.new('RGBA', (width + 2 * pad, h + 2 * pad), (0, 0, 0, 0))
+    sh = Image.new('L', lay.size, 0); ImageDraw.Draw(sh).rounded_rectangle([pad + 6, pad + 18, pad + width + 6, pad + h + 18], 12, fill=150)
+    lay.putalpha(sh.filter(ImageFilter.GaussianBlur(22))); lay = Image.composite(Image.new('RGBA', lay.size, (0, 0, 0, 255)), Image.new('RGBA', lay.size, (0, 0, 0, 0)), lay.getchannel('A'))
+    lay.paste(c, (pad, pad), m)
+    return lay
+
+
+def cover_bg(slug, n, sc):
+    if sc.get('bg_clip'):
+        fr = clip_frames(sc['bg_clip'], sc.get('start', 0), n / FPS)
+        return [Image.eval(f.filter(ImageFilter.GaussianBlur(sc.get('bg_blur', 6))), lambda v: int(v * 0.8)) for f in fr]
+    reg = json.load(open(P('data/capas.json')))
+    ph = Image.open(P(reg[slug]['photo'])).convert('RGB')
+    s = max(W / ph.width, H / ph.height); ph = ph.resize((int(ph.width * s), int(ph.height * s)))
+    ph = ph.crop(((ph.width - W) // 2, (ph.height - H) // 2, (ph.width - W) // 2 + W, (ph.height - H) // 2 + H))
+    return [ImageEnhance.Brightness(ph.filter(ImageFilter.GaussianBlur(30))).enhance(0.8)] * n
 
 
 def book_still(photo, crop):
@@ -138,8 +165,11 @@ def main(spec_path):
                 ff.stdin.write(Image.blend(Image.new('RGB', (W, H)), fr, ease(k / (0.4 * FPS))).tobytes())
             continue
         n = int(round(sc['dur'] * FPS))
-        frames = [book_still(sc['photo'], sc['crop'])] * n if sc['kind'] == 'photo' \
-            else clip_frames(sc['clip'], sc.get('start', 0), sc['dur'])
+        if sc['kind'] == 'cover':
+            frames = cover_bg(sc['cover'], n, sc); cov = cover_layer(sc['cover'], sc.get('cover_w', 640))
+        else:
+            frames = [book_still(sc['photo'], sc['crop'])] * n if sc['kind'] == 'photo' \
+                else clip_frames(sc['clip'], sc.get('start', 0), sc['dur'])
         size = sc.get('size', 54)
         total_chars = sum(len(t) for l in sc['lines'] for t, _ in l)
         cache = None if sc.get('type') else text_layer(sc['lines'], size, top)
@@ -154,6 +184,13 @@ def main(spec_path):
                 small.alpha_composite(img.resize((iw, ih), Image.BILINEAR), ((W - iw) // 2 - 30, 440))
                 img = small
             img.alpha_composite(grad)
+            if sc['kind'] == 'cover':                       # capa entra a crescer e respira devagar
+                a = ease(t / 0.45); sc_ = (0.9 + 0.1 * a) * (1 + 0.025 * k / n)
+                cw, ch = int(cov.width * sc_), int(cov.height * sc_)
+                cl = cov.resize((cw, ch), Image.BILINEAR)
+                if a < 1: cl.putalpha(cl.getchannel('A').point(lambda v: int(v * a)))
+                cy = sc.get('cover_y', 1130)                # centro vertical da capa
+                img.alpha_composite(cl, ((W - cw) // 2 - 20, cy - ch // 2))
             if sc.get('type'):
                 img.alpha_composite(text_layer(sc['lines'], size, top, int(total_chars * min(1, t / sc['type']))))
             else:

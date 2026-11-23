@@ -242,6 +242,12 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
 - **Estilo "Sextante" com cores Nostos**: texto curto no topo (2 linhas), creme com sombra, palavra-chave em creme
   sobre etiqueta azul; gancho a escrever-se; frases a entrar suaves; zoom lento; fecho azul com logo,
   "Leia. Regresse a si." e uma pergunta. Sem cartões/caixas creme, sem barras.
+- **Livros = SÓ A CAPA DE FRENTE, bem cortada** (Yuri, 23/11, referência "Pai Rico"): cena `"kind": "cover"` –
+  capa plana e nítida (`fotos/livros/capas/<slug>.png`) colada com sombra suave sobre um vídeo real desfocado
+  (`bg_clip` de `fotos/videos/`, `bg_blur` 12). Nada de livro com bordas borradas. Livro sem capa recortada: medir os
+  4 cantos da capa de frente (grelha de 50 px sobre a foto, ver com Read; sem lombada nem mão), guardar em
+  `data/capas.json` e correr `python3 engine/capas.py <slug>`; ver o PNG com Read antes de usar.
+  Exemplo: `posts/prontos/reel_valorizam_inteligente.json`. A cena antiga `photo`+`crop` só se a capa não der.
 - **Imagens**: vídeos reais em `fotos/videos/` em ecrã inteiro; fotos de livros com `"kind": "photo"` + `"crop"`
   de `data/recortes.json` (livro + mão, sem preço). Livro novo sem recorte: medir com grelha (desenhar linhas de 100 px
   sobre `*_anuncio.jpg`, ver com Read) e acrescentar o recorte a `recortes.json`. Ver 6–8 frames antes de publicar.
