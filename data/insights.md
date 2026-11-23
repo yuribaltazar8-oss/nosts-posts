@@ -9,24 +9,20 @@ Score = (partilhas×4 + guardados×3 + comentários×3 + novos seguidores×5 + g
 - Só comparar posts com ≥ 24 h de vida.
 
 ## Ranking (actualizar diariamente: top 5 e piores 3 dos últimos 14 dias)
-Actualizado 22/11 (Windsor não devolve gostos/comentários: usa-se engagement no lugar de gostos+comentários; seguidores só nos carrosséis).
-Top 5: 13/11 reel (Score 19,8; alcance 605; skip 61%) · 09/11 reel romances (18,9; 3 400; skip 45%) ·
-10/11 reel Noites Brancas (16,4; 1 852; skip 49%) · 16/11 reel (16,0; 319; skip 69%) · 20/11 10:13 reel fora do motor (16,0; 125; skip 84%).
-Carrosséis: 17/11 página de livro (15,1; 503) · 19/11 Aristóteles "Página que fica" (11,5; 417; +1 seguidor) ·
-21/11 Perfil do livro Séneca (9,1; 132) · 18/11 nota dinheiro (7,2; 264) · 20/11 estudo Yale (6,4; 187).
-Piores 3: 20/11 19:51 reel Retórica/licenciamento (0,6; 179; skip 78%) · 18/11 imagem tsundoku (4,1; 169) ·
-21/11 13:23 trial A Única Coisa (5,8; 154; skip 76%).
-Ontem (21/11): melhor = feed_tarde reel A Única Coisa da fila, filmagem real (14,9; 268; 8 guardados; skip 71%; 4,8 s) –
-melhor reel desde 16/11; o mesmo vídeo em trial rendeu só 5,8 (não-seguidores saltam). Pior = trial A Única Coisa.
-Carrossel Séneca: alcance baixo (132) mas score médio (9,1).
-Revisão de domingo 22/11 (semana 16–21/11): estilo `page` (15,1 e 11,5) > `nota` (7,2; 6,4; 9,1) nos carrosséis →
-page ganha +1 dia na próxima semana (Sex passa a page com estudo), nota perde 1 (mantém Seg e Qua).
-Reels com foto parada do livro (livros.py): média ~6 → reduzir; reels com filmagem real (mãos, folhear) rendem 2–3× mais
-→ prioridade a vídeos reais do Yuri. Trial reels rendem metade dos normais: manter no máximo 1 trial por dia.
-Hoje (22/11): "A pergunta de domingo" em estilo page (o que rende mais), tema amor/família + clássico (Tolstói) + romance
-(Colleen Hoover, fórmula do melhor post de sempre). Copiar: page + hook emocional sobre a vida.
+Actualizado 23/11. Score calculado como (partilhas×4 + guardados×3 + engagement)/alcance×100 (Windsor não devolve gostos/comentários/seguidores nos reels).
+Top 5: 10/11 reel Noites Brancas (alcance 1 865; 30 guardados; 15 partilhas; skip 49%) · 13/11 reel (615; 19 guardados; skip 61%) ·
+22/11 13:15 reel "Desligar a cabeça" (18,3; 460; 9 guardados; 6 partilhas; skip 67%) · 21/11 19:49 reel A Única Coisa (18,2; 418; 12 guardados; skip 68%) ·
+17/11 carrossel página de livro (526; 15,1).
+Piores 3: 20/11 19:51 reel Retórica (0,5; 195; skip 76%) · 20/11 06:50 carrossel estudo Yale (5,9; 202) · 20/11 13:19 trial Crime e Castigo (6,5).
+Ontem (22/11): melhor = reel_meio "Livros para quem não consegue desligar a cabeça" (18,3; 460 alcance; 9 guardados; 6 partilhas) –
+lista de 4 livros de géneros diferentes, tema emocional (ansiedade). Pior = carrossel 06:50 "A pergunta de domingo" (8,1; 197).
+Reel 19:50 "Não sai do lugar" (9,3; 248; skip 82%) – o hook de dinheiro/trabalho rendeu metade do de ansiedade.
+Hoje (23/11): copiar a fórmula vencedora (reel lista "1, 2, 3 ou 4?", 4 livros de géneros diferentes, tema emocional) com tema
+novo – limites/pessoas difíceis ("ser bonzinho demais custa caro"), 4 livros que nunca tinham saído.
+Carrosséis continuam abaixo dos reels em alcance (158–202 nas últimas 4 manhãs).
 
 ## Fórmulas vencedoras (copiar e variar)
+- Reel lista "Livros para quem…" com 4 livros de géneros diferentes e pergunta "1, 2, 3 ou 4?" – 22/11: Score 18,3, 6 partilhas.
 - Listas de romances intensos (Yarros/Hazelwood) – 09/11: 3 329 alcance, 370 interacções.
 - Clássico com emoção (Noites Brancas) – 10/11: 1 782 alcance.
 - Carrossel de páginas de livro – 17/11: ~11% de interacção.
@@ -35,6 +31,7 @@ Hoje (22/11): "A pergunta de domingo" em estilo page (o que rende mais), tema am
 - Temas: romance intenso, clássicos com emoção, reflexão sobre a vida.
 
 ## A evitar
+- Hook de dinheiro/"trabalha e não sai do lugar" – 22/11: skip 82%, metade do score do reel de ansiedade.
 - Palavras desconhecidas / temas de nicho no hook (ex.: "tsundoku").
 - Publicar no meio da manhã (10:00–11:40) – piores resultados.
 - Imagem única no feed.

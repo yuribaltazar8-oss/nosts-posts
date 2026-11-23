@@ -3,7 +3,11 @@
 Actualizar no início de cada execução: Meta Ads, conta "Yuri e marketing" (2119139675179880),
 anúncios com estado ACTIVE. Ignorar anúncios da Dézir (boxer, renda, fio, algodão, ajustáveis).
 
-Última actualização: 2026-11-18
+Última actualização: 2026-11-23
+
+Anúncios de livros ACTIVE em 23/11/2026: "anucio acervo", "anucio classico", "Novo anúncio carrossel cicatrizes",
+"6 anucio Colleen", "anucio 50 livros fbs". (Os anúncios Yarros/Hazelwood, Dinheiro é Emocional, Rick Warren e
+Mente Milionária já não aparecem como ACTIVE – confirmar stock no WhatsApp antes de os destacar.)
 
 ## Romance — Colleen Hoover
 É Assim que Acaba (1 740 MT) · Mulher em Queda (1 740 MT) · Todas as Suas Imperfeições (1 650 MT) ·
