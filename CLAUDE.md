@@ -255,6 +255,7 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
   - Uma vez por semana (domingo), pesquisar na web que sons/músicas estão em tendência nos Reels (Moçambique,
     Brasil, Portugal) e sugerir ao Yuri os nomes, para ele enviar os que quiser. Não descarregar música da internet.
   - Se o Instagram silenciar ou recusar um vídeo por causa do som, avisar o Yuri com o nome do som e não o usar mais.
+- **Ideias de referência**: ver `data/ideias.md` (formatos copiados de reels que o Yuri enviou – usar só o som e a ideia).
 - Fila primeiro: `data/fila.md`.
 
 ## Cadência: MAIS VÍDEOS – 3 reels por dia (pedido do Yuri, 22/11/2026: "Passe a postar mais vídeos! No período da manhã quero vídeos")
