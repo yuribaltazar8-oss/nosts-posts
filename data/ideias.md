@@ -16,3 +16,8 @@ Os vídeos de referência NÃO se publicam: usa-se só o som (em `sons/`) e a id
   numa etiqueta azul; fecho azul.
 - Misturar géneros (clássico, finanças, fé, romance, filosofia, autoajuda). Variações: "…antes dos 30",
   "…se quer pensar melhor", "…que mudam a forma como vê o dinheiro" (só 1x/semana).
+
+## 3. "As pessoas valorizam quem é muito inteligente." (som_07 – frase de 3 s + música)
+- Abrir com a frase (texto no ecrã a escrever-se ao mesmo tempo), depois música (02–06) e 3–5 livros que dão repertório:
+  A República, Retórica, A Arte de Pensar Claramente, 1984, A Hora da Estrela… Fecho: "Leia. Regresse a si." +
+  "Qual destes já leu?". No máximo 1x por semana.

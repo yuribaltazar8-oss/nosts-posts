@@ -8,9 +8,12 @@
 | som_04_sextante_vida_com_proposito.m4a | reel da Sextante "Livros para construir uma vida com propósito" (enviado pelo Yuri) | 21,4 s | 23/11/2026 | 0 |
 | som_05_manipular_arte_da_guerra.m4a | reel "Imagina tentar me manipular enquanto leio A Arte da Guerra" (Yuri) | 31,6 s | 23/11/2026 | 0 |
 | som_06_11_livros.m4a | reel "11 livros que toda pessoa deveria ler" (Yuri) | 47,2 s | 23/11/2026 | 0 |
+| som_07_fala_valorizam_inteligente.m4a | **FALA (excepção aprovada pelo Yuri, 23/11)** – só os 1.os 3 s do reel do podcast: "As pessoas valorizam quem é muito inteligente." (o resto tem palavrão, não usar) | 3,0 s | 23/11/2026 | 0 |
 
 Actualizar a coluna "Usos" sempre que um som for usado. Sons novos: `ffmpeg -i reel.mp4 -vn -c:a aac sons/som_NN_<nome>.m4a`.
 
 Regra: só sons de MÚSICA (sem fala/narração). Antes de usar um som novo, confirmar que não é fala.
 
 Yuri (23/11): pode usar também os sons dos reels da Sextante que ele envia (só música). Rodar 02/03/04 – nunca o mesmo em 2 reels seguidos.
+
+som_07 é fala: usar só como ABERTURA (0–3 s) de reels sobre livros que tornam a pessoa mais inteligente/culta (Retórica, A República, A Arte de Pensar Claramente, 1984, Meditações…), e logo a seguir entrar com uma música (02–06) por baixo. Texto do gancho no ecrã a acompanhar a frase. No máximo 1x por semana.
