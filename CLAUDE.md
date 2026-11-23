@@ -261,6 +261,9 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
   - Uma vez por semana (domingo), pesquisar na web que sons/músicas estão em tendência nos Reels (Moçambique,
     Brasil, Portugal) e sugerir ao Yuri os nomes, para ele enviar os que quiser. Não descarregar música da internet.
   - Se o Instagram silenciar ou recusar um vídeo por causa do som, avisar o Yuri com o nome do som e não o usar mais.
+- **Tempo de leitura** (Yuri 23/11: "os textos desaparecem muito rápido"): cada frase fica no ecrã **≥ 3 s** (≈ 1 s por
+  cada 4 palavras, mínimo 3 s). Cortes rápidos de 1,5 s, sim, mas a mesma frase atravessa 2 cortes (`hold`).
+  Variar a posição do texto de frase para frase (`text_y`, `align`, `boxed`).
 - **Ideias de referência**: ver `data/ideias.md` (formatos copiados de reels que o Yuri enviou – usar só o som e a ideia).
 - Fila primeiro: `data/fila.md`.
 
