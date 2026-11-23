@@ -69,7 +69,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #dinheiro #habitos
 
-## 4. Carrossel – "Perguntei à IA" (desgosto) · estado: pendente (slot: feed_tarde de 23/11/2026, 19:47)
+## 4. Carrossel – "Perguntei à IA" (desgosto) · estado: publicado 2026-11-23 19:50 (18106067402052385)
 - Imagens (pela ordem): `posts/prontos/carrossel_ia_desgosto_1.jpg`, `posts/prontos/carrossel_ia_desgosto_2.jpg`
   → `create_carousel_post`. Estilo `anuncio` (a 2.ª imagem tem preço) – humor, aprovado pelo Yuri.
 - Legenda:
