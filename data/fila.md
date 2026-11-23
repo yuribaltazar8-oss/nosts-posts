@@ -107,3 +107,25 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #platao #clarice
+
+## 6. Reel – "Dê-lhe um destes livros. Ela nunca mais o esquece." (5 livros da Colleen Hoover) · estado: pendente (slot: reel_meio de 24/11/2026, 13:13 – NÃO antes, para não seguir logo o post de romance de 23/11 à noite)
+- Vídeo: `posts/prontos/reel_colleen_namorada.mp4` · capa: `posts/prontos/reel_colleen_namorada_capa.jpg`
+- Vídeo real do Yuri (`fotos/videos/colleen-hoover-5-livros.mp4`) · som_03 · estilo `calmo` (preço só na legenda), aprovado pelo Yuri.
+- Legenda:
+Dê-lhe um destes livros. Ela nunca mais o esquece.
+
+Cinco histórias da Colleen Hoover para oferecer a quem ama: uma para acreditar que o amor sobrevive a tudo, uma para não conseguir dormir, uma para desconfiar de toda a gente, uma para chorar e recomeçar, e uma para o amor que volta.
+
+Qual lhe oferecia primeiro? Diga nos comentários – e envie a quem precisa desta ideia de presente.
+
+Leia. Regresse a si.
+
+📖 Todas as Suas Imperfeições – 1 650 MT
+📖 Mulher em Queda – 1 740 MT
+📖 Verity – 1 700 MT
+📖 Uma Segunda Chance – 1 799 MT
+📖 É Assim que Começa – preço e disponibilidade no WhatsApp
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #colleenhoover #livros #presente #romance #mocambique #maputo
