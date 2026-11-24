@@ -1,0 +1,20 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-24",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Humor de leitor",
+   "text": "“Só mais um capítulo.”\n\nE, de repente, são duas da manhã.\n\nQue livro já lhe roubou uma noite de sono?",
+   "size": 72,
+   "highlight": ["capítulo", "duas da manhã"],
+   "book": {
+    "title": "O Código Da Vinci",
+    "author": "Dan Brown, 2003",
+    "photo": "fotos/livros/recortes/o-codigo-da-vinci.jpg",
+    "kicker": "Leia. Regresse a si."
+   }
+  }
+ ]
+}
