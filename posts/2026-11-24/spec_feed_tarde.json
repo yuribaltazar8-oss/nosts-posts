@@ -1,0 +1,87 @@
+{
+ "style": "nota",
+ "size": "feed",
+ "out": "posts/2026-11-24",
+ "name": "feed_tarde",
+ "pages": [
+  {
+   "kicker": "Perfil do livro",
+   "text": "Ninguém desiste de um sonho de uma vez.\n\nDesiste aos poucos, sem dar por isso.",
+   "size": 84,
+   "bold": true,
+   "highlight": [
+    "aos",
+    "poucos,"
+   ]
+  },
+  {
+   "text": "Primeiro, adia.\nDepois, encolhe-o.\nUm dia, já nem fala dele.",
+   "size": 72,
+   "highlight": [
+    "adia.",
+    "encolhe-o."
+   ],
+   "book": {
+    "title": "Nunca Desista de Seus Sonhos",
+    "author": "Augusto Cury",
+    "cover": "fotos/livros/capas/nunca-desista-de-seus-sonhos.png",
+    "kicker": "Perfil do livro"
+   }
+  },
+  {
+   "kicker": "Quem escreveu",
+   "text": "Augusto Cury.\nPsiquiatra e escritor brasileiro.\n\nEste livro já vendeu mais de 2,6 milhões de exemplares no Brasil.\n\nPorquê? Vai perceber já.",
+   "size": 72,
+   "highlight": [
+    "Augusto",
+    "Cury.",
+    "2,6",
+    "milhões"
+   ]
+  },
+  {
+   "kicker": "Ideia 1",
+   "text": "Um sonho é uma bússola.\n\nNão o leva lá sozinho.\n\nMas diz-lhe para onde andar quando tudo à volta confunde.",
+   "size": 76,
+   "highlight": [
+    "bússola."
+   ]
+  },
+  {
+   "kicker": "Ideia 2",
+   "text": "Sonhos pequenos fazem vidas pequenas.\n\nQuem encolhe o sonho para não falhar encolhe também aquilo que podia ser.",
+   "size": 76,
+   "highlight": [
+    "pequenos",
+    "pequenas."
+   ]
+  },
+  {
+   "kicker": "Ideia 3 – a que mais dói",
+   "text": "Quem não tenta falha sempre.\n\nNão às vezes. Sempre.\n\nO medo de errar parece prudência. É derrota garantida.",
+   "size": 76,
+   "highlight": [
+    "sempre.",
+    "Sempre."
+   ]
+  },
+  {
+   "kicker": "Livro-casa para quem…",
+   "text": "…tem um sonho guardado na gaveta.\n\nCury percorre a vida de Jesus, Lincoln e Martin Luther King para que não deixe o seu morrer.",
+   "size": 72,
+   "highlight": [
+    "gaveta."
+   ]
+  },
+  {
+   "text": "Seja honesto. O seu sonho está:\n\nA) Vivo\nB) Adiado\nC) Esquecido\n\nLeia. Regresse a si.",
+   "size": 76,
+   "highlight": [
+    "Leia.",
+    "Regresse",
+    "a",
+    "si."
+   ]
+  }
+ ]
+}
