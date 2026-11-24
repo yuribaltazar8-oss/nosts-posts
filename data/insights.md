@@ -11,8 +11,8 @@ Score = (partilhas×4 + guardados×3 + comentários×3 + novos seguidores×5 + g
 ## Ranking (actualizar diariamente: top 5 e piores 3 dos últimos 14 dias)
 Actualizado 24/11. Score = (partilhas×4 + guardados×3 + engagement)/alcance×100 (Windsor não devolve gostos/comentários/seguidores nos reels).
 Top 5 (14 dias): 23/11 13:15 reel "Valorizam quem é muito inteligente" (20,0; alcance 1 227; 37 guardados; 8 partilhas; skip 61%; trial!) ·
-22/11 13:15 reel "Desligar a cabeça" (15,4; 585; 10 guardados; 6 partilhas) · 21/11 19:49 reel A Única Coisa (17,3; 476; 13 guardados) ·
-23/11 06:50 reel "Bonzinho demais" (14,7; 639; 17 guardados; skip 57%) · 13/11 reel (15,8; 635; 19 guardados).
+22/11 13:15 reel "Desligar a cabeça" (15,4; 585; 10 guardados; 6 partilhas) · 21/11 19:49 reel A Única Coisa (17,2; 476; 13 guardados) ·
+23/11 06:50 reel "Bonzinho demais" (14,7; 639; 17 guardados; skip 57%) · 13/11 reel (19,1; 635; 19 guardados).
 Piores 3: 20/11 19:51 reel Retórica (0,4; 228; skip 74%) · 23/11 19:50 carrossel "Perguntei à IA" (7,1; 168; 0 guardados) · 20/11 13:19 trial Crime e Castigo (6,5).
 Ontem (23/11): melhor = reel_meio "As pessoas valorizam quem é muito inteligente" (Score 20,0, maior alcance das 2 semanas, 37 guardados) –
 abertura com frase falada viral (som_07) + lista de livros para "pensar melhor". Mesmo em trial bateu tudo.
