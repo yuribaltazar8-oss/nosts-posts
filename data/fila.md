@@ -108,7 +108,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #livros #leitura #mocambique #maputo #platao #clarice
 
-## 6. Reel – "5 livros que ela nunca vai esquecer… nem quem lhos deu." (5 livros da Colleen Hoover) · estado: pendente (slot: reel_meio de 24/11/2026, 13:13 – NÃO antes, para não seguir logo o post de romance de 23/11 à noite)
+## 6. Reel – "5 livros que ela nunca vai esquecer… nem quem lhos deu." (5 livros da Colleen Hoover) · estado: publicado 2026-11-24 13:15 (18113573501523065)
 - Vídeo: `posts/prontos/reel_colleen_namorada.mp4` · capa: `posts/prontos/reel_colleen_namorada_capa.jpg`
 - Vídeo real do Yuri (`fotos/videos/colleen-hoover-5-livros.mp4`) · som_03 · estilo `calmo` (preço só na legenda), aprovado pelo Yuri.
 - Legenda:
