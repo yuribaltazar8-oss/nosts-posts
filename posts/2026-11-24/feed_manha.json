@@ -1,0 +1,156 @@
+{
+ "out": "posts/2026-11-24/feed_manha.mp4",
+ "audio": "sons/som_05_manipular_arte_da_guerra.m4a",
+ "audio_loop": true,
+ "text_y": 250,
+ "scenes": [
+  {
+   "kind": "cover",
+   "cover": "a-arte-de-pensar-claramente",
+   "dur": 4.2,
+   "type": 0.7,
+   "size": 62,
+   "focus": 0.4,
+   "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 3,
+   "bg_blur": 12,
+   "lines": [
+    [
+     [
+      "Imagine tentar manipular-me",
+      false
+     ]
+    ],
+    [
+     [
+      "enquanto leio ",
+      false
+     ],
+     [
+      "este livro.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "cover",
+   "cover": "a-arte-de-pensar-claramente",
+   "dur": 3.6,
+   "text_y": 300,
+   "align": "left",
+   "bg_clip": "fotos/videos/embrulho-presente-separadores.mp4",
+   "start": 1,
+   "bg_blur": 12,
+   "lines": [
+    [
+     [
+      "“Toda a gente já comprou.”",
+      false
+     ]
+    ],
+    [
+     [
+      "Isso é ",
+      false
+     ],
+     [
+      "efeito manada.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "cover",
+   "cover": "a-arte-de-pensar-claramente",
+   "dur": 3.8,
+   "text_y": 250,
+   "align": "center",
+   "bg_clip": "fotos/videos/rebecca-yarros-ali-hazelwood-pilha.mp4",
+   "start": 6,
+   "bg_blur": 12,
+   "lines": [
+    [
+     [
+      "“Já investiu tanto, não desista.”",
+      false
+     ]
+    ],
+    [
+     [
+      "Custo ",
+      false
+     ],
+     [
+      "irrecuperável.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "cover",
+   "cover": "a-arte-de-pensar-claramente",
+   "dur": 3.6,
+   "text_y": 300,
+   "align": "right",
+   "bg_clip": "fotos/videos/carnegie-preocupar-folhear.mp4",
+   "start": 10,
+   "bg_blur": 12,
+   "lines": [
+    [
+     [
+      "“Tome, é um presente.”",
+      false
+     ]
+    ],
+    [
+     [
+      "Ah, a ",
+      false
+     ],
+     [
+      "reciprocidade.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "cover",
+   "cover": "a-arte-de-pensar-claramente",
+   "dur": 3.6,
+   "text_y": 250,
+   "align": "center",
+   "bg_clip": "fotos/videos/rebecca-yarros-ali-hazelwood-pilha.mp4",
+   "start": 20,
+   "bg_blur": 12,
+   "lines": [
+    [
+     [
+      "Desculpe. Hoje eu",
+      false
+     ]
+    ],
+    [
+     [
+      "penso ",
+      false
+     ],
+     [
+      "claramente.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "outro",
+   "dur": 3.4,
+   "sub": "Qual destes truques já o apanhou?",
+   "bg_clip": "fotos/videos/embrulho-presente-separadores.mp4",
+   "start": 3
+  }
+ ]
+}
