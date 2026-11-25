@@ -1,0 +1,16 @@
+{
+ "style": "nota",
+ "size": "feed",
+ "out": "posts/2026-11-25",
+ "name": "feed_tarde",
+ "pages": [
+  {"kicker": "Livros-casa para quem…", "text": "Ninguém recomeça do zero.\n\nRecomeça com as cicatrizes que tem.", "size": 88, "bold": true, "highlight": ["cicatrizes"]},
+  {"kicker": "1. Para quem ainda dói", "text": "Há feridas que ninguém vê.\n\nE quem diz \"já passou\" nunca as carregou.\n\nO título deste livro diz o que muitos sentem e calam.", "size": 74, "highlight": ["ninguém", "vê."]},
+  {"text": "foto"},
+  {"kicker": "2. Para quem não sabe por onde começar", "text": "Não precisa de mudar tudo amanhã.\n\nPrecisa de uma pergunta:\n\nqual é a única coisa que, se a fizer, torna o resto mais fácil?", "size": 74, "highlight": ["única", "coisa"]},
+  {"text": "foto"},
+  {"kicker": "3. O que ninguém quer ouvir", "text": "Talvez o recomeço não seja sobre si.\n\nRick Warren tira-o do centro e propõe 40 dias para descobrir para que vive.", "size": 74, "highlight": ["sobre", "si."]},
+  {"text": "foto"},
+  {"text": "Qual é o seu recomeço?\n\n1, 2 ou 3?\n\nPartilhe com quem está nesta fase.\n\nLeia. Regresse a si.", "size": 78, "highlight": ["1,", "2", "3?", "Leia.", "Regresse", "a", "si."]}
+ ]
+}
