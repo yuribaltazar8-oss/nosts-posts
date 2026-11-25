@@ -20,5 +20,5 @@ Regras de uso (todos os slots):
 | carrossel_ia_desgosto_1/2.jpg | carrossel | humor "Perguntei à IA" – Todas as Suas Imperfeições | 2.ª imagem | fila 23/11 19:47 |
 | reel_valorizam_inteligente_preco.mp4 | reel | pensar melhor – República, Hora da Estrela, Psic. Financeira, Essencialismo | sim | feed 23/11 (trial) |
 | reel_valorizam_inteligente.mp4 | reel | igual, sem preço | não | – (bom para repetir sem preço daqui a 3 semanas) |
-| reel_colleen_namorada.mp4 | reel | presente/romance – 5 livros Colleen Hoover | sim (texto) | feed 24/11 13:13 (normal) |
+| reel_colleen_namorada.mp4 | reel | presente/romance – 5 livros Colleen Hoover | sim (texto) | feed 24/11 13:13 (normal); story 25/11 (capa) |
 | reel_carnegie_descanso.mp4 | reel | ansiedade/paz interior – Como Parar de se Preocupar (Carnegie), lições em legendas | sim (fecho: Black Oferta 1 850) | fila 26/11 13:13 |
