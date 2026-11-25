@@ -1,0 +1,14 @@
+{"out": "posts/2026-11-25/reel_meio.mp4", "audio": "sons/som_04_sextante_vida_com_proposito.m4a", "audio_start": 0, "audio_loop": true, "text_y": 250,
+ "scenes": [
+  {"kind": "cover", "cover": "o-poder-da-garota-que-ora", "dur": 4.8, "bg_clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 0, "bg_blur": 12, "type": 0.9, "size": 64, "focus": 0.8,
+   "lines": [[["A sua filha fala com o ", false], ["telemóvel", true]], [["o dia inteiro. E com Deus?", false]]]},
+  {"kind": "cover", "cover": "o-poder-da-garota-que-ora", "dur": 3.6, "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 3, "bg_blur": 12, "size": 62, "align": "left",
+   "lines": [[["Orar não é coisa", false]], [["só de ", false], ["adultos.", true]]]},
+  {"kind": "cover", "cover": "o-poder-da-garota-que-ora", "dur": 3.6, "bg_clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 2, "bg_blur": 12, "size": 58, "boxed": true, "text_y": 300,
+   "lines": [[["Ensina o que é orar,", false]], [["como orar e porquê.", false]]]},
+  {"kind": "cover", "cover": "o-poder-da-garota-que-ora", "dur": 3.4, "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 7, "bg_blur": 12, "size": 60, "plain": true, "color": [255, 227, 150], "align": "right",
+   "lines": [[["Em palavras simples,", false]], [["feitas para meninas.", false]]]},
+  {"kind": "cover", "cover": "o-poder-da-garota-que-ora", "dur": 3.6, "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 10, "bg_blur": 12, "size": 58,
+   "lines": [[["Cada capítulo traz perguntas", false]], [["para ela ", false], ["pensar.", true]]]},
+  {"kind": "outro", "dur": 3.6, "bg_clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 0, "sub": "Com que idade aprendeu a orar?"}
+ ]}
