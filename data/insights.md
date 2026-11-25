@@ -46,6 +46,7 @@ Hoje (25/11): reel lista "7 livros que toda a pessoa deveria ler uma vez na vida
 - Trial reels como única saída de um bom vídeo (21/11: o mesmo vídeo rendeu 5,8 em trial vs 14,9 normal).
 
 ## Regras actuais
+- Teste A/B de reels (Yuri 25/11): modelo A "capa" (cover, texto limpo) vs modelo B "mão" (photo+crop, etiquetas). Alternar; comparar Score ao domingo. Reserva pronta do modelo A: posts/2026-11-25/feed_manha_v2.mp4 (7 livros, não publicada – não repetir antes de ~2 semanas).
 - Feed manhã: 06:45. Story: 12:37. Feed tarde: 19:47 (vídeos curtos e atualidade).
 - Comparar manhã vs tarde e vídeo vs carrossel; tipo de hook (pergunta, verdade dura, lista, número, história).
 - Todos os dias: o tipo de hook/tema/formato do melhor post dos últimos 7 dias deve ser reutilizado (com outra

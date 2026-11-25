@@ -247,7 +247,14 @@ para trocar"). TODOS os reels (reel_meio, feed_tarde, trial ou não) seguem agor
   (`bg_clip` de `fotos/videos/`, `bg_blur` 12). Nada de livro com bordas borradas. Livro sem capa recortada: medir os
   4 cantos da capa de frente (grelha de 50 px sobre a foto, ver com Read; sem lombada nem mão), guardar em
   `data/capas.json` e correr `python3 engine/capas.py <slug>`; ver o PNG com Read antes de usar.
-  Exemplo: `posts/prontos/reel_valorizam_inteligente.json`. A cena antiga `photo`+`crop` só se a capa não der.
+  Exemplo: `posts/prontos/reel_valorizam_inteligente.json`.
+- **Teste A/B dos dois modelos (Yuri, 25/11: "teve um bom resultado… pode testar os dois modelos sempre")**:
+  o reel de 25/11 06:45 com o modelo antigo (`photo`+`crop`, livro na mão, gancho em caixa creme, palavra-chave em
+  etiqueta azul) rendeu bem. Alternar os dois modelos nos reels feitos pelo motor:
+  **A = "capa"** (cena `cover`, só a capa de frente, texto `plain` sem caixas nem etiquetas – ex.
+  `posts/2026-11-25/feed_manha_v2.json`) e **B = "mão"** (`photo`+`crop`, etiquetas/caixas – ex.
+  `posts/2026-11-25/feed_manha.json`). Nunca o mesmo modelo em 2 reels de motor seguidos; registar no log, na coluna
+  `photo`, `modelo A capa` ou `modelo B mão`. No domingo, comparar o Score médio de A vs B em `insights.md`.
 - **Imagens**: vídeos reais em `fotos/videos/` em ecrã inteiro; fotos de livros com `"kind": "photo"` + `"crop"`
   de `data/recortes.json` (livro + mão, sem preço). Livro novo sem recorte: medir com grelha (desenhar linhas de 100 px
   sobre `*_anuncio.jpg`, ver com Read) e acrescentar o recorte a `recortes.json`. Ver 6–8 frames antes de publicar.
