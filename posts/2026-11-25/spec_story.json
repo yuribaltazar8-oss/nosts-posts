@@ -1,0 +1,16 @@
+{
+ "style": "photo",
+ "size": "story",
+ "out": "posts/2026-11-25",
+ "name": "story",
+ "pages": [
+  {
+   "photo": "posts/prontos/reel_colleen_namorada_capa.jpg",
+   "text": "Um livro oferecido nunca se esquece. Qual destes daria a quem ama?",
+   "size": 70,
+   "sub": "Veja o vídeo no perfil · Leia. Regresse a si.",
+   "shade": 0.8,
+   "shade_from": 0.62
+  }
+ ]
+}

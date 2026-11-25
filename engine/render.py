@@ -266,8 +266,10 @@ def photo_draw(W, H, p, root):
     src = Image.open(os.path.join(root, p["photo"])).convert("RGB")
     img = ImageOps.fit(src, (W, H), Image.LANCZOS)
     # escurecer a metade de baixo para o texto respirar
-    grad = np.linspace(0, 1, H) ** 1.6
-    arr = np.array(img, float) * (1 - 0.62 * grad)[:, None, None]
+    grad = np.linspace(0, 1, H) ** p.get("shade_curve", 1.6)
+    if p.get("shade_from") is not None:  # banda escura a partir de uma fração da altura (texto legível)
+        grad = np.clip((np.linspace(0, 1, H) - p["shade_from"]) / 0.1, 0, 1)
+    arr = np.array(img, float) * (1 - p.get("shade", 0.62) * grad)[:, None, None]
     img = Image.fromarray(arr.astype(np.uint8))
     d = ImageDraw.Draw(img)
     M = 96
