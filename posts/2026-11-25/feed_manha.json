@@ -1,0 +1,20 @@
+{"out": "posts/2026-11-25/feed_manha.mp4", "audio": "sons/som_06_11_livros.m4a", "audio_start": 0, "audio_loop": true, "text_y": 250,
+ "scenes": [
+  {"kind": "clip", "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 2.2, "dur": 4.6, "type": 1.8, "size": 64, "boxed": true,
+   "lines": [[["7 livros que toda a pessoa", false]], [["deveria ler ", false], ["uma vez na vida.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/o-pequeno-principe_anuncio.jpg", "crop": [385,250,1000,1165], "dur": 3.3,
+   "lines": [[["1. Para não esquecer", false]], [["o que é ", false], ["essencial.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/1984_anuncio.jpg", "crop": [447,219,1060,1181], "dur": 3.3, "align": "left",
+   "lines": [[["2. Para perceber quem", false]], [["controla ", false], ["o que pensa.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/revolucao-dos-bichos_anuncio.jpg", "crop": [405,203,987,1173], "dur": 3.3,
+   "lines": [[["3. Para ver o que o poder", false]], [["faz ", false], ["às pessoas.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/a-metamorfose_anuncio.jpg", "crop": [345,430,990,1475], "dur": 3.6, "align": "left",
+   "lines": [[["4. Para saber se é amado", false]], [["pelo que é ", false], ["ou pelo que faz.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/retorica_anuncio.jpg", "crop": [371,461,1001,1429], "dur": 3.3,
+   "lines": [[["5. Para convencer", false]], [["com razão, ", true], ["não com gritos.", false]]]},
+  {"kind": "photo", "photo": "fotos/livros/ikigai_anuncio.jpg", "crop": [380,203,999,1181], "dur": 3.3, "align": "left",
+   "lines": [[["6. Para encontrar", false]], [["a sua ", false], ["razão de viver.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/a-vida-e-curta-demais_anuncio.jpg", "crop": [380,253,962,1164], "dur": 3.3,
+   "lines": [[["7. Para deixar de viver", false]], [["pela metade.", true]]]},
+  {"kind": "outro", "dur": 3.4, "sub": "Quantos destes já leu?"}
+ ]}
