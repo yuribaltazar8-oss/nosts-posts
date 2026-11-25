@@ -89,5 +89,96 @@
    411,
    1103
   ]
+ },
+ "o-pequeno-principe": {
+  "photo": "fotos/livros/o-pequeno-principe_anuncio.jpg",
+  "quad": [
+   418,
+   268,
+   968,
+   253,
+   1018,
+   1100,
+   428,
+   1125
+  ]
+ },
+ "1984": {
+  "photo": "fotos/livros/1984_anuncio.jpg",
+  "quad": [
+   465,
+   232,
+   1035,
+   228,
+   1033,
+   1075,
+   465,
+   1092
+  ]
+ },
+ "revolucao-dos-bichos": {
+  "photo": "fotos/livros/revolucao-dos-bichos_anuncio.jpg",
+  "quad": [
+   408,
+   228,
+   960,
+   222,
+   978,
+   1082,
+   412,
+   1078
+  ]
+ },
+ "a-metamorfose": {
+  "photo": "fotos/livros/a-metamorfose_anuncio.jpg",
+  "quad": [
+   378,
+   452,
+   1003,
+   487,
+   1022,
+   1363,
+   400,
+   1418
+  ]
+ },
+ "retorica": {
+  "photo": "fotos/livros/retorica_anuncio.jpg",
+  "quad": [
+   383,
+   488,
+   984,
+   489,
+   988,
+   1403,
+   382,
+   1400
+  ]
+ },
+ "ikigai": {
+  "photo": "fotos/livros/ikigai_anuncio.jpg",
+  "quad": [
+   394,
+   227,
+   980,
+   226,
+   988,
+   1105,
+   396,
+   1105
+  ]
+ },
+ "a-vida-e-curta-demais": {
+  "photo": "fotos/livros/a-vida-e-curta-demais_anuncio.jpg",
+  "quad": [
+   410,
+   293,
+   950,
+   277,
+   958,
+   1130,
+   412,
+   1126
+  ]
  }
 }
