@@ -1,0 +1,17 @@
+{
+ "style": "photo",
+ "size": "story",
+ "out": "posts/2026-11-26",
+ "name": "story",
+ "pages": [
+  {
+   "photo": "fotos/videos/frames/embrulho-nostos.jpg",
+   "text": "Amanhã é Black Friday na Nostos.\n\nQue livro gostaria de receber embrulhado assim?",
+   "size": 70,
+   "sub": "Leia. Regresse a si.  #regresseasi",
+   "shade": 0.74,
+   "shade_curve": 1.3,
+   "shade_from": 0.5
+  }
+ ]
+}
