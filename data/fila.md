@@ -130,7 +130,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #colleenhoover #livros #presente #romance #mocambique #maputo
 
-## 7. Reel – Carnegie "A sua mente não precisa de mais preocupações" (Black Oferta) · estado: pendente (slot: reel_meio de 26/11/2026, 13:13)
+## 7. Reel – Carnegie "A sua mente não precisa de mais preocupações" (Black Oferta) · estado: publicado 2026-11-26 13:15 (18423480865157015)
 - Vídeo: `posts/prontos/reel_carnegie_descanso.mp4` · capa: `posts/prontos/reel_carnegie_descanso_capa.jpg`
 - Vídeo real do Yuri (`fotos/videos/carnegie-preocupar-folhear.mp4`) · som_09 · estilo `anuncio` (preço no fecho), aprovado pelo Yuri 23/11.
 - Legenda:
