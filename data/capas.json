@@ -193,5 +193,44 @@
    500,
    1012
   ]
+ },
+ "habitos-atomicos": {
+  "photo": "fotos/livros/habitos-atomicos_anuncio.jpg",
+  "quad": [
+   454,
+   217,
+   1024,
+   205,
+   1046,
+   1072,
+   446,
+   1068
+  ]
+ },
+ "deixa-pra-la": {
+  "photo": "fotos/livros/deixa-pra-la_anuncio.jpg",
+  "quad": [
+   412,
+   315,
+   950,
+   305,
+   956,
+   1093,
+   406,
+   1091
+  ]
+ },
+ "o-poder-do-agora": {
+  "photo": "fotos/livros/o-poder-do-agora_anuncio.jpg",
+  "quad": [
+   420,
+   177,
+   1050,
+   170,
+   1068,
+   1098,
+   417,
+   1103
+  ]
  }
 }
