@@ -1,0 +1,200 @@
+{
+ "out": "posts/2026-11-26/feed_manha.mp4",
+ "audio": "sons/som_03_sextante_proposito_profissional.m4a",
+ "audio_start": 0,
+ "audio_loop": true,
+ "text_y": 250,
+ "scenes": [
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 14,
+   "dur": 4.4,
+   "type": 1.2,
+   "size": 66,
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "Se ninguém estivesse a ver,",
+      false
+     ]
+    ],
+    [
+     [
+      "continuaria ",
+      false
+     ],
+     [
+      "honesto?",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 18.4,
+   "dur": 3.4,
+   "align": "left",
+   "lines": [
+    [
+     [
+      "Platão fez esta pergunta",
+      false
+     ]
+    ],
+    [
+     [
+      "há ",
+      false
+     ],
+     [
+      "2 400 anos.",
+      true
+     ]
+    ]
+   ],
+   "boxed": true
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/carnegie-preocupar-folhear.mp4",
+   "start": 8,
+   "dur": 3.6,
+   "text_y": 330,
+   "lines": [
+    [
+     [
+      "Um pastor encontra um anel",
+      false
+     ]
+    ],
+    [
+     [
+      "que o torna ",
+      false
+     ],
+     [
+      "invisível.",
+      true
+     ]
+    ]
+   ],
+   "boxed": true
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/carnegie-preocupar-folhear.mp4",
+   "start": 19.5,
+   "dur": 3.8,
+   "align": "right",
+   "lines": [
+    [
+     [
+      "Seduz a rainha e fica",
+      false
+     ]
+    ],
+    [
+     [
+      "com o ",
+      false
+     ],
+     [
+      "trono do rei.",
+      true
+     ]
+    ]
+   ],
+   "boxed": true
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/embrulho-presente-separadores.mp4",
+   "start": 0.5,
+   "dur": 3.8,
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "Glauco diz: qualquer pessoa",
+      false
+     ]
+    ],
+    [
+     [
+      "faria ",
+      false
+     ],
+     [
+      "o mesmo.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 20.5,
+   "dur": 4.0,
+   "align": "left",
+   "text_y": 330,
+   "lines": [
+    [
+     [
+      "Sócrates responde: ser justo",
+      false
+     ]
+    ],
+    [
+     [
+      "não é medo de ser ",
+      false
+     ],
+     [
+      "apanhado.",
+      true
+     ]
+    ]
+   ],
+   "boxed": true
+  },
+  {
+   "kind": "photo",
+   "photo": "fotos/livros/a-republica_anuncio.jpg",
+   "crop": [
+    385,
+    240,
+    1005,
+    1130
+   ],
+   "dur": 4.4,
+   "lines": [
+    [
+     [
+      "É ter a alma em ordem.",
+      false
+     ]
+    ],
+    [
+     [
+      "A República, ",
+      true
+     ],
+     [
+      "Platão.",
+      false
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "outro",
+   "dur": 3.6,
+   "sub": "Com o anel, mudava? Sim ou não?"
+  }
+ ]
+}
