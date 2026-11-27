@@ -70,3 +70,12 @@ São os anúncios da Nostos já no branding (preço e WhatsApp incluídos) – u
 - A Hora da Estrela – Clarice Lispector – 1 350 MT · `a-hora-da-estrela` (23/11)
 
 Regra: preços só na legenda e só quando o post fala do livro. Nunca inventar preço.
+
+## BLACK FRIDAY – OFERTAS ESPECIAIS (Yuri, 27/11/2026) – usar estes preços enquanto o Yuri não disser que acabou
+- Manual de Epicteto – Epicteto – antes 1 550 MT, agora 1 300 MT (sem foto)
+- Sobre a Brevidade da Vida – Séneca – antes 1 550 MT, agora 1 350 MT (sem foto)
+- Como Parar de se Preocupar e Começar a Viver – Dale Carnegie – antes 2 300 MT, agora 1 850 MT
+- A República – Platão – antes 2 500 MT, agora 2 150 MT
+- As Coisas que Você Só Vê Quando Desacelera (capa dura) – Haemin Sunim – antes 1 850 MT, agora 1 700 MT (sem foto)
+- Deixa para Lá – Mel Robbins – antes 1 900 MT, agora 1 750 MT
+- Pense Rápido, Fale Melhor – Matt Abrahams – antes 1 900 MT, agora 1 750 MT (sem foto)

@@ -148,3 +148,26 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #dalecarnegie #ansiedade #blackfriday #livros #mocambique #maputo
+
+## 8. Carrossel – BLACK FRIDAY: 7 ofertas especiais · estado: pendente (slot: feed_tarde de 27/11/2026, 19:47)
+- Imagens (pela ordem): `posts/2026-11-27/feed_tarde_1.jpg` … `feed_tarde_9.jpg` → `create_carousel_post`. Estilo `anuncio`. Preços do Yuri (27/11).
+- Legenda:
+Os livros que mudam a forma como pensa ficaram mais baratos. 🖤📚
+
+BLACK FRIDAY NA NOSTOS – ofertas especiais:
+📖 Manual de Epicteto – de 1 550 por 1 300 MT
+📖 Sobre a Brevidade da Vida – de 1 550 por 1 350 MT
+📖 Como Parar de se Preocupar e Começar a Viver – de 2 300 por 1 850 MT
+📖 A República – de 2 500 por 2 150 MT
+📖 As Coisas que Você Só Vê Quando Desacelera (capa dura) – de 1 850 por 1 700 MT
+📖 Deixa para Lá – de 1 900 por 1 750 MT
+📖 Pense Rápido, Fale Melhor – de 1 900 por 1 750 MT
+
+Qual destes leva para casa? Diga o número nos comentários.
+
+Leia. Regresse a si.
+
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #blackfriday #livros #leitura #mocambique #maputo #filosofia
