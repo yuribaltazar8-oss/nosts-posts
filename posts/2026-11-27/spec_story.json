@@ -1,0 +1,19 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-27",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Black Friday na Nostos",
+   "text": "Há quem gaste a Black Friday em coisas que esquece antes de Janeiro.\n\nHoje, às 19:47: 7 livros que ficam. Mais baratos.\n\nCoisas ou livros?",
+   "size": 72,
+   "highlight": ["ficam", "19:47"],
+   "book": {
+    "title": "Sobre a Brevidade da Vida",
+    "author": "Séneca   ·   Leia. Regresse a si.  #regresseasi",
+    "kicker": "Leia. Regresse a si."
+   }
+  }
+ ]
+}
