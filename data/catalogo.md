@@ -72,10 +72,12 @@ São os anúncios da Nostos já no branding (preço e WhatsApp incluídos) – u
 Regra: preços só na legenda e só quando o post fala do livro. Nunca inventar preço.
 
 ## BLACK FRIDAY – OFERTAS ESPECIAIS (Yuri, 27/11/2026) – usar estes preços enquanto o Yuri não disser que acabou
-- Manual de Epicteto – Epicteto – antes 1 550 MT, agora 1 300 MT (sem foto)
-- Sobre a Brevidade da Vida – Séneca – antes 1 550 MT, agora 1 350 MT (sem foto)
+- Manual de Epicteto – Epicteto – antes 1 550 MT, agora 1 300 MT · foto real `fotos/livros/manual-de-epicteto_mao_hd.jpg` (Yuri 27/11)
+- Sobre a Brevidade da Vida – Séneca – antes 1 550 MT, agora 1 350 MT · foto real `fotos/livros/sobre-a-brevidade-da-vida_mao_hd.jpg` (tem "1550 MZN" no canto – recortar só ao livro)
 - Como Parar de se Preocupar e Começar a Viver – Dale Carnegie – antes 2 300 MT, agora 1 850 MT
 - A República – Platão – antes 2 500 MT, agora 2 150 MT
-- As Coisas que Você Só Vê Quando Desacelera (capa dura) – Haemin Sunim – antes 1 850 MT, agora 1 700 MT (sem foto)
+- As Coisas que Você Só Vê Quando Desacelera (capa dura) – Haemin Sunim – antes 1 850 MT, agora 1 700 MT · foto real `fotos/livros/as-coisas-que-voce-so-ve-quando-desacelera_anuncio_hd.jpg` (anúncio com 1.850 e frases – recortar ao livro: 252,400,928,1290)
 - Deixa para Lá – Mel Robbins – antes 1 900 MT, agora 1 750 MT
-- Pense Rápido, Fale Melhor – Matt Abrahams – antes 1 900 MT, agora 1 750 MT (sem foto)
+- Pense Rápido, Fale Melhor – Matt Abrahams – antes 1 900 MT, agora 1 750 MT · foto real `fotos/livros/pense-rapido-fale-melhor_mao_hd.jpg`
+
+- Combo estoicos (Meditações + Manual de Epicteto + Sobre a Brevidade da Vida): 3 750 MT (poupe 900) · `fotos/livros/combo-estoicos_anuncio_hd.jpg` (anúncio do Yuri, 27/11)

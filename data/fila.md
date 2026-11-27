@@ -149,7 +149,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #dalecarnegie #ansiedade #blackfriday #livros #mocambique #maputo
 
-## 8. Carrossel – BLACK FRIDAY: 7 ofertas especiais · estado: publicado 2026-11-27 19:51 (18115381592233591)
+## 8. Carrossel – BLACK FRIDAY: 7 ofertas especiais · estado: publicado 2026-11-27 19:51 (18115381592233591); refeito com fotos reais a pedido do Yuri – v2 publicado 2026-11-27 (17915366142565371), imagens feed_tarde_v2_*.jpg
 - Imagens (pela ordem): `posts/2026-11-27/feed_tarde_1.jpg` … `feed_tarde_9.jpg` → `create_carousel_post`. Estilo `anuncio`. Preços do Yuri (27/11).
 - Legenda:
 Os livros que mudam a forma como pensa ficaram mais baratos. 🖤📚
