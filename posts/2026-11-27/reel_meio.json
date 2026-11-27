@@ -1,0 +1,16 @@
+{"out": "posts/2026-11-27/reel_meio.mp4", "audio": "sons/som_09_mente_descanso.m4a", "audio_start": 0, "audio_loop": true, "text_y": 250,
+ "scenes": [
+  {"kind": "cover", "cover": "a-hora-da-estrela", "dur": 4.6, "bg_clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 3, "bg_blur": 12, "focus": 0.8, "type": 1.6, "size": 64, "plain": true, "color": [255, 227, 150],
+   "lines": [[["Há quem viva anos", false]], [["sem que ninguém repare.", false]]]},
+  {"kind": "cover", "cover": "a-hora-da-estrela", "dur": 4.2, "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 6, "bg_blur": 12, "size": 58, "plain": true, "color": [255, 227, 150], "text_y": 300, "align": "left",
+   "lines": [[["Macabéa tem 19 anos.", false]], [["Veio de Alagoas para o Rio.", false]]]},
+  {"kind": "cover", "cover": "a-hora-da-estrela", "dur": 4.2, "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 16, "bg_blur": 12, "size": 58, "plain": true, "color": [255, 227, 150],
+   "lines": [[["Dactilógrafa, sozinha,", false]], [["quase invisível.", false]]]},
+  {"kind": "cover", "cover": "a-hora-da-estrela", "dur": 4.4, "bg_clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 12, "bg_blur": 12, "size": 58, "plain": true, "color": [255, 227, 150], "text_y": 300, "align": "left",
+   "lines": [[["Não sabe que é infeliz.", false]], [["Ninguém lho disse.", false]]]},
+  {"kind": "cover", "cover": "a-hora-da-estrela", "dur": 4.6, "bg_clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 24, "bg_blur": 12, "size": 56, "plain": true, "color": [255, 227, 150],
+   "lines": [[["Clarice Lispector, 1977:", false]], [["o último romance que publicou.", false]]]},
+  {"kind": "cover", "cover": "a-hora-da-estrela", "dur": 3.8, "bg_clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 20, "bg_blur": 12, "size": 62, "plain": true, "color": [255, 227, 150], "text_y": 300, "align": "left",
+   "lines": [[["E o final…", false]], [["ninguém esquece.", false]]]},
+  {"kind": "outro", "dur": 3.8, "sub": "Já se sentiu invisível? Sim ou não?"}
+ ]}
