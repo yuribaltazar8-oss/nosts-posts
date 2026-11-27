@@ -9,18 +9,19 @@ Score = (partilhas×4 + guardados×3 + comentários×3 + novos seguidores×5 + g
 - Só comparar posts com ≥ 24 h de vida.
 
 ## Ranking (actualizar diariamente: top 5 e piores 3 dos últimos 14 dias)
-Actualizado 26/11. Score = (partilhas×4 + guardados×3 + engagement)/alcance×100 (Windsor não devolve gostos/comentários/seguidores nos reels).
-Top 5 (14 dias): 25/11 06:55 reel lista "7 livros que toda a pessoa deveria ler uma vez na vida" (34,9; alcance 1 637; 95 guardados; 19 partilhas;
-skip 52,3%; tempo médio 10,6 s – MELHOR DE SEMPRE) · 23/11 13:15 trial "Valorizam quem é muito inteligente" (19,1; 1 434; 42 guardados) ·
-24/11 06:54 humor "Imagine tentar manipular-me" – Dobelli (18,2; 1 138; 33 guardados) · 13/11 reel (18,6; 657; 19 guardados) ·
-21/11 19:49 reel A Única Coisa (16,9; 525; 14 guardados).
-Piores 3: 25/11 13:21 reel trial Garota que Ora (1,8; alcance 110; skip 86%) · 25/11 19:51 carrossel-anúncio "Livros-casa para quem
-está a recomeçar" (2,3; 87) · 20/11 19:51 reel Retórica (0,7; 268).
-Ontem (25/11): melhor = reel 06:55 lista de 7 clássicos/essenciais (modelo B mão, som_06) – 34,9, quase o dobro do anterior recorde.
-Pior = carrossel-anúncio 19:51 (87 alcance) e trial da Garota que Ora (110; skip 86% – hook de fé/"a sua filha" + trial não pegou).
-Teste A/B até agora: modelo B mão 25/11 = 34,9 vs modelo A capa 25/11 (trial) = 1,8 e 24/11 (Dobelli) = 18,2.
-Hoje (26/11): reel "Página que fica" Platão – anel de Giges ("Se ninguém estivesse a ver, continuaria honesto?"), modelo B, som_03 –
-repete o vencedor (clássico forte + pensar melhor + manhã + modelo B).
+Actualizado 27/11. Score = (partilhas×4 + guardados×3 + engagement)/alcance×100 (Windsor não devolve gostos/comentários/seguidores nos reels).
+Top 5 (14 dias): 25/11 06:55 reel lista "7 livros que toda a pessoa deveria ler uma vez na vida" (36,3; alcance 1 713; 101 guardados; 23 partilhas;
+skip 51,7%; tempo médio 10,7 s – MELHOR DE SEMPRE) · 26/11 13:15 fila Carnegie "mente precisa de descanso" (21,9; 315; 11 guardados – vídeo real do Yuri) ·
+23/11 13:15 trial "Valorizam quem é muito inteligente" (19,1; 1 438; 42 guardados) · 24/11 06:54 humor "Imagine tentar manipular-me" – Dobelli (17,7; 1 168) ·
+21/11 19:49 reel A Única Coisa (16,2; 544).
+Piores 3: 25/11 13:21 reel trial Garota que Ora (1,8; alcance 114; skip 85%) · 25/11 19:51 carrossel-anúncio (5,4; 166) ·
+26/11 19:55 humor Black Friday "só vou ver livros" (4,4; 206; ainda < 24 h).
+Ontem (26/11): melhor = reel 13:15 Carnegie (fila, vídeo real do Yuri, Black Oferta) – 21,9 mas alcance baixo (315).
+Pior = reel 06:52 "Página que fica" Platão/anel de Giges (8,7; alcance 183; skip 72,7%) – pergunta moral abstracta na manhã não pegou,
+e o humor das 19:55 (4,4). Os 3 reels de 26/11 tiveram alcance baixo (183–315) depois de 3 dias com > 1 000.
+Teste A/B até agora: modelo B mão média 22,5 (25/11 36,3; 26/11 8,7) vs modelo A capa média 8,0 (24/11 17,7; 25/11 1,8; 26/11 4,4).
+Hoje (27/11, Black Friday): reel B "Black Friday: vai comprar o que passa ou o que fica?" – 2 Black Ofertas confirmadas (República 2 150, Carnegie 1 850),
+lista numerada "1 ou 2?", som_06 (o som do recorde), copia Carnegie (melhor de ontem) + fórmula lista.
 Proposta (reforçada): carrosséis das 19:47 rendem 5–20× menos do que reels; trocar por reel ou carrossel só com fotos reais.
 
 ## Fórmulas vencedoras (copiar e variar)

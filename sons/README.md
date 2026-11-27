@@ -7,10 +7,10 @@
 | som_03_sextante_proposito_profissional.m4a | reel da Sextante "Livros para quem se sente perdido na vida profissional" (enviado pelo Yuri) | 28,7 s | 23/11/2026 | 2 (Colleen 24/11 – fila; Platão anel de Giges 26/11) |
 | som_04_sextante_vida_com_proposito.m4a | reel da Sextante "Livros para construir uma vida com propósito" (enviado pelo Yuri) | 21,4 s | 23/11/2026 | 2 (Valorizam inteligente 23/11; Garota que Ora 25/11) |
 | som_05_manipular_arte_da_guerra.m4a | reel "Imagina tentar me manipular enquanto leio A Arte da Guerra" (Yuri) | 31,6 s | 23/11/2026 | 2 (Imagine manipular-me – Dobelli 24/11; Black Friday "só vou ver livros" 26/11) |
-| som_06_11_livros.m4a | reel "11 livros que toda pessoa deveria ler" (Yuri) | 47,2 s | 23/11/2026 | 1 (7 livros uma vez na vida 25/11) |
+| som_06_11_livros.m4a | reel "11 livros que toda pessoa deveria ler" (Yuri) | 47,2 s | 23/11/2026 | 2 (7 livros uma vez na vida 25/11; Black Friday 27/11) |
 | som_07_fala_valorizam_inteligente.m4a | **FALA (excepção aprovada pelo Yuri, 23/11)** – só os 1.os 3 s do reel do podcast: "As pessoas valorizam quem é muito inteligente." (o resto tem palavrão, não usar) | 3,0 s | 23/11/2026 | 0 |
 | som_08_fala_livros_mulher.m4a | **FALA** – reel de uma criadora a apresentar livros (O Poder do Hábito, Mindset, Hábitos Atómicos, Essencialismo, Como Fazer Amigos…) – aprovado pelo Yuri 23/11; usar só um trecho curto, à espera de o Yuri dizer qual | 44,4 s | 23/11/2026 | 0 |
-| som_09_mente_descanso.m4a | reel "Sua mente precisa de descanso" (52 Reflexões, Carnegie) – música calma (Yuri) | 18,6 s | 23/11/2026 | 0 |
+| som_09_mente_descanso.m4a | reel "Sua mente precisa de descanso" (52 Reflexões, Carnegie) – música calma (Yuri) | 18,6 s | 23/11/2026 | 1 (fila Carnegie 26/11) |
 
 Actualizar a coluna "Usos" sempre que um som for usado. Sons novos: `ffmpeg -i reel.mp4 -vn -c:a aac sons/som_NN_<nome>.m4a`.
 
