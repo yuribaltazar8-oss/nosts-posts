@@ -1,0 +1,26 @@
+{
+ "out": "posts/2026-11-27/feed_manha.mp4",
+ "audio": "sons/som_06_11_livros.m4a",
+ "audio_start": 0,
+ "audio_loop": true,
+ "text_y": 250,
+ "scenes": [
+  {"kind": "clip", "clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 0.5, "dur": 4.2, "type": 1.2, "size": 66, "boxed": true,
+   "lines": [[["Black Friday: vai comprar", false]], [["o que passa ou o que ", false], ["fica?", true]]]},
+  {"kind": "clip", "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 14, "dur": 3.6, "align": "left", "boxed": true,
+   "lines": [[["A roupa sai de moda.", false]], [["O telemóvel fica ", false], ["velho.", true]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 8, "dur": 3.6, "text_y": 330, "boxed": true,
+   "lines": [[["Uma boa ideia fica consigo", false]], [["a vida ", false], ["inteira.", true]]]},
+  {"kind": "clip", "clip": "fotos/videos/embrulho-presente-separadores.mp4", "start": 4.5, "dur": 3.6, "align": "right", "boxed": true,
+   "lines": [[["Por isso, hoje há duas", false]], [["Black Ofertas", true], [" na Nostos.", false]]]},
+  {"kind": "clip", "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4", "start": 18.4, "dur": 3.4, "boxed": true,
+   "lines": [[["1. Para quem quer", false]], [["pensar ", false], ["melhor.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/a-republica_anuncio.jpg", "crop": [385, 240, 1005, 1130], "dur": 4.2,
+   "lines": [[["A República, Platão.", false]], [["De 2 500 por ", false], ["2 150 MT", true]]]},
+  {"kind": "clip", "clip": "fotos/videos/carnegie-preocupar-folhear.mp4", "start": 19.5, "dur": 3.4, "align": "left", "text_y": 330, "boxed": true,
+   "lines": [[["2. Para quem não consegue", false]], [["desligar a ", false], ["cabeça.", true]]]},
+  {"kind": "photo", "photo": "fotos/livros/como-parar-de-se-preocupar_anuncio.jpg", "crop": [452, 160, 1062, 1160], "dur": 4.2,
+   "lines": [[["Como Parar de se Preocupar.", false]], [["De 2 300 por ", false], ["1 850 MT", true]]]},
+  {"kind": "outro", "dur": 3.8, "sub": "Qual levava hoje: 1 ou 2?", "wa": true}
+ ]
+}
