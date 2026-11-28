@@ -1,0 +1,231 @@
+{
+ "out": "posts/2026-11-28/feed_manha.mp4",
+ "audio": "sons/som_04_sextante_vida_com_proposito.m4a",
+ "audio_start": 0,
+ "audio_loop": true,
+ "text_y": 250,
+ "sfx": "sons/sfx/whoosh.m4a",
+ "scenes": [
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 5,
+   "dur": 4.4,
+   "type": 1.4,
+   "size": 66,
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "Todos querem ganhar mais.",
+      false
+     ]
+    ],
+    [
+     [
+      "Poucos sabem ",
+      false
+     ],
+     [
+      "gastar bem.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/embrulho-presente-separadores.mp4",
+   "start": 1,
+   "dur": 3.8,
+   "align": "left",
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "Gastar para impressionar",
+      false
+     ]
+    ],
+    [
+     [
+      "é um jogo ",
+      false
+     ],
+     [
+      "sem fim.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/carnegie-preocupar-folhear.mp4",
+   "start": 30,
+   "dur": 3.6,
+   "text_y": 330,
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "Há sempre alguém",
+      false
+     ]
+    ],
+    [
+     [
+      "com mais ",
+      false
+     ],
+     [
+      "à sua frente.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "photo",
+   "photo": "fotos/livros/a-arte-de-gastar-dinheiro_anuncio.jpg",
+   "crop": [
+    360,
+    170,
+    1100,
+    1230
+   ],
+   "dur": 4.2,
+   "lines": [
+    [
+     [
+      "Morgan Housel escreveu",
+      false
+     ]
+    ],
+    [
+     [
+      "um livro sobre ",
+      false
+     ],
+     [
+      "isto.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 18,
+   "dur": 3.8,
+   "align": "right",
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "1. O dinheiro é ferramenta.",
+      false
+     ]
+    ],
+    [
+     [
+      "Não é ",
+      false
+     ],
+     [
+      "quem você é.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/carnegie-preocupar-folhear.mp4",
+   "start": 42,
+   "dur": 3.8,
+   "align": "left",
+   "text_y": 330,
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "2. O que não gasta",
+      false
+     ]
+    ],
+    [
+     [
+      "compra-lhe ",
+      false
+     ],
+     [
+      "liberdade.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "clip",
+   "clip": "fotos/videos/a-unica-coisa-folhear-sublinhar.mp4",
+   "start": 25,
+   "dur": 3.8,
+   "boxed": true,
+   "lines": [
+    [
+     [
+      "3. Gaste de forma a não",
+      false
+     ]
+    ],
+    [
+     [
+      "se ",
+      false
+     ],
+     [
+      "arrepender amanhã.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "photo",
+   "photo": "fotos/livros/a-arte-de-gastar-dinheiro_anuncio.jpg",
+   "crop": [
+    360,
+    170,
+    1100,
+    1230
+   ],
+   "dur": 4.2,
+   "align": "left",
+   "lines": [
+    [
+     [
+      "4. Poupar não é o fim.",
+      false
+     ]
+    ],
+    [
+     [
+      "É para ",
+      false
+     ],
+     [
+      "gastar bem.",
+      true
+     ]
+    ]
+   ]
+  },
+  {
+   "kind": "outro",
+   "dur": 3.8,
+   "sub": "Qual lhe faz falta: 1, 2, 3 ou 4?"
+  }
+ ]
+}
