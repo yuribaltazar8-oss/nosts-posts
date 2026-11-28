@@ -1,7 +1,7 @@
 import subprocess
 from PIL import Image, ImageDraw, ImageFilter
 exec(open('make.py').read().split("P=subprocess.Popen")[0])   # funções, OV (moldura Reels), card(), etc.
-SRC='/mnt/user-data/uploads/_r07qxo_-_R_Download.mov'
+SRC='/mnt/user-data/uploads/0e3f96d6-r07qxo_-_R_Download.mov'
 # 1) vídeo do Yuri inteiro, só redimensionado para 1080x1920
 subprocess.run(['ffmpeg','-v','error','-y','-i',SRC,'-vf','scale=1080:1920,fps=30','-c:v','libx264','-preset','veryfast','-crf','19','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-ar','44100','-ac','2','/tmp/rd/p1.mp4'],check=True)
 dur=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0','/tmp/rd/p1.mp4'],capture_output=True,text=True).stdout)

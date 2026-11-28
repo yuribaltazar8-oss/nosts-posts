@@ -171,3 +171,23 @@ Leia. Regresse a si.
 🚚 Entregas em Maputo, Matola e todo o país
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #blackfriday #livros #leitura #mocambique #maputo #filosofia
+
+## 9. Reel – trend "redirect" (vídeo do Yuri cortado + aba Instagram com os 5 livros da Colleen Hoover) · estado: pendente (slot: reel_meio de 28/11/2026, 13:13)
+- Vídeo: `posts/prontos/reel_redirect_colleen.mp4` · capa: `posts/prontos/reel_redirect_colleen_capa.jpg` · estilo `anuncio` (preços no vídeo), pedido pelo Yuri.
+- Legenda:
+Flores murcham. Chocolate acaba. Um livro destes, ela guarda para sempre. 📚❤️
+
+📖 Todas as Suas Imperfeições – 1 650 MT
+📖 Mulher em Queda – 1 740 MT
+📖 Verity – 1 700 MT
+📖 Uma Segunda Chance – 1 799 MT
+📖 É Assim que Começa – 1 600 MT
+
+Qual destes oferecia primeiro? Diga nos comentários.
+
+Leia. Regresse a si.
+
+📍 Nostos Livraria | Maputo
+🚚 Entregas em Maputo, Matola e todo o país
+📲 WhatsApp: 87 943 1217
+#nostoslivraria #regresseasi #colleenhoover #livros #presente #mocambique #maputo
