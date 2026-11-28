@@ -172,7 +172,7 @@ Leia. Regresse a si.
 📲 WhatsApp: 87 943 1217
 #nostoslivraria #regresseasi #blackfriday #livros #leitura #mocambique #maputo #filosofia
 
-## 9. Reel – trend "redirect" (vídeo do Yuri cortado + aba Instagram com os 5 livros da Colleen Hoover) · estado: pendente (slot: reel_meio de 28/11/2026, 13:13)
+## 9. Reel – trend "redirect" (vídeo do Yuri cortado + aba Instagram com os 5 livros da Colleen Hoover) · estado: publicado 2026-11-28 13:15 (18116201318264062)
 - Vídeo: `posts/prontos/reel_redirect_colleen.mp4` · capa: `posts/prontos/reel_redirect_colleen_capa.jpg` · estilo `anuncio` (preços no vídeo), pedido pelo Yuri.
 - Legenda:
 Flores murcham. Chocolate acaba. Um livro destes, ela guarda para sempre. 📚❤️
