@@ -5,7 +5,7 @@
 | ~~som_01_felipe_reis.m4a~~ **NÃO USAR – é fala, não música (Yuri, 22/11)** | reel do livro de Felipe Reis Monteiro | 120 s | 21/11/2026 | 1 (A Única Coisa 21/11) |
 | som_02_curto.m4a | reel enviado pelo Yuri | 11,5 s (usar com loop) | 21/11/2026 | 3 (Desligar a cabeça; Não sai do lugar – fila; Bonzinho demais 23/11) |
 | som_03_sextante_proposito_profissional.m4a | reel da Sextante "Livros para quem se sente perdido na vida profissional" (enviado pelo Yuri) | 28,7 s | 23/11/2026 | 2 (Colleen 24/11 – fila; Platão anel de Giges 26/11) |
-| som_04_sextante_vida_com_proposito.m4a | reel da Sextante "Livros para construir uma vida com propósito" (enviado pelo Yuri) | 21,4 s | 23/11/2026 | 2 (Valorizam inteligente 23/11; Garota que Ora 25/11) |
+| som_04_sextante_vida_com_proposito.m4a | reel da Sextante "Livros para construir uma vida com propósito" (enviado pelo Yuri) | 21,4 s | 23/11/2026 | 3 (Valorizam inteligente 23/11; Garota que Ora 25/11; Housel 28/11) |
 | som_05_manipular_arte_da_guerra.m4a | reel "Imagina tentar me manipular enquanto leio A Arte da Guerra" (Yuri) | 31,6 s | 23/11/2026 | 2 (Imagine manipular-me – Dobelli 24/11; Black Friday "só vou ver livros" 26/11) |
 | som_06_11_livros.m4a | reel "11 livros que toda pessoa deveria ler" (Yuri) | 47,2 s | 23/11/2026 | 2 (7 livros uma vez na vida 25/11; Black Friday 27/11) |
 | som_07_fala_valorizam_inteligente.m4a | **FALA (excepção aprovada pelo Yuri, 23/11)** – só os 1.os 3 s do reel do podcast: "As pessoas valorizam quem é muito inteligente." (o resto tem palavrão, não usar) | 3,0 s | 23/11/2026 | 0 |

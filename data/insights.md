@@ -9,19 +9,18 @@ Score = (partilhas×4 + guardados×3 + comentários×3 + novos seguidores×5 + g
 - Só comparar posts com ≥ 24 h de vida.
 
 ## Ranking (actualizar diariamente: top 5 e piores 3 dos últimos 14 dias)
-Actualizado 27/11. Score = (partilhas×4 + guardados×3 + engagement)/alcance×100 (Windsor não devolve gostos/comentários/seguidores nos reels).
-Top 5 (14 dias): 25/11 06:55 reel lista "7 livros que toda a pessoa deveria ler uma vez na vida" (36,3; alcance 1 713; 101 guardados; 23 partilhas;
-skip 51,7%; tempo médio 10,7 s – MELHOR DE SEMPRE) · 26/11 13:15 fila Carnegie "mente precisa de descanso" (21,9; 315; 11 guardados – vídeo real do Yuri) ·
-23/11 13:15 trial "Valorizam quem é muito inteligente" (19,1; 1 438; 42 guardados) · 24/11 06:54 humor "Imagine tentar manipular-me" – Dobelli (17,7; 1 168) ·
-21/11 19:49 reel A Única Coisa (16,2; 544).
-Piores 3: 25/11 13:21 reel trial Garota que Ora (1,8; alcance 114; skip 85%) · 25/11 19:51 carrossel-anúncio (5,4; 166) ·
-26/11 19:55 humor Black Friday "só vou ver livros" (4,4; 206; ainda < 24 h).
-Ontem (26/11): melhor = reel 13:15 Carnegie (fila, vídeo real do Yuri, Black Oferta) – 21,9 mas alcance baixo (315).
-Pior = reel 06:52 "Página que fica" Platão/anel de Giges (8,7; alcance 183; skip 72,7%) – pergunta moral abstracta na manhã não pegou,
-e o humor das 19:55 (4,4). Os 3 reels de 26/11 tiveram alcance baixo (183–315) depois de 3 dias com > 1 000.
-Teste A/B até agora: modelo B mão média 22,5 (25/11 36,3; 26/11 8,7) vs modelo A capa média 8,0 (24/11 17,7; 25/11 1,8; 26/11 4,4).
-Hoje (27/11, Black Friday): reel B "Black Friday: vai comprar o que passa ou o que fica?" – 2 Black Ofertas confirmadas (República 2 150, Carnegie 1 850),
-lista numerada "1 ou 2?", som_06 (o som do recorde), copia Carnegie (melhor de ontem) + fórmula lista.
+Actualizado 28/11. Score = (partilhas×4 + guardados×3 + engagement)/alcance×100 (Windsor não devolve gostos/comentários/seguidores nos reels).
+Top 5 (14 dias): 25/11 06:55 reel lista "7 livros que toda a pessoa deveria ler" (36,1; alcance 1 780; 103 guardados; 25 partilhas; skip 51%; 11,0 s – MELHOR DE SEMPRE) ·
+26/11 13:15 fila Carnegie "mente precisa de descanso" (21,6; 379; 13 guardados) · 23/11 13:15 trial "Valorizam quem é muito inteligente" (19,1; 1 440; 42 guardados) ·
+24/11 06:54 humor "Imagine tentar manipular-me" (17,6; 1 185; 33 guardados) · 21/11 19:49 reel A Única Coisa (16,5; 564).
+Piores 3: 25/11 13:21 trial Garota que Ora (1,7; 115; skip 85%) · 27/11 06:55 reel Black Friday com preços (1,9; 214; 0 guardados) · 26/11 19:55 humor "só vou ver livros" (3,3; 273).
+Ontem (27/11): melhor = reel trial 13:19 Clarice "Há quem viva anos sem que ninguém repare" (9,7; alcance 113 – trial; skip 82%).
+Pior = reel 06:55 "Black Friday: vai comprar o que passa ou o que fica?" (1,9; 214; 0 guardados, 0 partilhas) – preço e promoção no reel da manhã não prendem.
+Carrossel Black v3 das 20:14: 111 de alcance, 3 interacções (< 24 h; v1/v2 já não aparecem no Windsor).
+Alerta: 4 dias seguidos de alcance baixo (113–379) depois de 23–25/11 com > 1 000. Os posts com preço/Black (27/11) foram os piores – voltar a conteúdo calmo e de valor.
+Teste A/B: modelo B mão média 15,3 (25/11 36,1; 26/11 7,8; 27/11 1,9) vs modelo A capa média 8,1 (24/11 17,6; 25/11 1,7; 26/11 3,3; 27/11 9,7).
+Hoje (28/11): reel B "Todos querem ganhar mais. Poucos sabem gastar bem." – A Arte de Gastar Dinheiro (Housel), 1 livro + 4 lições numeradas (copia a lista numerada do recorde),
+sem preço nas imagens, som_04. Único post de dinheiro da semana; hook sem "salário".
 Proposta (reforçada): carrosséis das 19:47 rendem 5–20× menos do que reels; trocar por reel ou carrossel só com fotos reais.
 
 ## Fórmulas vencedoras (copiar e variar)
@@ -38,6 +37,7 @@ Proposta (reforçada): carrosséis das 19:47 rendem 5–20× menos do que reels;
 - Temas: romance intenso, clássicos com emoção, reflexão sobre a vida.
 
 ## A evitar
+- Reel da manhã com preços/promoção (Black Friday 27/11: 214 alcance, 0 guardados, Score 1,9).
 - Trial reel de fé com hook "A sua filha…" – 25/11 Garota que Ora: 110 alcance, skip 86%.
 - Carrossel-anúncio à noite – 25/11: 87 alcance.
 - Carrossel "Perfil do livro" 3D à noite – 24/11 Cury: 77 de alcance.
