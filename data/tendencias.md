@@ -6,7 +6,7 @@ Marcar na coluna "Usado" a data em que saiu. Apagar o que tiver > 3 semanas e n�
 ## Actualizado 28/11/2026 (pesquisa web: Later, SocialBee, Virlo, Rolling Stone, Estante Virtual)
 | Tendência / formato | Como adaptar | Usado |
 |---|---|---|
-| "Sim… mas" (ecrã dividido: o lado bom e o lado mau) | "Ler antes de dormir: Sim, acalma. Mas… são 3h da manhã e ainda está no capítulo 12." (Verity) | |
+| "Sim… mas" (ecrã dividido: o lado bom e o lado mau) | "Ler antes de dormir: Sim, acalma. Mas… são 3h da manhã e ainda está no capítulo 12." (Verity) | 28/11 story (pilha por ler + Essencialismo) |
 | "Este é o seu sinal" | "Este é o seu sinal para finalmente ler Sobre a Brevidade da Vida." Texto pequeno, livro na mão | |
 | "Uma vez por dia / por semana / por mês" | "10 páginas por dia. 1 livro por mês. 12 livros por ano." – mostrar 3 livros | |
 | Hábitos 10/10 (lista para guardar) | "Hábitos 10/10 de quem lê muito" – carrossel guardável | |

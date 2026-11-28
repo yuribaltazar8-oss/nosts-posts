@@ -1,0 +1,23 @@
+{
+ "style": "nota",
+ "size": "story",
+ "out": "posts/2026-11-28",
+ "name": "story",
+ "pages": [
+  {
+   "kicker": "Humor de leitor",
+   "text": "Doze livros por ler em casa. E comprar mais um?\n\nSim… mas este ensina a viver com menos.\n\nQuantos livros tem por ler?",
+   "size": 72,
+   "highlight": [
+    "menos",
+    "Quantos"
+   ],
+   "book": {
+    "title": "Essencialismo",
+    "author": "Greg McKeown · #regresseasi",
+    "cover": "fotos/livros/capas/essencialismo.png",
+    "kicker": "Leia. Regresse a si."
+   }
+  }
+ ]
+}
