@@ -44,6 +44,15 @@ aprovado pelo Yuri, publicar esse (como está) em vez de criar um novo, e seguir
    livro mencionado, foto usada, media_id) e fazer commit + push.
 9. **Avisar o Yuri** em 2–3 linhas: o que foi publicado e, no slot feed_manha, o resultado dos posts de ontem.
 
+## Viral e sem repetição (Yuri, 28/11/2026: "procure sempre assuntos mais virais… tem sido muito repetitivo")
+- **Todos os dias** (slot feed_manha): 2–3 pesquisas web de tendências (Reels/TikTok, BookTok, notícias de livros,
+  Moçambique) e actualizar `data/tendencias.md`. Ao domingo, revisão completa.
+- **Pelo menos 1 post por dia** usa uma tendência de `tendencias.md` (adaptada a um livro do catálogo); marcar "Usado".
+- **Anti-repetição** (ver as últimas 21 linhas do log antes de escrever): nunca repetir nos últimos 7 dias a mesma
+  estrutura de gancho (ex.: "X livros para quem…", "A sua mente…", "Ninguém lhe diz…"), o mesmo formato no mesmo
+  slot em dias seguidos, nem o mesmo livro em destaque. Se o post planeado se parece com um dos últimos 7 dias,
+  trocar o formato por uma tendência nova. Campanhas (Black Friday, etc.) no máximo 2 posts por dia.
+
 ## Voz: formal (pedido do Yuri, 18/11/2026)
 - Escrever **sempre de forma formal, na 3.ª pessoa / "você"**: "Recebe no dia 25…", "A maioria das pessoas…",
   "Quem lê…", "Você já reparou…". Português cuidado, sem gíria.
